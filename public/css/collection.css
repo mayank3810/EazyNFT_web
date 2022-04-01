@@ -1,0 +1,7 @@
+.collections-container {
+  padding: 50px 7%;
+}
+.grid-wrapper {
+  display: grid;
+  grid-gap: 15px;
+}

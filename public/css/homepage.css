@@ -1,0 +1,152 @@
+.header-wrapper {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+.banner-area .header-title {
+  text-align: start;
+}
+.banner-area .header-title sub {
+  right: 150px;
+}
+
+.card-big {
+  width: 339px;
+  height: 498px;
+}
+.planet-card {
+  height: 485px;
+  max-width: 330px !important;
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.pricing-table {
+  max-width: 330px !important;
+  width: 100% !important;
+  margin: auto;
+}
+.from-container p {
+  margin-bottom: 3rem;
+}
+.genesis-drop-pcard{
+  margin: inherit !important;
+  margin-right: auto !important;
+}
+@media only screen and (max-width: 1000px) {
+  .genesis-drop-pcard{
+    margin-right: inherit;
+    margin: auto !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn-container {
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .btn-area {
+    margin-right: 0px !important;
+  }
+  .button {
+    height: 45px !important;
+    padding: 8px !important;
+    border-radius: 20px !important;
+    font-size: 16px !important;
+  }
+  .header-wrapper {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+  .header-title {
+    text-align: center !important;
+  }
+  .header-title sub {
+    right: 40px !important;
+  }
+  .header-content h4 {
+    text-align: center !important;
+  }
+  .planet-card-conatiner {
+    height: inherit !important;
+    float: left;
+  }
+  .info > h4 {
+    text-align: center !important;
+  }
+  .info > p {
+    text-align: center !important;
+  }
+  .genesis-drop-pcard {
+    margin-top: 30px;
+    margin: auto; 
+  }
+  .planet-card-footer {
+    width: 80% !important;
+  }
+  .card-big {
+    height: inherit !important;
+    width: inherit !important;
+  }
+  .genesis-drop .container {
+    padding: 10px !important;
+  }
+  .heading-area h3 {
+    width: 100% !important;
+  }
+  .genesis-drop .info p {
+    width: 100% !important;
+  }
+  .text-end {
+    display: none !important;
+  }
+  .nft-card-new {
+    margin: 10px 42px !important;
+    max-width: 300px;
+    width: 100% !important;
+  }
+  .email-input {
+    right: 7% !important;
+  }
+  .email-input button {
+    right: 0px !important;
+  }
+  .newsletter {
+    padding: 25px 15px !important;
+  }
+  .trending-slider .trending-item {
+    margin: 10px 32px !important;
+  }
+  .section-title h2 {
+    text-align: center !important;
+  }
+  .heading-area p {
+    margin-top: 18px;
+  }
+  .hot-colection-card-wrapper {
+    padding: 0px 55px;
+  }
+  .content-col {
+    width: 100% !important;
+    padding: 0px 15px;
+  }
+  .padding {
+    padding: 55px 0 !important;
+  }
+  .from-container p {
+    margin-bottom: 1rem !important;
+  }
+  .default-btn {
+    margin-bottom: 12px;
+  }
+  .copy-right-social {
+    display: none;
+  }
+  .terms-wrapper {
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .copy-right-text {
+    top: 7px !important;
+  }
+}

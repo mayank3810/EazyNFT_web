@@ -1,0 +1,8 @@
+{
+    "window.title": "POLYONE - WEB: ${rootName}${separator}${activeEditorShort}",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#00a19a",
+        "titleBar.activeBackground": "#00a19a",
+        "titleBar.activeForeground": "#F9FCFE"
+    }
+}

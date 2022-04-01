@@ -1,0 +1,20 @@
+.admin-user-list .avatar-wrapper{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    z-index: 0;
+    margin-top: 10px;
+}
+.admin-user-list .profile-pic{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 15px;
+}
+.admin-user-list .profile-pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
