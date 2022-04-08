@@ -61,7 +61,7 @@ const Wrapper = styled.div`
     line-height: 32px;
     text-align: center;
     font-size: 16px;
-    color: var(--pinkColor);
+    color: var(--yellowColor);
     background-color: #f14d5d15;
     -webkit-transition: var(--transition);
     transition: var(--transition);

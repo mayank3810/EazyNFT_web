@@ -116,7 +116,6 @@ export default function LiveDrops() {
           </div>
         </div>
       </div>
-      <div className="line" />
     </div>
   );
 }

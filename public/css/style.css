@@ -23,44 +23,8 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap");
 
-@font-face {
-  font-family: "DrukWide-Bold";
-  src: url("/fonts/DrukWide-Bold-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "DrukWide-Heavy";
-  src: url("/fonts/DrukWide-Heavy-Reduced.woff.ttf") format("truetype");
-}
-@font-face {
-  font-family: "DrukWide-Medium";
-  src: url("/fonts/DrukWide-Medium.ttf") format("truetype");
-}
 
-@font-face {
-  font-family: "Tomica";
-  src: url("/fonts/Tomica.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Gordita";
-  src: url("/fonts/Gordita-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Rubik";
-  src: url("/fonts/Rubik-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Rubik Bold";
-  src: url("/fonts/Rubik-Bold.ttf") format("truetype");
-}
 
 @import url("nav.css");
 @import url("table.css");
@@ -79,10 +43,10 @@ Default CSS
 
 :root {
   --bodyFonts: "Josefin Sans", sans-serif;
-  --pinkColor: #01dcba;
+  --yellowColor: #ffb302;
   --titleColor: #fff;
   --bodyColor: #b7b7b7;
-  --lightblueColor: #01dcba;
+  --lightblueColor: #00a19a;
   --whiteColor: #ffffff;
   --fontSize: 16px;
   --transition: 0.5s;
@@ -245,7 +209,6 @@ Default Btn CSS
   position: relative;
 
   padding: 15px 30px;
-  font-family: "Tomica";
   font-style: normal;
   font-weight: 400;
   font-size: 12.8648px;
@@ -253,28 +216,8 @@ Default Btn CSS
   text-align: center;
 
   color: #ffffff;
-  /* border-radius: 8px; */
   z-index: 0;
-  /* background: var(--pinkColor); */
-  background: linear-gradient(
-    51.06deg,
-    #9358f7 0.87%,
-    #9259f7 7.31%,
-    #8e5df6 13.75%,
-    #8862f5 20.19%,
-    #806bf4 26.63%,
-    #7575f2 33.07%,
-    #6882f0 39.51%,
-    #5990ee 45.95%,
-    #4a9feb 52.39%,
-    #3bade9 58.84%,
-    #2ebae7 65.28%,
-    #23c4e5 71.72%,
-    #1bcde4 78.16%,
-    #15d2e3 84.6%,
-    #11d6e2 91.04%,
-    #10d7e2 97.48%
-  );
+  background: var(--yellowColor);
   border: none;
   border-radius: 16px !important;
   cursor: pointer;
@@ -282,19 +225,9 @@ Default Btn CSS
 
 .default-btn:hover {
   color: var(--whiteColor) !important;
-  /* background: #000; */
-  background: linear-gradient(135deg, #7f30cb 0%, #01dcba 100%);
 }
 
 .default-btn:hover:before {
-  /* -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform: translateX(-45%) translateY(0) scale(1);
-  transform: translateX(-45%) translateY(0) scale(1);
-  -webkit-transform-origin: bottom center;
-  transform-origin: bottom center; */
   background: #000;
 }
 
@@ -303,7 +236,7 @@ Default Btn CSS
 }
 
 .default-btn.two::before {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
 }
 
 /*================================
@@ -311,27 +244,16 @@ Section Title Style
 ===================================*/
 .section-title span {
   font-size: 15px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   display: inline-block;
   margin-bottom: 15px;
 }
 
 .section-title h2 {
-  font-family: DrukWide-Bold;
-  /* font-family: "Tomica"; */
   font-style: normal;
   font-weight: 700;
   font-size: 34.3061px;
   line-height: 41px;
-  /* or 120% */
-
-  /* Linear Horizon */
-
-  background: linear-gradient(135deg, #01dcba 0%, #7f30cb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }
 
 .section-title p {
@@ -404,7 +326,7 @@ Navbar Area
 .desktop-nav .navbar .navbar-nav .nav-item a:hover,
 .desktop-nav .navbar .navbar-nav .nav-item a:focus,
 .desktop-nav .navbar .navbar-nav .nav-item a.active {
-  /* color: var(--pinkColor); */
+  /* color: var(--yellowColor); */
   color: #fff;
   border-bottom: 2px solid #fff;
 }
@@ -441,7 +363,7 @@ Navbar Area
 .desktop-nav .navbar .navbar-nav .nav-item.active a {
   border-bottom: 2px solid #fff;
   color: #fff;
-  /* color: var(--pinkColor); */
+  /* color: var(--yellowColor); */
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu {
@@ -451,7 +373,7 @@ Navbar Area
   transition: all 0.3s ease-in-out; */
   background: var(--whiteColor);
   border: none;
-  border-top: 2px solid var(--pinkColor);
+  border-top: 2px solid var(--yellowColor);
   position: absolute;
   visibility: hidden;
   /* -webkit-transform-origin: bottom;
@@ -495,7 +417,7 @@ Navbar Area
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover,
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus,
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a i {
@@ -551,7 +473,7 @@ Navbar Area
   .dropdown-menu
   li
   a.active {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav
@@ -617,7 +539,7 @@ Navbar Area
   .dropdown-menu
   li
   a.active {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav
@@ -692,7 +614,7 @@ Navbar Area
   .dropdown-menu
   li
   a.active {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav
@@ -777,7 +699,7 @@ Navbar Area
   .dropdown-menu
   li
   a.active {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav
@@ -872,7 +794,7 @@ Navbar Area
   .dropdown-menu
   li
   a.active {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav
@@ -977,7 +899,7 @@ Navbar Area
   .dropdown-menu
   li
   a.active {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav
@@ -997,7 +919,7 @@ Navbar Area
   .dropdown-menu
   li.active
   a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav
@@ -1037,7 +959,7 @@ Navbar Area
   .dropdown-menu
   li.active
   a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav
@@ -1073,7 +995,7 @@ Navbar Area
   .dropdown-menu
   li.active
   a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav
@@ -1105,7 +1027,7 @@ Navbar Area
   .dropdown-menu
   li.active
   a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav
@@ -1133,7 +1055,7 @@ Navbar Area
   .dropdown-menu
   li.active
   a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav
@@ -1151,7 +1073,7 @@ Navbar Area
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .desktop-nav
@@ -1294,11 +1216,11 @@ Navbar Area
 }
 
 .nav-widget-form .search-form button:hover {
-  /* background: var(--pinkColor); */
+  /* background: var(--yellowColor); */
 }
 
 .nav-widget-form.nav-widget-form-bg .form-control {
-  background-color: #e5e5e5;
+  background-color: #212529;
   border-radius: 15px;
   color: var(--bodyColor);
 }
@@ -1318,11 +1240,11 @@ Navbar Area
 }
 
 .nav-widget-form.nav-widget-form-bg button {
-  color: var(--pinkColor);
+  color: #000;
 }
 
 .nav-widget-form.nav-widget-form-bg button:hover {
-  background: var(--pinkColor);
+  background: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -1349,11 +1271,11 @@ Navbar Area
 }
 
 .others-options .optional-item-list li a:hover {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
 }
 
 .others-options .optional-item-list li a.active {
-  /* background-color: var(--pinkColor);
+  /* background-color: var(--yellowColor);
   -webkit-transition: var(--transition);
   transition: var(--transition); */
 
@@ -1392,7 +1314,7 @@ Navbar Area
 
 .mobile-nav .search-btn a i {
   font-size: 18px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
@@ -1443,7 +1365,7 @@ Navbar Area
   line-height: 40px;
   background-color: var(--whiteColor);
   border-radius: 0;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   text-align: center;
   border: none;
   font-size: 24px;
@@ -1453,7 +1375,7 @@ Navbar Area
 
 .modal-header button.close:hover,
 .modal-header button.close:focus {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -1495,7 +1417,7 @@ Navbar Area
 }
 
 .modal-search-form .search-field:focus {
-  border-color: var(--pinkColor);
+  border-color: var(--yellowColor);
 }
 
 .modal-search-form .search-field:focus::-webkit-input-placeholder,
@@ -1515,7 +1437,7 @@ Navbar Area
 .modal-search-form button {
   border: none;
   background-color: var(--whiteColor);
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   height: 40px;
   width: 40px;
   position: absolute;
@@ -1542,7 +1464,7 @@ Navbar Area
 
 .modal-search-form button:hover,
 .modal-search-form button:focus {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -1577,7 +1499,7 @@ Navbar Area
   margin: 0 2px;
   -webkit-transition: 0.7s;
   transition: 0.7s;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
 }
 
 .side-nav-responsive .dot-menu:hover .circle-inner .circle {
@@ -1676,7 +1598,7 @@ Navbar Area
   .optional-item-list
   li
   a:hover {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
 }
 
 .side-nav-responsive
@@ -1686,7 +1608,7 @@ Navbar Area
   .optional-item-list
   li
   a.active {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
@@ -1732,13 +1654,12 @@ Main Banner Area
 
 .banner-content span {
   font-size: 18px;
-  /* color: var(--pinkColor); */
+  /* color: var(--yellowColor); */
   display: block;
   /* margin-bottom: 10px; */
 }
 
 .banner-content h1 {
-  font-family: "DrukWide-Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 53.1745px;
@@ -1919,11 +1840,11 @@ Main Banner Area
 }
 
 .banner-card .content .banner-user-list span a:hover {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .banner-card .content .banner-user-list:hover h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .banner-card .content .banner-user-btn {
@@ -1932,7 +1853,7 @@ Main Banner Area
   line-height: 32px;
   font-size: 18px;
   border-radius: 50px;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
   text-align: center;
   display: inline-block;
@@ -1946,7 +1867,6 @@ Main Banner Area
 
 .banner-btn .default-btn {
   padding: 20px 110px;
-  font-family: "Tomica";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -1970,7 +1890,6 @@ Main Banner Area
   height: 41px;
   width: 41px;
   height: 41px;
-  font-family: "Tomica";
   font-style: normal;
   font-weight: 400;
   font-size: 19.86px;
@@ -1997,7 +1916,6 @@ Main Banner Area
   height: 41px;
   width: 41px;
   height: 41px;
-  font-family: "Tomica";
   font-style: normal;
   font-weight: 400;
   font-size: 19.86px;
@@ -2035,7 +1953,7 @@ Main Banner Area
 }
 
 .banner-card .content:hover .banner-user-list h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .banner-card .content:hover .banner-user-list .banner-user-list-img {
@@ -2160,13 +2078,13 @@ Main Banner Area
 }
 
 .banner-item-slider .owl-dots .owl-dot.active span {
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   width: 35px !important;
   height: 7px !important;
 }
 
 .banner-item-slider .owl-dots .owl-dot:hover span {
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   width: 35px !important;
   height: 7px !important;
 }
@@ -2229,7 +2147,7 @@ Main Banner Area
   .banner-item-user:hover
   .banner-item-user-option
   span {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .banner-item .content {
@@ -2257,7 +2175,7 @@ Main Banner Area
   position: relative;
   top: 3px;
   margin-right: 3px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .banner-item .content .banner-item-content {
@@ -2324,7 +2242,7 @@ Main Banner Area
   position: relative;
   border-radius: 50px;
   z-index: 0;
-  background: var(--pinkColor);
+  background: var(--yellowColor);
   overflow: hidden;
   white-space: nowrap;
 }
@@ -2482,7 +2400,7 @@ Inner Banner Area
 }
 
 .inner-banner .inner-title ul li a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
@@ -2598,7 +2516,7 @@ Inner Banner Area
   text-align: center;
   font-size: 18px;
   background-color: rgba(241, 77, 93, 0.15);
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   border-radius: 5px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -2616,12 +2534,12 @@ Inner Banner Area
 }
 
 .about-card:hover .number {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
 .about-card:hover h3 {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .involved-card {
@@ -2650,7 +2568,7 @@ Inner Banner Area
   list-style-type: none;
   margin: 0;
   padding: 7px 12px;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   border-radius: 25px;
   display: inline-block;
 }
@@ -2677,7 +2595,7 @@ Inner Banner Area
   line-height: 32px;
   text-align: center;
   font-size: 16px;
-  color: var(--pinkColor) !important;
+  color: var(--yellowColor) !important;
   background-color: #e5e5e5 !important;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -2694,7 +2612,7 @@ Inner Banner Area
   text-align: center;
   font-size: 16px;
   color: white !important;
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   display: inline-block;
@@ -2721,7 +2639,7 @@ Inner Banner Area
   padding: 18px 16px 0px;
   font-size: 14px;
   color: var(--whiteColor) !important;
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   border: 1px solid var(--whiteColor);
   border-radius: 15px;
   line-height: 0;
@@ -2734,7 +2652,7 @@ Inner Banner Area
   line-height: 32px;
   text-align: center;
   font-size: 16px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   background-color: var(--whiteColor);
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -2799,7 +2717,7 @@ Trending Area
   line-height: 45px !important;
   border-radius: 50px !important;
   background-color: var(--whiteColor) !important;
-  color: var(--pinkColor) !important;
+  color: var(--yellowColor) !important;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
@@ -2808,7 +2726,7 @@ Trending Area
 
 /* .trending-slider .owl-nav .owl-prev:hover {
   color: var(--whiteColor) !important;
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
 } */
 
 /* .trending-slider .owl-nav .owl-next {
@@ -2826,7 +2744,7 @@ Trending Area
   line-height: 45px !important;
   border-radius: 50px !important;
   background-color: var(--whiteColor) !important;
-  color: var(--pinkColor) !important;
+  color: var(--yellowColor) !important;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
@@ -2835,7 +2753,7 @@ Trending Area
 
 .trending-slider .owl-nav .owl-next:hover {
   color: var(--whiteColor) !important;
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
 }
 
 .trending-slider .trending-item {
@@ -2933,7 +2851,7 @@ Trending Area
 }
 
 .trending-item .trending-img .trending-user:hover .trending-user-option span {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .trending-item .trending-img .trending-title {
@@ -3010,14 +2928,14 @@ Trending Area
 
 .trending-item .content span i {
   font-size: 18px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   position: relative;
   top: 3px;
   margin-right: 3px;
 }
 
 .trending-item:hover .content h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .trending-item:hover .trending-img .default-btn {
@@ -3065,7 +2983,7 @@ Trending Area
   position: relative;
   top: 3px;
   margin-right: 3px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .trending-card .trending-card-img .default-btn {
@@ -3162,7 +3080,7 @@ Trending Area
 }
 
 .trending-card:hover .content h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .trending-card:hover .trending-card-img .default-btn {
@@ -3239,7 +3157,7 @@ Help Center Page Css
   top: 0;
   right: 0;
   border: 0;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
   height: 50px;
   line-height: 50px;
@@ -3318,12 +3236,12 @@ Help Center Page Css
   color: var(--whiteColor);
   text-align: center;
   line-height: 28px;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   border-radius: 50px;
 }
 
 .promoted-int-content .promoted .promoted-title.active {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .promoted-int-content .promoted .promoted-title.active i {
@@ -3374,7 +3292,7 @@ Wallet Page Css
 }
 
 .wallet-area .section-title p a:hover {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .wallet-card {
@@ -3415,7 +3333,7 @@ Wallet Page Css
   right: 20px;
   padding: 10px 18px 7px;
   color: var(--whiteColor);
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   font-size: 14px;
   display: inline-block;
   border-radius: 15px;
@@ -3429,11 +3347,11 @@ Wallet Page Css
 }
 
 .wallet-card:hover h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .wallet-card:hover .top-btn {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
 }
 
 .wallet-text {
@@ -3506,7 +3424,7 @@ Item Details Area
   position: relative;
   top: 3px;
   margin-right: 3px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .item-details-content {
@@ -3579,7 +3497,7 @@ Item Details Area
 }
 
 .item-details-content .item-details-card .item-details-card-img img {
-  border: 2px solid var(--pinkColor);
+  border: 2px solid var(--yellowColor);
   border-radius: 10px;
 }
 
@@ -3664,7 +3582,7 @@ Item Details Area
 }
 
 .item-details-user .content .images img {
-  /* border: 1px solid var(--pinkColor); */
+  /* border: 1px solid var(--yellowColor); */
   border-radius: 50%;
   /* max-width: 45px; */
   width: 100%;
@@ -3687,7 +3605,7 @@ Item Details Area
 }
 
 .item-details-user .content span {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   margin-bottom: 0;
 }
 
@@ -3714,7 +3632,7 @@ Item Details Area
   margin-bottom: 0;
   margin-left: 70px;
   margin-right: 70px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .item-details-price .item-details-title span {
@@ -3917,7 +3835,7 @@ Item Details Area
 }
 
 .item-details-user-area .item-details-user-card .item-details-card-img img {
-  border: 2px solid var(--pinkColor);
+  border: 2px solid var(--yellowColor);
   border-radius: 10px;
   max-width: 50px;
   height: 100%;
@@ -4024,7 +3942,7 @@ Collection Form Area
 }
 
 .collection-form .form-group.checkbox-option p a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .collection-form .form-group.checkbox-option p a:hover {
@@ -4125,7 +4043,7 @@ Collection Form Area
 }
 
 .profile-outer .profileButton .profileButton-button:hover {
-  border: 1px solid var(--pinkColor);
+  border: 1px solid var(--yellowColor);
 }
 
 .profile-outer .profileButton .profileButton-button:before {
@@ -4282,7 +4200,7 @@ Collection Form Area
   content: "";
   width: 9px;
   height: 9px;
-  background: var(--pinkColor);
+  background: var(--yellowColor);
   position: absolute;
   top: 7px;
   left: 3px;
@@ -4333,7 +4251,7 @@ Collection Form Area
   content: "";
   width: 9px;
   height: 9px;
-  background: var(--pinkColor);
+  background: var(--yellowColor);
   position: absolute;
   top: 7px;
   left: 3px;
@@ -4363,7 +4281,7 @@ Top Seller Area
 }
 
 .top-sellers-item .number {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   font-weight: 600;
   margin-bottom: 0;
   margin-right: 10px;
@@ -4409,7 +4327,7 @@ Top Seller Area
 }
 
 .top-sellers-item:hover h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 /*=================================
@@ -4511,7 +4429,7 @@ Activity Area
   text-align: center;
   font-size: 16px;
   background-color: rgba(241, 77, 93, 0.15);
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   display: inline-block;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -4519,11 +4437,11 @@ Activity Area
 
 .activity-card .activity-btn:hover i {
   color: var(--whiteColor);
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
 }
 
 .activity-card:hover .activity-into h3 {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 /*=================================
@@ -4555,13 +4473,13 @@ Auctions Area
 }
 
 .auctions-slider .owl-dots .owl-dot.active span {
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   width: 35px !important;
   height: 7px !important;
 }
 
 .auctions-slider .owl-dots .owl-dot:hover span {
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   width: 35px !important;
   height: 7px !important;
 }
@@ -4729,11 +4647,11 @@ Auctions Area
 }
 
 .auction-item .content .auction-item-list span a:hover {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .auction-item .content .auction-item-list:hover h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .auction-item .content .auction-item-btn {
@@ -4742,7 +4660,7 @@ Auctions Area
   line-height: 32px;
   font-size: 18px;
   border-radius: 50px;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
   text-align: center;
   display: inline-block;
@@ -4768,7 +4686,7 @@ Auctions Area
 }
 
 .auction-item .content:hover .auction-item-list h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .auction-item .content:hover .auction-item-list .auction-item-list-img {
@@ -4782,7 +4700,7 @@ Auctions Area
 }
 
 .auction-item:hover .content .auction-item-list h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .auction-item:hover .content .default-btn {
@@ -4813,13 +4731,13 @@ Auctions Area
 }
 
 .auctions-slider-two .owl-dots .owl-dot.active span {
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   width: 35px !important;
   height: 7px !important;
 }
 
 .auctions-slider-two .owl-dots .owl-dot:hover span {
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   width: 35px !important;
   height: 7px !important;
 }
@@ -4935,7 +4853,7 @@ Auctions Area
   .auction-card-user:hover
   .auction-card-user-option
   span {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .auction-card .auction-card-img .auction-card-into {
@@ -5034,7 +4952,7 @@ Auctions Area
   position: relative;
   top: 3px;
   margin-right: 3px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .auction-card .content .auction-card-content {
@@ -5101,7 +5019,7 @@ Auctions Area
   position: relative;
   border-radius: 50px;
   z-index: 0;
-  background: var(--pinkColor);
+  background: var(--yellowColor);
   overflow: hidden;
   white-space: nowrap;
 }
@@ -5154,7 +5072,7 @@ Auctions Area
 }
 
 .auction-card:hover .content h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .auction-card:hover .content p {
@@ -5199,12 +5117,12 @@ Featured Area
 }
 
 .featured-tab-area .tabs li.active a {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
 .featured-tab-area .tabs li.current a {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -5285,7 +5203,7 @@ Featured Area
   .featured-user:hover
   .featured-user-option
   span {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .featured-item .featured-item-img .featured-item-clock {
@@ -5427,14 +5345,14 @@ Featured Area
 
 .featured-item .content .featured-content-list p i {
   font-size: 17px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   position: relative;
   top: 3px;
   margin-right: 2px;
 }
 
 .featured-item:hover .content h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .featured-item:hover .featured-item-img .default-btn {
@@ -5512,7 +5430,7 @@ Featured Area
   position: relative;
   top: 3px;
   margin-right: 3px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .featured-card .featured-card-img .default-btn {
@@ -5589,7 +5507,7 @@ Featured Area
   line-height: 35px;
   font-size: 18px;
   border-radius: 50px;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
   text-align: center;
   display: inline-block;
@@ -5637,7 +5555,7 @@ Featured Area
 }
 
 .featured-card .content .featured-user-option:hover span {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .featured-card:hover {
@@ -5647,11 +5565,11 @@ Featured Area
 
 .featured-card:hover .featured-card-img p {
   color: var(--whiteColor);
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
 }
 .featured-card .featured-card-img .active {
   color: var(--whiteColor);
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
 }
 .featured-card .featured-card-img .active i {
   color: var(--whiteColor);
@@ -5659,12 +5577,12 @@ Featured Area
 .like-btn-inactive:hover,
 .like-btn-inactive:hover i {
   color: var(--whiteColor) !important;
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
 }
 .like-btn-active,
 .like-btn-active i {
   color: var(--whiteColor) !important;
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
 }
 
 .featured-card:hover .featured-card-img p i {
@@ -5678,7 +5596,7 @@ Featured Area
 }
 
 .featured-card:hover .content h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 /*=================================
@@ -5710,13 +5628,13 @@ Testimonial Area
 }
 
 .testimonial-slider .owl-dots .owl-dot.active span {
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   width: 35px !important;
   height: 7px !important;
 }
 
 .testimonial-slider .owl-dots .owl-dot:hover span {
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   width: 35px !important;
   height: 7px !important;
 }
@@ -5825,13 +5743,13 @@ Testimonial Area
 }
 
 .testimonial-slider-two .owl-dots .owl-dot.active span {
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   width: 35px !important;
   height: 7px !important;
 }
 
 .testimonial-slider-two .owl-dots .owl-dot:hover span {
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   width: 35px !important;
   height: 7px !important;
 }
@@ -5939,7 +5857,7 @@ Testimonial Area End
 }
 
 .team-card span {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   display: block;
   margin-bottom: 15px;
 }
@@ -5954,7 +5872,7 @@ Testimonial Area End
 }
 
 .team-card:hover h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .team-shape {
@@ -6002,11 +5920,11 @@ Create Area
 }
 
 .create-card p a:hover {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .create-card:hover h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 /*=================================
@@ -6083,7 +6001,7 @@ Author Area
   display: inline-block;
   padding: 10px 14px 8px;
   color: var(--whiteColor);
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   border-radius: 5px;
   position: absolute;
   top: 5px;
@@ -6143,7 +6061,7 @@ Author Area
 }
 
 .author-card .content .content-follow .author-social li a:hover i {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -6183,7 +6101,7 @@ Author Area
 
 .author-card .content .author-user img {
   border-radius: 5px;
-  border: 3px solid var(--pinkColor);
+  border: 3px solid var(--yellowColor);
   max-width: 64px;
 }
 
@@ -6212,7 +6130,7 @@ Author Area
 }
 
 .author-card .content span {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   margin-bottom: 15px;
   display: block;
 }
@@ -6298,7 +6216,7 @@ Author Area
   display: inline-block;
   padding: 10px 14px 8px;
   color: var(--whiteColor);
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   border-radius: 5px;
   position: relative;
   cursor: pointer;
@@ -6368,7 +6286,7 @@ Author Area
   li
   a:hover
   i {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -6425,7 +6343,7 @@ Author Area
 }
 
 .author-card:hover .content h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .author-item {
@@ -6466,7 +6384,7 @@ Author Area
 
 .author-item .content .author-user-list .author-user-img img {
   border-radius: 5px;
-  border: 3px solid var(--pinkColor);
+  border: 3px solid var(--yellowColor);
 }
 
 .author-item .content .author-user-list .author-user-img i {
@@ -6528,7 +6446,7 @@ Author Area
   display: inline-block;
   padding: 10px 14px 8px;
   color: var(--whiteColor);
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   border-radius: 5px;
   position: relative;
   cursor: pointer;
@@ -6598,7 +6516,7 @@ Author Area
   li
   a:hover
   i {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -6655,7 +6573,7 @@ Author Area
 }
 
 .author-item:hover .content h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .author-profile-sidebar {
@@ -6677,7 +6595,7 @@ Author Area
 
 .author-profile-sidebar .author-user img {
   border-radius: 5px;
-  border: 3px solid var(--pinkColor);
+  border: 3px solid var(--yellowColor);
   max-width: 100%;
 }
 
@@ -6706,7 +6624,7 @@ Author Area
 }
 
 .author-profile-sidebar span {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   margin-bottom: 15px;
   display: block;
 }
@@ -6759,7 +6677,7 @@ Author Area
   display: inline-block;
   padding: 10px 14px 7px;
   color: var(--whiteColor);
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   border-radius: 5px;
   position: relative;
   cursor: pointer;
@@ -6827,7 +6745,7 @@ Author Area
   li
   a:hover
   i {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -6875,7 +6793,7 @@ Author Area
 }
 
 .author-profile-sidebar:hover h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 /*=================================
@@ -6949,7 +6867,7 @@ Blog Area
 }
 
 .blog-card .blog-img .blog-user:hover .blog-user-option span {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .blog-card .blog-img .blog-tag-btn {
@@ -6961,7 +6879,7 @@ Blog Area
   border-radius: 50px;
   font-size: 14px;
   color: var(--whiteColor);
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
@@ -7002,7 +6920,7 @@ Blog Area
 }
 
 .blog-card:hover .content h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .blog-details-content {
@@ -7117,7 +7035,7 @@ Blog Area
   top: -20px;
   right: 30px;
   display: inline-block;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
   padding: 10px 20px 7px;
   border-radius: 50px;
@@ -7270,7 +7188,7 @@ Blog Area
   line-height: 32px;
   text-align: center;
   font-size: 16px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   background-color: #f14d5d15;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -7285,7 +7203,7 @@ Blog Area
   li
   a:hover
   i {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -7375,7 +7293,7 @@ Collections Area
 }
 
 .collections-card:hover .content h3 a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 /*=================================
@@ -7401,7 +7319,7 @@ Collections Area End
 }
 
 .side-bar-widget .title a:hover {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .side-bar-widget .search-form {
@@ -7429,7 +7347,7 @@ Collections Area End
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border-color: var(--pinkColor);
+  border-color: var(--yellowColor);
 }
 
 .side-bar-widget .search-form button {
@@ -7439,7 +7357,7 @@ Collections Area End
   border: 0;
   border-radius: 0;
   background-color: transparent;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   height: 50px;
   line-height: 50px;
   font-size: 20px;
@@ -7450,7 +7368,7 @@ Collections Area End
 }
 
 .side-bar-widget .search-form button:hover {
-  background: var(--pinkColor);
+  background: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -7570,7 +7488,7 @@ Collections Area End
 }
 
 .side-bar-widget-categories ul li:hover a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .side-bar-widget-categories ul li:hover a::before {
@@ -7589,7 +7507,7 @@ Collections Area End
 
 .side-bar-profile img {
   border-radius: 15px;
-  border: 3px solid var(--pinkColor);
+  border: 3px solid var(--yellowColor);
   margin-bottom: 20px;
 }
 
@@ -7628,7 +7546,7 @@ Collections Area End
   line-height: 32px;
   text-align: center;
   font-size: 16px;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   background-color: #f14d5d15;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -7637,7 +7555,7 @@ Collections Area End
 }
 
 .side-bar-profile .social-link li a:hover i {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -7715,7 +7633,7 @@ Collections Area End
 }
 
 .widget-popular-post .item .info .title-text a:hover {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .widget-popular-post .item .info p {
@@ -7746,7 +7664,7 @@ Contact Area
   height: 45px;
   line-height: 45px;
   text-align: center;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
   border-radius: 50px;
   font-size: 20px;
@@ -7775,7 +7693,7 @@ Contact Area
 }
 
 .contact-card:hover p a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .contact-form {
@@ -7823,7 +7741,7 @@ Contact Area
 }
 
 .contact-form .form-group.checkbox-option p a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .contact-form .form-group.checkbox-option p a:hover {
@@ -7883,7 +7801,7 @@ Contact Area
 }
 
 .contact-form .agree-label label a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .contact-form .agree-label label a:hover {
@@ -8012,7 +7930,7 @@ Contact Area
 }
 
 .user-all-form .contact-form .login-with-account ul li a:hover {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -8065,7 +7983,7 @@ Contact Area
 }
 
 .single-content a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .single-content a:hover {
@@ -8111,7 +8029,7 @@ Contact Area
 }
 
 .error-area .error-content h1 span {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .error-area .error-content h3 {
@@ -8176,7 +8094,7 @@ Coming Soon Area
 
 .coming-soon-area .coming-soon-content #timer div {
   display: inline-block;
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   position: relative;
   width: 80px;
   height: 80px;
@@ -8246,7 +8164,7 @@ Coming Soon Area
   .coming-soon-content
   .newsletter-form
   .input-newsletter:focus {
-  border-color: var(--pinkColor);
+  border-color: var(--yellowColor);
 }
 
 .coming-soon-area .coming-soon-content .newsletter-form .default-btn {
@@ -8265,7 +8183,7 @@ Coming Soon Area
   font-weight: 500;
   font-size: 15px;
   cursor: pointer;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   border-radius: 0;
 }
 
@@ -8359,12 +8277,12 @@ Footer Area
 }
 
 .footer-widget .footer-list li a:hover {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   letter-spacing: 0.25px;
 }
 
 .footer-widget .footer-list li:hover a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   letter-spacing: 0.25px;
 }
 
@@ -8394,7 +8312,7 @@ Footer Area
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 1px solid var(--pinkColor);
+  border: 1px solid var(--yellowColor);
 }
 
 .newsletter-area .newsletter-form .subscribe-btn {
@@ -8411,7 +8329,7 @@ Footer Area
   padding: 12px 20px 9px;
   font-size: 16px;
   color: var(--whiteColor);
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
 }
 
 .newsletter-area .newsletter-form .subscribe-btn:hover {
@@ -8425,7 +8343,7 @@ Footer Area
 }
 
 .copyright-area {
-  border-top: 2px solid #00ff47;
+  border-top: 2px solid #303030;
   background: #000 !important;
   padding: 15px 0;
 }
@@ -8443,7 +8361,7 @@ Footer Area
 }
 
 .copy-right-text p a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   font-weight: 500;
 }
 
@@ -8471,12 +8389,12 @@ Footer Area
 }
 
 .copy-right-text .copy-right-list li a:hover {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   letter-spacing: 0.25px;
 }
 
 .copy-right-text .copy-right-list li:hover a {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
   letter-spacing: 0.25px;
 }
 
@@ -8512,7 +8430,7 @@ Footer Area
 }
 
 .copy-right-social .social-link li a:hover i {
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   color: var(--whiteColor);
 }
 
@@ -8559,7 +8477,7 @@ Go Top Area
   font-size: 24px;
   font-weight: bold;
   text-align: center;
-  background: var(--pinkColor);
+  background: var(--yellowColor);
   border-radius: 0;
   width: 45px;
   height: 45px;
@@ -8611,7 +8529,7 @@ Pagination Area
 }
 
 .pagination-area .page-numbers:hover {
-  color: var(--pinkColor);
+  color: var(--yellowColor);
 }
 
 .pagination-area .page-numbers i {
@@ -8622,9 +8540,9 @@ Pagination Area
 }
 
 .pagination-area .page-numbers.current {
-  background: rgba(0, 255, 71, 0.22);
-  color: var(--pinkColor);
-  border: 2px solid var(--pinkColor);
+  background: var(--lightblueColor);
+  color: var(--yellowColor);
+  border: 2px solid var(--yellowColor);
 }
 
 /*================================
@@ -8664,7 +8582,7 @@ Preloader Area
   display: inline-block;
   position: absolute;
   top: 0;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   border-radius: 100%;
   -webkit-animation: sk-bounce 3s infinite ease-in-out;
   animation: sk-bounce 3s infinite ease-in-out;
@@ -8676,7 +8594,7 @@ Preloader Area
 
 .preloader .dot2 {
   top: auto;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   bottom: 0;
   -webkit-animation-delay: -2s;
   animation-delay: -1s;
@@ -8832,7 +8750,7 @@ Animation CSS
 }
 
 .react-tabs__tab--selected a {
-  background-color: var(--pinkColor) !important;
+  background-color: var(--yellowColor) !important;
   color: var(--bs-body-color) !important;
 }
 
@@ -8955,7 +8873,7 @@ Animation CSS
   padding: 12px 20px 10px;
   background-color: #14233d;
   border-radius: 15px;
-  background-color: var(--pinkColor);
+  background-color: var(--yellowColor);
   -webkit-transition: var(--transition);
   transition: var(--transition);
   margin-left: 15px;
@@ -9081,32 +8999,6 @@ input:checked + .slider:before {
   margin-right: 10px !important;
 }
 
-/* Landing Page CSS */
-
-@font-face {
-  font-family: "DrukWide-Bold";
-  src: url("/fonts/DrukWide-Bold-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "DrukWide-Heavy";
-  src: url("/fonts/DrukWide-Heavy-Reduced.woff.ttf") format("truetype");
-}
-@font-face {
-  font-family: "DrukWide-Medium";
-  src: url("/fonts/DrukWide-Medium.ttf") format("truetype");
-}
-
-.font-rubik {
-  font-family: "Rubik" !important;
-}
-
-.font-druk {
-  font-family: DrukWide-Bold !important;
-}
-
-.navbar-container {
-  /* margin: 0 250px !important; */
-}
 
 .dark {
   background-color: #000;
@@ -9119,7 +9011,6 @@ input:checked + .slider:before {
   overflow: hidden !important;
   width: 100%;
   display: block;
-  font-family: DrukWide-Bold !important;
 }
 
 .logo {
@@ -9329,9 +9220,7 @@ header:before {
   font-weight: bold;
   font-size: 50px;
   line-height: 70px;
-  background: -webkit-linear-gradient(135deg, #01dcba 0%, #7f30cb 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #00a19a;
 }
 
 .card-container i {
@@ -10456,23 +10345,6 @@ ul.wallet-list {
   width: 50px;
   float: right;
 }
-
-/* .subcription-card-container:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 15px;
-  padding: 5px;
-  background: linear-gradient(135deg, #01dcba 0%, #7f30cb 100%);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  z-index: -1;
-} */
-
 .overflow-ell {
   white-space: nowrap;
   overflow: hidden;

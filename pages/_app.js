@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
     // <Web3ReactProvider getLibrary={getLibrary}>
     <>
       <Head>
-        <title>Polyone</title>
+        <title>Eazy NFT</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <InitialPhase />
@@ -41,12 +41,9 @@ function MyApp({ Component, pageProps }) {
       <ToastContainer />
       <CustomConfetti />
       <Component {...pageProps} />
-      {/* Preloader */}
       <Loader loading={loading} />
-      {/* go top */}
-      {/* <GoTop scrollStepInPx="100" delayInMs="10.50" /> */}
+      <GoTop scrollStepInPx="100" delayInMs="10.50" />
     </>
-    //  </Web3ReactProvider>
   );
 }
 

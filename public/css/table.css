@@ -13,15 +13,14 @@ table caption {
 }
 
 table tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
+  background-color: #212529;
+  border: 1px solid #000000;
   padding: 0.35em;
-  /* display: flex; */
   align-items: center;
-   /* justify-content: center; */
+  color: #fff;
 }
 table thead tr{
-  background: #5fc089;
+  background-color: #212529;
   color: white;
 }
 table thead tr td{

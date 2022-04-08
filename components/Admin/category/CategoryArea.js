@@ -80,7 +80,7 @@ export default function CategoryArea() {
                 className={"mt-2 pt-1"}
                 style={{
                   borderBottom:
-                    type === "nft" ? "2px solid var(--pinkColor)" : "",
+                    type === "nft" ? "2px solid var(--yellowColor)" : "",
                   padding: "10px 20px",
                 }}
               >
@@ -94,7 +94,7 @@ export default function CategoryArea() {
                 className={" mt-2 pt-1"}
                 style={{
                   borderBottom:
-                    type === "collection" ? "2px solid var(--pinkColor)" : "",
+                    type === "collection" ? "2px solid var(--yellowColor)" : "",
                   padding: "10px 20px",
                 }}
               >

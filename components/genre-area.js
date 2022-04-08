@@ -6,12 +6,11 @@ function GenreArea(props) {
   const { categories } = props?.main;
 
   return (
-    <div className="bg-dark font-gordita pt-5 pb-5">
-      <hr className="line mb-5" />
+    <div className="bg-dark pt-5 pb-5">
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2 class="title-gradient title-h2 mb-4">Mediums</h2>
+            <h2 class="mb-4">Categories</h2>
           </div>
 
           <div className="row mt-4">

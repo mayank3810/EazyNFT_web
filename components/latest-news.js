@@ -17,7 +17,7 @@ export default function LatestNews() {
         <div className="container spacer">
           <div className="row ">
             <div className="col-6">
-              <h2 className="title-gradient title-h2 mb-4">Latest News</h2>
+              <h2 className="mb-4">Latest News</h2>
             </div>
             {data.length > 0 ? (
               <div className="row pt-45">
@@ -107,7 +107,6 @@ export default function LatestNews() {
           </div>
         </div>
       </div>
-      <div className="line"></div>
     </>
   );
 }

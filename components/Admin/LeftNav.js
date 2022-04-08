@@ -10,7 +10,7 @@ const LeftNav = () => {
   const isUser = asPath.includes(routes.admin.users.root);
 
   return (
-    <nav className="admin-nav-menu">
+    <nav className="admin-nav-menu bg-dark">
       <div className="smartphone-menu-trigger"></div>
       <ul>
         <li

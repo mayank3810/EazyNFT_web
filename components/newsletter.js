@@ -45,7 +45,6 @@ export default function NewsLetter() {
 
   return (
     <>
-      <div className="line bg-darker"></div>
       <div className="bg-darker newsletter font-tomica">
         <div className="from-container">
           <h1 className="text-center section-heading m-5 font-druk mt-0 mb-2">
@@ -82,7 +81,6 @@ export default function NewsLetter() {
           </form>
         </div>
       </div>
-      <div className="line"></div>
     </>
   );
 }

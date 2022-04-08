@@ -626,7 +626,7 @@
         width: 32px;
         height: 32px;
         line-height: 32px !important;
-        background-color: var(--pinkColor) !important;
+        background-color: var(--yellowColor) !important;
       }
       .owl-next {
         position: inherit;
@@ -638,7 +638,7 @@
         width: 32px;
         height: 32px;
         line-height: 32px !important;
-        background-color: var(--pinkColor) !important;
+        background-color: var(--yellowColor) !important;
       }
     }
   }
@@ -1016,7 +1016,7 @@
         margin-bottom: 15px;
         img {
           border-radius: 5px;
-          border: 3px solid var(--pinkColor);
+          border: 3px solid var(--yellowColor);
           max-width: 54px;
         }
         i {
@@ -2714,7 +2714,7 @@
         margin-bottom: 15px;
         img {
           border-radius: 5px;
-          border: 3px solid var(--pinkColor);
+          border: 3px solid var(--yellowColor);
           max-width: 54px;
         }
         i {
@@ -3636,7 +3636,7 @@
         margin-bottom: 15px;
         img {
           border-radius: 5px;
-          border: 3px solid var(--pinkColor);
+          border: 3px solid var(--yellowColor);
           max-width: 54px;
         }
         i {
@@ -4478,7 +4478,7 @@
         margin-bottom: 15px;
         img {
           border-radius: 5px;
-          border: 3px solid var(--pinkColor);
+          border: 3px solid var(--yellowColor);
           max-width: 54px;
         }
         i {
@@ -4849,7 +4849,7 @@
                   }
                 }
                 &.active {
-                  color: var(--pinkColor);
+                  color: var(--yellowColor);
                 }
               }
               li {
@@ -4891,9 +4891,9 @@
           width: 35px;
           height: 30px;
           padding-top: 6px;
-          color: var(--pinkColor);
+          color: var(--yellowColor);
           span {
-            background: var(--pinkColor);
+            background: var(--yellowColor);
             height: 4px;
             margin-top: -6px;
             border-radius: 0;

@@ -472,35 +472,6 @@
   .trending-slider {
     margin-bottom: 30px;
   }
-  /*
-  * Munny Changes
-  */
-  /* .trending-slider .owl-nav .owl-prev {
-    position: inherit;
-    top: 0;
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%);
-    left: 0;
-    font-size: 16px !important;
-    color: var(--whiteColor) !important;
-    width: 32px;
-    height: 32px;
-    line-height: 32px !important;
-    background-color: var(--pinkColor) !important;
-  }
-  .trending-slider .owl-nav .owl-next {
-    position: inherit;
-    top: 0;
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%);
-    right: 0;
-    font-size: 16px !important;
-    color: var(--whiteColor) !important;
-    width: 32px;
-    height: 32px;
-    line-height: 32px !important;
-    background-color: var(--pinkColor) !important;
-  } */
   .trending-card .content {
     padding: 20px 15px 25px;
   }
@@ -820,7 +791,7 @@
   }
   .author-card .content .author-user img {
     border-radius: 5px;
-    border: 3px solid var(--pinkColor);
+    border: 3px solid var(--yellowColor);
     max-width: 54px;
   }
   .author-card .content .author-user i {
@@ -2224,7 +2195,7 @@
   }
   .author-card .content .author-user img {
     border-radius: 5px;
-    border: 3px solid var(--pinkColor);
+    border: 3px solid var(--yellowColor);
     max-width: 54px;
   }
   .author-card .content .author-user i {
@@ -3003,7 +2974,7 @@
   }
   .author-card .content .author-user img {
     border-radius: 5px;
-    border: 3px solid var(--pinkColor);
+    border: 3px solid var(--yellowColor);
     max-width: 54px;
   }
   .author-card .content .author-user i {
@@ -3695,7 +3666,7 @@
   }
   .author-card .content .author-user img {
     border-radius: 5px;
-    border: 3px solid var(--pinkColor);
+    border: 3px solid var(--yellowColor);
     max-width: 54px;
   }
   .author-card .content .author-user i {
@@ -4033,7 +4004,7 @@
     ul
     li
     a.active {
-    color: var(--pinkColor);
+    color: var(--yellowColor);
   }
   .mobile-responsive-nav
     .mobile-responsive-menu.mean-container
@@ -4080,10 +4051,10 @@
     width: 35px;
     height: 30px;
     padding-top: 6px;
-    color: var(--pinkColor);
+    color: var(--yellowColor);
   }
   .mobile-responsive-nav .mean-container a.meanmenu-reveal span {
-    background: var(--pinkColor);
+    background: var(--yellowColor);
     height: 4px;
     margin-top: -6px;
     border-radius: 0;

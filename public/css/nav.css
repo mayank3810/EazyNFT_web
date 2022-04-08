@@ -1,12 +1,13 @@
 .admin-main {
-  padding-left: 180px;
+  margin-left: 230px;
+  width: calc(100% - 230px);
+  padding: 25px;
+  background: #000000;
 }
 .admin-nav-menu {
-  background: #141414;
   height: 100vh;
-  width: 180px;
+  width: 230px;
   position: fixed;
-  top: 89px;
   left: 0;
   z-index: 5;
   outline: none;
@@ -29,20 +30,19 @@
 }
 .admin-nav-menu ul {
   list-style: none;
-  padding: 0.5em 0;
-  margin: 0;
+  margin: 0px !important;
+  padding: 0px !important;
 }
 .admin-nav-menu ul li {
-  padding: 0.5em 1em 0.5em 3em;
-  font-size: 0.95em;
-  font-weight: regular;
+  padding: 13px 30px;
+  font-size: 14px;
   background-repeat: no-repeat;
   background-position: left 15px center;
   background-size: auto 20px;
   transition: all 0.15s linear;
   cursor: pointer;
-  color: #5FC089;
-  margin: 10px 0;
+  color: #fff;
+  line-height: 19px;
 }
 .admin-nav-menu ul li.icon-dashboard {
   background-image: url("http://www.entypo.com/images//gauge.svg");
@@ -57,7 +57,7 @@
   background-image: url("http://www.entypo.com/images//tools.svg");
 }
 .admin-nav-menu ul .active, .admin-nav-menu ul li:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgb(0 0 0);
 }
 .admin-nav-menu ul li:focus {
   outline: none;

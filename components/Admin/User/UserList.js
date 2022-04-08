@@ -72,10 +72,9 @@ function UserList(props) {
   };
 
   return (
-    <div className="discover-area pt-20 pb-70 admin-user-list">
-      <div className="container">
+    <div className="admin-user-list">
         <div className="section-title position-relative d-flex">
-          <h2>( Admin ) User List</h2>
+          <h2>Users</h2>
           <div
             className="nav-widget-form nav-widget-form-bg position-absolute"
             style={{ right: 0 }}
@@ -95,7 +94,7 @@ function UserList(props) {
             </div>
           </div>
         </div>
-        <div className="mt-5">
+        <div className="mt-3">
           {isLoading ? (
             <div className="mt-5 mb-5 text-center">
               <Loading />
@@ -189,7 +188,6 @@ function UserList(props) {
             </>
           )}
         </div>
-      </div>
     </div>
   );
 }

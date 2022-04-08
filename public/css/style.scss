@@ -25,16 +25,6 @@ Default CSS
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 
-:root {
-    --bodyFonts: 'Josefin Sans', sans-serif;
-    --pinkColor: #F14D5D;
-    --titleColor: #000000;
-    --bodyColor: #666666;
-    --lightblueColor: #8D99FF;
-    --whiteColor: #ffffff;
-    --fontSize: 16px;
-    --transition: .5s;
-}
 
 body {
     padding: 0;
@@ -167,7 +157,7 @@ Default Btn CSS
     position: relative;
     border-radius: 8px;
     z-index: 0;
-    background: var(--pinkColor);
+    background: var(--yellowColor);
     overflow: hidden;
     white-space: nowrap;
     border: 0;
@@ -198,7 +188,7 @@ Default Btn CSS
     &.two {
         background: var(--lightblueColor);
         &::before {
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
         }
     }
 }
@@ -209,7 +199,7 @@ Section Title Style
 .section-title {
     span {
         font-size: 15px;
-        color: var(--pinkColor);
+        color: var(--yellowColor);
         display: inline-block;
         margin-bottom: 15px;
     }
@@ -285,7 +275,7 @@ Navbar Area
                         line-height: normal;
                     }
                     &:hover, &:focus, &.active {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                         &::before {
                             width: 100%;
                         }
@@ -311,7 +301,7 @@ Navbar Area
                 }
                 &:hover, &:focus, &.active {
                     a {
-                        color: var(--pinkColor);;
+                        color: var(--yellowColor);;
                     }
                 }
                 .dropdown-menu {
@@ -319,7 +309,7 @@ Navbar Area
                     transition: all 0.3s ease-in-out;
                     background: var(--whiteColor);
                     border: none;
-                    border-top: 2px solid var(--pinkColor);
+                    border-top: 2px solid var(--yellowColor);
                     position: absolute;
                     visibility: hidden;
                     transform-origin: bottom;
@@ -352,7 +342,7 @@ Navbar Area
                                 display: none;
                             }
                             &:hover, &:focus, &.active {
-                                color: var(--pinkColor);
+                                color: var(--yellowColor);
                             }
                             i {
                                 float: right;
@@ -370,7 +360,7 @@ Navbar Area
                                 a {
                                     color: var(--titleColor);
                                     &:hover, &:focus, &.active {
-                                        color: var(--pinkColor);
+                                        color: var(--yellowColor);
                                     }
                                 }
                                 .dropdown-menu {
@@ -383,7 +373,7 @@ Navbar Area
                                             color: var(--titleColor);
                                             font-size: 15px;
                                             &:hover, &:focus, &.active {
-                                                color: var(--pinkColor);
+                                                color: var(--yellowColor);
                                             }
                                         }
                                         .dropdown-menu {
@@ -395,7 +385,7 @@ Navbar Area
                                                 a {
                                                     color: var(--titleColor);
                                                     &:hover, &:focus, &.active {
-                                                        color: var(--pinkColor);
+                                                        color: var(--yellowColor);
                                                     }
                                                 }
                                                 .dropdown-menu {
@@ -408,7 +398,7 @@ Navbar Area
                                                             color: var(--titleColor);
                                                             
                                                             &:hover, &:focus, &.active {
-                                                                color: var(--pinkColor);
+                                                                color: var(--yellowColor);
                                                             }
                                                         }
                                                         .dropdown-menu {
@@ -421,7 +411,7 @@ Navbar Area
                                                                     color: var(--titleColor);
                                                                     
                                                                     &:hover, &:focus, &.active {
-                                                                        color: var(--pinkColor);
+                                                                        color: var(--yellowColor);
                                                                     }
                                                                 }
                                                                 .dropdown-menu {
@@ -433,14 +423,14 @@ Navbar Area
                                                                         a {
                                                                             color: var(--titleColor);
                                                                             &:hover, &:focus, &.active {
-                                                                                color: var(--pinkColor);
+                                                                                color: var(--yellowColor);
                                                                             }
                                                                         }
                                                                     }
                                                                 }
                                                                 &.active {
                                                                     a {
-                                                                        color: var(--pinkColor);
+                                                                        color: var(--yellowColor);
                                                                     }
                                                                 }
                                                                 &:hover {
@@ -454,7 +444,7 @@ Navbar Area
                                                         }
                                                         &.active {
                                                             a {
-                                                                color: var(--pinkColor);
+                                                                color: var(--yellowColor);
                                                             }
                                                         }
                                                         &:hover {
@@ -468,7 +458,7 @@ Navbar Area
                                                 }
                                                 &.active {
                                                     a {
-                                                        color: var(--pinkColor);
+                                                        color: var(--yellowColor);
                                                     }
                                                 }
                                                 &:hover {
@@ -482,7 +472,7 @@ Navbar Area
                                         }
                                         &.active {
                                             a {
-                                                color: var(--pinkColor);
+                                                color: var(--yellowColor);
                                             }
                                         }
                                         &:hover {
@@ -496,7 +486,7 @@ Navbar Area
                                 }
                                 &.active {
                                     a {
-                                        color: var(--pinkColor);
+                                        color: var(--yellowColor);
                                     }
                                 }
                                 &:hover {
@@ -510,7 +500,7 @@ Navbar Area
                         }
                         &.active {
                             a {
-                                color: var(--pinkColor);
+                                color: var(--yellowColor);
                             }
                         }
                         &:hover {
@@ -621,7 +611,7 @@ Navbar Area
             transition: var(--transition);
             border-radius: 0 5px 5px 0;
             &:hover {
-                background: var(--pinkColor);
+                background: var(--yellowColor);
             }           
         }
     }
@@ -635,9 +625,9 @@ Navbar Area
             }
         }
         button {
-            color: var(--pinkColor);
+            color: var(--yellowColor);
             &:hover {
-                background: var(--pinkColor);
+                background: var(--yellowColor);
                 color: var(--whiteColor);
             }           
         }
@@ -662,10 +652,10 @@ Navbar Area
                 background-color: #14233D;
                 border-radius: 15px;
                 &:hover {
-                    background-color: var(--pinkColor);
+                    background-color: var(--yellowColor);
                 }
                 &.active {
-                    background-color: var(--pinkColor);
+                    background-color: var(--yellowColor);
                     transition: var(--transition);
                     &:hover {
                         background-color: #14233D;
@@ -691,7 +681,7 @@ Navbar Area
         a {
             i {
                 font-size: 18px;
-                color: var(--pinkColor);
+                color: var(--yellowColor);
                 transition: .6s;
                 &:hover {
                   color: var(--lightblueColor);
@@ -742,13 +732,13 @@ Navbar Area
             line-height: 40px;
             background-color: var(--whiteColor);
             border-radius: 0;
-            color: var(--pinkColor);
+            color: var(--yellowColor);
             text-align: center;
             border: none;
             font-size: 24px;
             transition: .6s;
             &:hover, &:focus {
-                background-color: var(--pinkColor);
+                background-color: var(--yellowColor);
                 color: var(--whiteColor);
             }
         }
@@ -774,7 +764,7 @@ Navbar Area
             transition: .6s;
         }
         &:focus {
-            border-color: var(--pinkColor);
+            border-color: var(--yellowColor);
             &::-webkit-input-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder {
                 color: transparent;
             }
@@ -783,7 +773,7 @@ Navbar Area
     button {
         border: none;
         background-color: var(--whiteColor);
-        color: var(--pinkColor);
+        color: var(--yellowColor);
         height: 40px;
         width: 40px;
         position: absolute;
@@ -803,7 +793,7 @@ Navbar Area
             transform: translateY(-52%);
         }
         &:hover, &:focus {
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
             color: var(--whiteColor);
         }
     }
@@ -829,7 +819,7 @@ Navbar Area
 				border-radius: 100%;
 				margin: 0 2px;
 				transition: 0.7s;
-				background-color: var(--pinkColor);
+				background-color: var(--yellowColor);
 			}
 		}
 		&:hover {
@@ -889,10 +879,10 @@ Navbar Area
                             background-color: #14233D;
                             border-radius: 15px;
                             &:hover {
-                                background-color: var(--pinkColor);
+                                background-color: var(--yellowColor);
                             }
                             &.active {
-                                background-color: var(--pinkColor);
+                                background-color: var(--yellowColor);
                                 transition: var(--transition);
                                 &:hover {
                                     background-color: #14233D;
@@ -926,7 +916,7 @@ Main Banner Area
 .banner-content {
     span {
         font-size: 18px;
-        color: var(--pinkColor);
+        color: var(--yellowColor);
         display: block;
         margin-bottom: 10px;
     }
@@ -1072,14 +1062,14 @@ Main Banner Area
                     color: var(--bodyColor);
                     transition: var(--transition);
                     &:hover {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
             }
             &:hover {
                 h3 {
                     a {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
             }
@@ -1090,7 +1080,7 @@ Main Banner Area
             line-height: 32px;
             font-size: 18px;
             border-radius: 50px;
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
             color: var(--whiteColor);
             text-align: center;
             display: inline-block;
@@ -1112,7 +1102,7 @@ Main Banner Area
             .banner-user-list {
                 h3 {
                     a {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
                 .banner-user-list-img {
@@ -1234,14 +1224,14 @@ Main Banner Area
             }
             &.active {
                 span {
-                   background-color: var(--pinkColor) !important;
+                   background-color: var(--yellowColor) !important;
                    width: 35px !important;
                    height: 7px !important;
                 }
             }
             &:hover {
                 span {
-                    background-color: var(--pinkColor) !important;
+                    background-color: var(--yellowColor) !important;
                     width: 35px !important;
                     height: 7px !important;
                 }
@@ -1288,7 +1278,7 @@ Main Banner Area
             &:hover {
                 .banner-item-user-option {
                     span {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
             }
@@ -1314,7 +1304,7 @@ Main Banner Area
                 position: relative;
                 top: 3px;
                 margin-right: 3px;
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
         .banner-item-content {
@@ -1369,7 +1359,7 @@ Main Banner Area
             position: relative;
             border-radius: 50px;
             z-index: 0;
-            background: var(--pinkColor);
+            background: var(--yellowColor);
             overflow: hidden;
             white-space: nowrap;
             &:before {
@@ -1500,7 +1490,7 @@ Inner Banner Area
                     background-color: var(--whiteColor);
                 }
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                     transition: var(--transition);
                     &:hover {
                         color: var(--whiteColor);
@@ -1599,7 +1589,7 @@ Inner Banner Area
         text-align: center;
         font-size: 18px;
         background-color: rgba(#F14D5D,.15%);
-        color: var(--pinkColor);
+        color: var(--yellowColor);
         border-radius: 5px;
         transition: var(--transition);
         font-weight: 700;
@@ -1613,11 +1603,11 @@ Inner Banner Area
     }
     &:hover {
         .number {
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
             color: var(--whiteColor);
         }
         h3 {
-            color: var(--pinkColor);
+            color: var(--yellowColor);
         }
     }
 }
@@ -1642,7 +1632,7 @@ Inner Banner Area
         list-style-type: none;
         margin: 0;
         padding: 7px 12px;
-        background-color: var(--pinkColor);
+        background-color: var(--yellowColor);
         border-radius: 25px;
         display: inline-block;
         li {
@@ -1659,7 +1649,7 @@ Inner Banner Area
                     line-height: 32px;
                     text-align: center;
                     font-size: 16px;
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                     background-color:  var(--whiteColor);
                     transition: var(--transition);
                     display: inline-block;
@@ -1719,12 +1709,12 @@ Trending Area
             line-height: 45px !important;
             border-radius: 50px !important;
             background-color: var(--whiteColor) !important;
-            color: var(--pinkColor) !important;
+            color: var(--yellowColor) !important;
             transition: var(--transition);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
             &:hover {
                 color: var(--whiteColor) !important;
-                background-color: var(--pinkColor) !important;
+                background-color: var(--yellowColor) !important;
             }
         }
         .owl-next {
@@ -1740,12 +1730,12 @@ Trending Area
             line-height: 45px !important;
             border-radius: 50px !important;
             background-color: var(--whiteColor) !important;
-            color: var(--pinkColor) !important;
+            color: var(--yellowColor) !important;
             transition: var(--transition);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
             &:hover {
                 color: var(--whiteColor) !important;
-                background-color: var(--pinkColor) !important;
+                background-color: var(--yellowColor) !important;
             }
         }
     }
@@ -1821,7 +1811,7 @@ Trending Area
             &:hover {
                 .trending-user-option {
                     span {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
             }
@@ -1882,7 +1872,7 @@ Trending Area
 
             i {
                 font-size: 18px;
-                color: var(--pinkColor);
+                color: var(--yellowColor);
                 position: relative;
                 top: 3px;
                 margin-right: 3px;
@@ -1893,7 +1883,7 @@ Trending Area
         .content {
             h3 {
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                 }
             }
         }
@@ -1941,7 +1931,7 @@ Trending Area
                 position: relative;
                 top: 3px;
                 margin-right: 3px;
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
         .default-btn {
@@ -2022,7 +2012,7 @@ Trending Area
         .content {
             h3 {
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                 }
             }
         }
@@ -2087,7 +2077,7 @@ Help Center Page Css
             top: 0;
             right: 0;
             border: 0;
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
             color: var(--whiteColor);
             height: 50px;
             line-height: 50px;
@@ -2153,11 +2143,11 @@ Help Center Page Css
                 color: var(--whiteColor);
                 text-align: center;
                 line-height: 28px;
-                background-color: var(--pinkColor);
+                background-color: var(--yellowColor);
                 border-radius: 50px;
             }
             &.active {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
                 i {
                     color: var(--whiteColor);
                     background-color: var(--lightblueColor);
@@ -2204,7 +2194,7 @@ Wallet Page Css
             a {
                 color: var(--lightblueColor);
                 &:hover {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                 }
             }
         }
@@ -2249,11 +2239,11 @@ Wallet Page Css
         transform: translateY(-10px);
         h3 {
             a {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
         .top-btn {
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
         }
     }
 }
@@ -2293,7 +2283,7 @@ Item Details Area
             position: relative;
             top: 3px;
             margin-right: 3px;
-            color: var(--pinkColor);
+            color: var(--yellowColor);
         }
     }
 }
@@ -2339,7 +2329,7 @@ Item Details Area
             position: relative;
             margin-right: 20px;
             img {
-                border: 2px solid var(--pinkColor);
+                border: 2px solid var(--yellowColor);
                 border-radius: 10px;
             }
             i {
@@ -2366,7 +2356,7 @@ Item Details Area
                 }
             }
             span {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
         .work-hours {
@@ -2398,7 +2388,7 @@ Item Details Area
             position: relative;
             margin-right: 20px;
             img {
-                border: 1px solid var(--pinkColor);
+                border: 1px solid var(--yellowColor);
                 border-radius: 10px;
                 max-width: 45px;
             }
@@ -2417,7 +2407,7 @@ Item Details Area
             }
         }
         span {
-            color: var(--pinkColor);
+            color: var(--yellowColor);
             margin-bottom: 0;
         }
     }
@@ -2437,7 +2427,7 @@ Item Details Area
             margin-bottom: 0;
             margin-left: 70px;
             margin-right: 70px;
-            color: var(--pinkColor);
+            color: var(--yellowColor);
         }
         span {
             margin-bottom: 0;
@@ -2598,7 +2588,7 @@ Item Details Area
             position: relative;
             margin-right: 20px;
             img {
-                border: 2px solid var(--pinkColor);
+                border: 2px solid var(--yellowColor);
                 border-radius: 10px;
                 max-width: 50px;
             }
@@ -2677,7 +2667,7 @@ Collection Form Area
                 font-size: 15px;
                 color: var(--titleColor);
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                     &:hover {
                         color: var(--titleColor);
                     }
@@ -2752,7 +2742,7 @@ Collection Form Area
             border: none;
             background-color: #F6F6F6;
             &:hover {
-                border: 1px solid var(--pinkColor);
+                border: 1px solid var(--yellowColor);
             }
             &:before {
                 display: none;
@@ -2807,7 +2797,7 @@ Collection Form Area
             border: none;
             background-color: #F6F6F6;
             &:hover {
-                border: 1px dashed var(--pinkColor);
+                border: 1px dashed var(--yellowColor);
             }
             &:before {
                 display: none;
@@ -2878,7 +2868,7 @@ Collection Form Area
                 content: '';
                 width: 9px;
                 height: 9px;
-                background: var(--pinkColor);
+                background: var(--yellowColor);
                 position: absolute;
                 top: 7px;
                 left: 3px;
@@ -2916,7 +2906,7 @@ Collection Form Area
                 content: '';
                 width: 9px;
                 height: 9px;
-                background: var(--pinkColor);
+                background: var(--yellowColor);
                 position: absolute;
                 top: 7px;
                 left: 3px;
@@ -2942,7 +2932,7 @@ Top Seller Area
     align-items: center;
     margin-bottom: 30px;
     .number {
-        color: var(--pinkColor);
+        color: var(--yellowColor);
         font-weight: 600;
         margin-bottom: 0;
         margin-right: 10px;
@@ -2987,7 +2977,7 @@ Top Seller Area
     &:hover {
         h3 {
             a {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
     }
@@ -3067,21 +3057,21 @@ Activity Area
             text-align: center;
             font-size: 16px;
             background-color: rgba(#F14D5D,.15%);
-            color: var(--pinkColor);
+            color: var(--yellowColor);
             display: inline-block;
             transition: var(--transition);
         }
         &:hover {
             i {
                 color: var(--whiteColor);
-                background-color: var(--pinkColor);
+                background-color: var(--yellowColor);
             }
         }
     }
     &:hover {
         .activity-into { 
             h3 {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
     }
@@ -3112,14 +3102,14 @@ Auctions Area
             }
             &.active {
                 span {
-                   background-color: var(--pinkColor) !important;
+                   background-color: var(--yellowColor) !important;
                    width: 35px !important;
                    height: 7px !important;
                 }
             }
             &:hover {
                 span {
-                    background-color: var(--pinkColor) !important;
+                    background-color: var(--yellowColor) !important;
                     width: 35px !important;
                     height: 7px !important;
                 }
@@ -3256,14 +3246,14 @@ Auctions Area
                     transition: var(--transition);
 
                     &:hover {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
             }
             &:hover {
                 h3 {
                     a {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
             }
@@ -3274,7 +3264,7 @@ Auctions Area
             line-height: 32px;
             font-size: 18px;
             border-radius: 50px;
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
             color: var(--whiteColor);
             text-align: center;
             display: inline-block;
@@ -3298,7 +3288,7 @@ Auctions Area
             .auction-item-list {
                 h3 {
                     a {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
                 .auction-item-list-img {
@@ -3314,7 +3304,7 @@ Auctions Area
             .auction-item-list {
                 h3 {
                     a {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
             }
@@ -3345,14 +3335,14 @@ Auctions Area
             }
             &.active {
                 span {
-                   background-color: var(--pinkColor) !important;
+                   background-color: var(--yellowColor) !important;
                    width: 35px !important;
                    height: 7px !important;
                 }
             }
             &:hover {
                 span {
-                    background-color: var(--pinkColor) !important;
+                    background-color: var(--yellowColor) !important;
                     width: 35px !important;
                     height: 7px !important;
                 }
@@ -3439,7 +3429,7 @@ Auctions Area
             &:hover {
                 .auction-card-user-option {
                     span {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
             }
@@ -3514,7 +3504,7 @@ Auctions Area
                 position: relative;
                 top: 3px;
                 margin-right: 3px;
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
         .auction-card-content {
@@ -3568,7 +3558,7 @@ Auctions Area
             position: relative;
             border-radius: 50px;
             z-index: 0;
-            background: var(--pinkColor);
+            background: var(--yellowColor);
             overflow: hidden;
             white-space: nowrap;
             &:before {
@@ -3609,7 +3599,7 @@ Auctions Area
         .content {
             h3 {
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                 }
             }
             p {
@@ -3651,11 +3641,11 @@ Featured Area
                 cursor: pointer;
             }
             &.active a {
-                background-color: var(--pinkColor);
+                background-color: var(--yellowColor);
                 color: var(--whiteColor);
             }
             &.current a {
-                background-color: var(--pinkColor);
+                background-color: var(--yellowColor);
                 color: var(--whiteColor);
             }
         }
@@ -3725,7 +3715,7 @@ Featured Area
             &:hover {
                 .featured-user-option {
                     span {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
             }
@@ -3842,7 +3832,7 @@ Featured Area
 
                 i {
                     font-size: 17px;
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                     position: relative;
                     top: 3px;
                     margin-right: 2px;
@@ -3854,7 +3844,7 @@ Featured Area
         .content {
             h3 {
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                 }
             }
         }
@@ -3930,7 +3920,7 @@ Featured Area
                 position: relative;
                 top: 3px;
                 margin-right: 3px;
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
         .default-btn {
@@ -3985,7 +3975,7 @@ Featured Area
                 line-height: 35px;
                 font-size: 18px;
                 border-radius: 50px;
-                background-color: var(--pinkColor);
+                background-color: var(--yellowColor);
                 color: var(--whiteColor);
                 text-align: center;
                 display: inline-block;
@@ -4024,7 +4014,7 @@ Featured Area
             }
             &:hover {
                 span {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                 }
             }
         }
@@ -4035,7 +4025,7 @@ Featured Area
         .featured-card-img {
             p {
                 color: var(--whiteColor);
-                background-color: var(--pinkColor);
+                background-color: var(--yellowColor);
                 i {
                     color: var(--whiteColor);
                 }
@@ -4049,7 +4039,7 @@ Featured Area
         .content {
             h3 {
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                 }
             }
         }
@@ -4081,14 +4071,14 @@ Testimonial Area
             }
             &.active {
                 span {
-                   background-color: var(--pinkColor) !important;
+                   background-color: var(--yellowColor) !important;
                    width: 35px !important;
                    height: 7px !important;
                 }
             }
             &:hover {
                 span {
-                    background-color: var(--pinkColor) !important;
+                    background-color: var(--yellowColor) !important;
                     width: 35px !important;
                     height: 7px !important;
                 }
@@ -4186,14 +4176,14 @@ Testimonial Area
             }
             &.active {
                 span {
-                   background-color: var(--pinkColor) !important;
+                   background-color: var(--yellowColor) !important;
                    width: 35px !important;
                    height: 7px !important;
                 }
             }
             &:hover {
                 span {
-                    background-color: var(--pinkColor) !important;
+                    background-color: var(--yellowColor) !important;
                     width: 35px !important;
                     height: 7px !important;
                 }
@@ -4293,7 +4283,7 @@ Testimonial Area End
         transition: var(--transition);
     }
     span {
-        color: var(--pinkColor);
+        color: var(--yellowColor);
         display: block;
         margin-bottom: 15px;
     }
@@ -4304,7 +4294,7 @@ Testimonial Area End
         transform: translateX(-10px);
         h3 {
             a {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
     }
@@ -4342,14 +4332,14 @@ Create Area
             transition: var(--transition);
             display: inline-block;
             &:hover {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
     }
     &:hover {
         h3 {
             a {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
     }
@@ -4420,7 +4410,7 @@ Author Area
             display: inline-block;
             padding: 10px 14px 8px;
             color: var(--whiteColor);
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
             border-radius: 5px;
             position: absolute;
             top: 5px;
@@ -4466,7 +4456,7 @@ Author Area
                         }
                         &:hover {
                             i {
-                                background-color: var(--pinkColor);
+                                background-color: var(--yellowColor);
                                 color: var(--whiteColor);
                             }
                         }
@@ -4502,7 +4492,7 @@ Author Area
             margin-bottom: 20px;
             img {
                 border-radius: 5px;
-                border: 3px solid var(--pinkColor);
+                border: 3px solid var(--yellowColor);
                 max-width: 64px;
             }
             i {
@@ -4527,7 +4517,7 @@ Author Area
             }
         }
         span {
-            color: var(--pinkColor);
+            color: var(--yellowColor);
             margin-bottom: 15px;
             display: block;
         }
@@ -4598,7 +4588,7 @@ Author Area
                 display: inline-block;
                 padding: 10px 14px 8px;
                 color: var(--whiteColor);
-                background-color: var(--pinkColor);
+                background-color: var(--yellowColor);
                 border-radius: 5px;
                 position: relative;
                 cursor: pointer;
@@ -4642,7 +4632,7 @@ Author Area
                             }
                             &:hover {
                                 i {
-                                    background-color: var(--pinkColor);
+                                    background-color: var(--yellowColor);
                                     color: var(--whiteColor);
                                 }
                             }
@@ -4678,7 +4668,7 @@ Author Area
         .content {
             h3 {
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                 }
             }
         }
@@ -4708,7 +4698,7 @@ Author Area
                 margin-right: 25px;
                 img {
                     border-radius: 5px;
-                    border: 3px solid var(--pinkColor);
+                    border: 3px solid var(--yellowColor);
                 }
                
                 i {
@@ -4764,7 +4754,7 @@ Author Area
                 display: inline-block;
                 padding: 10px 14px 8px;
                 color: var(--whiteColor);
-                background-color: var(--pinkColor);
+                background-color: var(--yellowColor);
                 border-radius: 5px;
                 position: relative;
                 cursor: pointer;
@@ -4808,7 +4798,7 @@ Author Area
                             }
                             &:hover {
                                 i {
-                                    background-color: var(--pinkColor);
+                                    background-color: var(--yellowColor);
                                     color: var(--whiteColor);
                                 }
                             }
@@ -4844,7 +4834,7 @@ Author Area
         .content {
             h3 {
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                 }
             }
         }
@@ -4866,7 +4856,7 @@ Author Area
         max-width: 100%;
         img {
             border-radius: 5px;
-            border: 3px solid var(--pinkColor);
+            border: 3px solid var(--yellowColor);
             max-width: 180px;
         }
         i {
@@ -4891,7 +4881,7 @@ Author Area
         }
     }
     span {
-        color: var(--pinkColor);
+        color: var(--yellowColor);
         margin-bottom: 15px;
         display: block;
     }
@@ -4932,7 +4922,7 @@ Author Area
             display: inline-block;
             padding: 10px 14px 7px;
             color: var(--whiteColor);
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
             border-radius: 5px;
             position: relative;
             cursor: pointer;
@@ -4976,7 +4966,7 @@ Author Area
                         }
                         &:hover {
                             i {
-                                background-color: var(--pinkColor);
+                                background-color: var(--yellowColor);
                                 color: var(--whiteColor);
                             }
                         }
@@ -5009,7 +4999,7 @@ Author Area
     &:hover {
         h3 {
             a {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
     }
@@ -5069,7 +5059,7 @@ Blog Area
             &:hover {
                 .blog-user-option {
                     span {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
             }
@@ -5083,7 +5073,7 @@ Blog Area
             border-radius: 50px;
             font-size: 14px;
             color: var(--whiteColor);
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
             transition: var(--transition);
             &:hover {
                 background-color: var(--lightblueColor);
@@ -5118,7 +5108,7 @@ Blog Area
         .content {
             h3 {
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                 }
             }
         }
@@ -5205,7 +5195,7 @@ Blog Area
             top: -20px;
             right: 30px;
             display: inline-block;
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
             color: var(--whiteColor);
             padding: 10px 20px 7px;
             border-radius: 50px;
@@ -5312,7 +5302,7 @@ Blog Area
                             line-height: 32px;
                             text-align: center;
                             font-size: 16px;
-                            color: var(--pinkColor);
+                            color: var(--yellowColor);
                             background-color: #f14d5d15;
                             transition: var(--transition);
                             display: inline-block;
@@ -5320,7 +5310,7 @@ Blog Area
                         }
                         &:hover {
                             i {
-                                background-color: var(--pinkColor);
+                                background-color: var(--yellowColor);
                                 color: var(--whiteColor);
                             }
                         }
@@ -5406,7 +5396,7 @@ Collections Area
         .content {
             h3 {
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                 }
             }
         }
@@ -5429,7 +5419,7 @@ Collections Area End
             font-size: 15px;
             transition: var(--transition);
             &:hover {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
     }
@@ -5453,7 +5443,7 @@ Collections Area End
             &:focus {
                 outline: none;
                 box-shadow: none;
-                border-color: var(--pinkColor);
+                border-color: var(--yellowColor);
             }
         }
         button {
@@ -5463,7 +5453,7 @@ Collections Area End
             border: 0;
             border-radius: 0;
             background-color: transparent;
-            color: var(--pinkColor);
+            color: var(--yellowColor);
             height: 50px;
             line-height: 50px;
             font-size: 20px;
@@ -5471,7 +5461,7 @@ Collections Area End
             transition: var(--transition);
             border-radius: 0 15px 15px 0;
             &:hover {
-                background: var(--pinkColor);
+                background: var(--yellowColor);
                 color: var(--whiteColor);
             }           
         }
@@ -5569,7 +5559,7 @@ Collections Area End
             }
             &:hover {
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                     &::before {
                         background-color: var(--lightblueColor);
                     }
@@ -5588,7 +5578,7 @@ Collections Area End
     margin-bottom: 35px;
     img {
         border-radius: 15px;
-        border: 3px solid var(--pinkColor);
+        border: 3px solid var(--yellowColor);
         margin-bottom: 20px;
     }
     h3 {
@@ -5617,7 +5607,7 @@ Collections Area End
                     line-height: 32px;
                     text-align: center;
                     font-size: 16px;
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                     background-color:  #f14d5d15;
                     transition: var(--transition);
                     display: inline-block;
@@ -5625,7 +5615,7 @@ Collections Area End
                 }
                 &:hover {
                     i {
-                        background-color: var(--pinkColor);
+                        background-color: var(--yellowColor);
                         color: var(--whiteColor);
                     }
                 }
@@ -5690,7 +5680,7 @@ Collections Area End
                     display: inline-block;
                     color: var(--titleColor);
                     &:hover {
-                        color: var(--pinkColor);
+                        color: var(--yellowColor);
                     }
                 }
             }
@@ -5724,7 +5714,7 @@ Contact Area
         height: 45px;
         line-height: 45px;
         text-align: center;
-        background-color: var(--pinkColor);
+        background-color: var(--yellowColor);
         color: var(--whiteColor);
         border-radius: 50px;
         font-size: 20px;
@@ -5748,7 +5738,7 @@ Contact Area
         }
         p {
             a {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
     }
@@ -5787,7 +5777,7 @@ Contact Area
                 font-size: 15px;
                 color: var(--titleColor);
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                     &:hover {
                         color: var(--titleColor);
                     }
@@ -5828,7 +5818,7 @@ Contact Area
             color: var(--titleColor);
             margin-left: 25px;
             a {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
                 &:hover {
                     color: var(--titleColor);
                 }
@@ -5935,7 +5925,7 @@ Contact Area
                             }
                         }
                         &:hover {
-                            background-color: var(--pinkColor);
+                            background-color: var(--yellowColor);
                             color: var(--whiteColor);
                             i {
                                 color: var(--whiteColor);
@@ -5981,7 +5971,7 @@ Contact Area
         font-size: 17px;
     }
     a {
-        color: var(--pinkColor);
+        color: var(--yellowColor);
         &:hover {
             color: var(--titleColor);
         }
@@ -6016,7 +6006,7 @@ Contact Area
             font-weight: 700;
             color: var(--titleColor);
             span {
-                color: var(--pinkColor);
+                color: var(--yellowColor);
             }
         }
         h3 {
@@ -6074,7 +6064,7 @@ Coming Soon Area
             margin-top: 40px;
             div {
                 display: inline-block;
-                color: var(--pinkColor);
+                color: var(--yellowColor);
                 position: relative;
                 width: 80px;
                 height: 80px;
@@ -6131,7 +6121,7 @@ Coming Soon Area
                 border: 1px solid #cccccc;
                 color: #5d5d5d;
                 &:focus {
-                    border-color:  var(--pinkColor);
+                    border-color:  var(--yellowColor);
                 }
             }
             .default-btn {
@@ -6149,7 +6139,7 @@ Coming Soon Area
                 font-weight: 500;
                 font-size: 15px;
                 cursor: pointer;
-                background-color: var(--pinkColor);
+                background-color: var(--yellowColor);
                 border-radius: 0;
                 &::before {
                     border-radius: 0;
@@ -6227,13 +6217,13 @@ Footer Area
             a {
                 color: var(--bodyColor);
                 &:hover {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                     letter-spacing: 0.25px; 
                 }
             }
             &:hover {
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                     letter-spacing: 0.25px; 
                 }
             }
@@ -6261,7 +6251,7 @@ Footer Area
             &:focus {
                 outline: none;
                 box-shadow: none;
-                border: 1px solid var(--pinkColor);
+                border: 1px solid var(--yellowColor);
             }
         }
         .subscribe-btn {
@@ -6277,7 +6267,7 @@ Footer Area
             padding: 12px 20px 9px;
             font-size: 16px;
             color: var(--whiteColor);
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
             &:hover {
                background-color: var(--lightblueColor);
             }
@@ -6304,7 +6294,7 @@ Footer Area
         color: var(--bodyColor);
         margin-bottom: 0;
         a {
-            color: var(--pinkColor);
+            color: var(--yellowColor);
             font-weight: 500;
             &:hover {
                 color: var(--lightblueColor);
@@ -6324,13 +6314,13 @@ Footer Area
             a {
                 color: var(--bodyColor);
                 &:hover {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                     letter-spacing: 0.25px; 
                 }
             }
             &:hover {
                 a {
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                     letter-spacing: 0.25px; 
                 }
             }
@@ -6358,7 +6348,7 @@ Footer Area
                     line-height: 35px;
                     text-align: center;
                     font-size: 18px;
-                    color: var(--pinkColor);
+                    color: var(--yellowColor);
                     background-color:  #f14d5d15;
                     transition: var(--transition);
                     display: inline-block;
@@ -6366,7 +6356,7 @@ Footer Area
                 }
                 &:hover {
                     i {
-                        background-color: var(--pinkColor);
+                        background-color: var(--yellowColor);
                         color: var(--whiteColor);
                     }
                 }
@@ -6414,7 +6404,7 @@ Go Top Area
         font-size: 24px;
         font-weight: bold;
         text-align: center;
-        background: var(--pinkColor);
+        background: var(--yellowColor);
         border-radius: 0;
         width: 45px;
         height: 45px;
@@ -6458,7 +6448,7 @@ Pagination Area
         font-size: 16px;
         border-radius: 5px;
         &:hover {
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
             color: var(--whiteColor);
         }
         i {
@@ -6468,7 +6458,7 @@ Pagination Area
             top: 7px;
         }
         &.current {
-            background-color: var(--pinkColor);
+            background-color: var(--yellowColor);
             color: var(--whiteColor);
         }
     }
@@ -6506,7 +6496,7 @@ Preloader Area
         display: inline-block;
         position: absolute;
         top: 0;
-        background-color: var(--pinkColor);
+        background-color: var(--yellowColor);
         border-radius: 100%;
         animation: sk-bounce 3.0s infinite ease-in-out;
     }
@@ -6516,7 +6506,7 @@ Preloader Area
     
     .dot2 {
         top: auto;
-        background-color: var(--pinkColor);
+        background-color: var(--yellowColor);
         bottom: 0;
         -webkit-animation-delay: -2.0s;
         animation-delay: -1.0s;

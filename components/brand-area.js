@@ -3,7 +3,6 @@ import React from "react";
 export default function BrandArea() {
   return (
     <>
-      <div className="line"></div>
 
       <div className="bg-black font-gordita pb-5 pt-5">
         <div className="brand-container">

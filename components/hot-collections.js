@@ -51,7 +51,7 @@ function HotCollections(props) {
       <div className="container hot-collections-container">
         <div className="row ">
           <div className="col-12">
-            <h2 className="title-gradient title-h2 mb-4">collections</h2>
+            <h2 className="mb-4">collections</h2>
           </div>
           <div
             className="row hot-colection-card-wrapper"
@@ -98,7 +98,6 @@ function HotCollections(props) {
           </div>
         </div>
       </div>
-      <div className="line"></div>
     </div>
   );
 }

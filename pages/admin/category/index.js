@@ -11,8 +11,6 @@ const Category = () => {
       <LeftNav />
       <div className="admin-main">
         <CategoryArea />
-        <Footer />
-        <Copyright />
       </div>
     </>
   );
