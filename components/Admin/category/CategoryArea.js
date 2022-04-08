@@ -66,9 +66,8 @@ export default function CategoryArea() {
 
   return (
     <div className="discover-area pt-20 pb-70 admin-user-list">
-      <div className="container">
         <div className="section-title position-relative d-lg-flex">
-          <h2>( Admin ) Category</h2>
+          <h2>Manage category</h2>
           <div
             className="nav-widget-form nav-widget-form-bg position-absolute d-flex"
             style={{ right: 0, color: "white" }}
@@ -113,14 +112,6 @@ export default function CategoryArea() {
         </div>
 
         <div className="pt-45">
-          {/* <div className="d-flex justify-content-end mb-4">
-            <button
-              className="default-btn"
-              onClick={() => seteditData({ status: true })}
-            >
-              Add
-            </button>
-          </div> */}
           {editData ? (
             <div
               className="row contact-form"
@@ -262,7 +253,6 @@ export default function CategoryArea() {
             </table>
           )}
         </div>
-      </div>
     </div>
   );
 }

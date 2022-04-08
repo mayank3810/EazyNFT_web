@@ -1,18 +1,14 @@
-import Footer from "../../../components/Layout/Footer";
-import Copyright from "../../../components/Common/Copyright";
 import LeftNav from "../../../components/Admin/LeftNav";
 import CreateDrop from "../../../components/Admin/drop/CreateDrop";
-import Navbar from "../../../components/Layout/Navbar";
+import NavbarAdmin from "../../../components/Layout/NavbarAdmin";
 
 const CreateDropArea = () => {
   return (
     <>
-      <Navbar />
+      <NavbarAdmin />
       <LeftNav />
       <div className="admin-main">
         <CreateDrop />
-        <Footer />
-        <Copyright />
       </div>
     </>
   );
