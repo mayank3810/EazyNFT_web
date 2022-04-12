@@ -171,7 +171,7 @@ const PlaceBid = (props) => {
             type="number"
             name="bid"
             id="bid"
-            class="polyone-input"
+            class="ez-input"
             label={`Bid in ${CHAINS[desiredChainId].currency}`}
             errors={formik.errors}
             touched={formik.touched}

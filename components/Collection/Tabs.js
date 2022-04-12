@@ -54,7 +54,7 @@ function Tabs(props) {
     <>
       <div
         id="artist-nft-card-area"
-        style={{ borderBottom: "1px solid #00FF47" }}
+        style={{ borderBottom: "1px solid #ffb302" }}
       >
         <div className="author-nav-tab-wrapper">
           {tabs.map((value, index) => (
@@ -78,7 +78,7 @@ const NavTabWrapper = (props) => {
   return (
     <div
       className="author-nav-tab"
-      style={props?.active ? { borderBottom: "2px solid rgb(0, 255, 71)" } : {}}
+      style={props?.active ? { borderBottom: "4px solid #fff" } : {}}
       onClick={() => props.setactiveTab(props?.value)}
     >
       <span style={{ color: "white" }}>{props?.value}</span>

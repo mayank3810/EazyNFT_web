@@ -173,7 +173,7 @@ const AuthorProfile = (props) => {
           <div className="discover-area pt-50 pb-70">
             <div className="container">
               <div className="section-title">
-                <h2>(Admin) Update Profile</h2>
+                <h2>Update user profile</h2>
               </div>
               <div className="row pt-45">
                 <div className="col-lg-3">

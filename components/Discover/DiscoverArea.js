@@ -69,62 +69,60 @@ const DiscoverArea = (props) => {
 
   return (
     <>
-      <div className="discover-area pt-50 pb-70">
-        <div className="container">
-          <div className="section-title">
-            <h2>Discover</h2>
+      <div className="discover-area pb-20">
+        <div className="section-title">
+          <h2 style={{"display" : "inline"}}>All NFTs</h2>
+          <a style={{"float" : "right"}} href="/create" className="default-btn btn pull-right" >Create New</a>
+        </div>
+        <div className="row pt-45">
+          <div className="col-lg-12">
+            <DiscoverTopbar
+              handleChange={handleFilters}
+              filterData={filterData}
+            />
           </div>
-
-          <div className="row pt-45">
-            <div className="col-lg-12">
-              <DiscoverTopbar
-                handleChange={handleFilters}
-                filterData={filterData}
-              />
+          {isLoading ? (
+            <div className="mt-5 mb-5 text-center">
+              <Loading />
             </div>
-            {isLoading ? (
-              <div className="mt-5 mb-5 text-center">
-                <Loading />
-              </div>
-            ) : (
-              <div className="col-lg-12">
-                <div className="row">
-                  {list.map((value, index) => (
-                    <div key={index} className="col-lg-3 col-md-6">
-                      <NFTCard token={value} />
-                    </div>
-                  ))}
-                  {!isLoading && !!list.length && lastPage > 1 && (
-                    <Pagination
-                      onChange={handlePage}
-                      page={page}
-                      lastPage={lastPage}
-                    />
-                  )}
-                  {!list.length && (
-                    <div className="tabs_item">
-                      <div className="row">
-                        <div className="col-12">
-                          <div className="error-area ptb-100">
-                            <div className="d-table">
-                              <div className="d-table-cell">
-                                <div className="error-content">
-                                  <h3>No NFT Found</h3>
-                                  <p>
-                                    Try different filters. Start selling today!
-                                  </p>
-                                </div>
+          ) : (
+            <div className="col-lg-12">
+              <div className="row">
+                {list.map((value, index) => (
+                  <div key={index} className="col-lg-3 col-md-6">
+                    <NFTCard token={value} />
+                  </div>
+                ))}
+                {!isLoading && !!list.length && lastPage > 1 && (
+                  <Pagination
+                    onChange={handlePage}
+                    page={page}
+                    lastPage={lastPage}
+                  />
+                )}
+                {!list.length && (
+                  <div className="tabs_item">
+                    <div className="row">
+                      <div className="col-12">
+                        <div className="error-area ptb-100">
+                          <div className="d-table">
+                            <div className="d-table-cell">
+                              <div className="error-content">
+                                <h3>No NFT Found</h3>
+                                <p>
+                                  Try different filters. Start selling today!
+                                </p>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </div>
     </>

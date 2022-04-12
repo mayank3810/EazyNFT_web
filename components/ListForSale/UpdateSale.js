@@ -397,7 +397,7 @@ const CreateCollectionArea = (props) => {
                             type="text"
                             name="price"
                             id="price"
-                            class="polyone-input"
+                            class="ez-input"
                             label={
                               type === "timed-auction"
                                 ? `Minimum accepting price in ${CHAINS[desiredChainId].currency}`
@@ -416,7 +416,7 @@ const CreateCollectionArea = (props) => {
                               type="text"
                               name="copies"
                               id="copies"
-                              class="polyone-input"
+                              class="ez-input"
                               label={"Number of copies to be listed"}
                               errors={formik.errors}
                               touched={formik.touched}

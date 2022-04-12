@@ -1,15 +1,15 @@
 import CreateNFTArea from "../components/CreateNFTArea/CreateNFTArea";
-import Footer from "../components/Layout/Footer";
-import Copyright from "../components/Common/Copyright";
-import Navbar from "../components/Layout/Navbar";
+import NavbarAdmin from "../components/Layout/NavbarAdmin";
+import LeftNav from "../components/Admin/LeftNav";
 
 const CreateCollection = () => {
   return (
     <>
-      <Navbar />
-      <CreateNFTArea />
-      <Footer />
-      <Copyright />
+      <NavbarAdmin />
+      <LeftNav />
+      <div className="admin-main">
+        <CreateNFTArea />
+      </div>
     </>
   );
 };

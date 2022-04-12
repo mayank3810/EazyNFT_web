@@ -37,7 +37,7 @@ function Tabs(props) {
     <>
       <div
         id="artist-nft-card-area"
-        style={{ borderBottom: "1px solid white" }}
+        style={{ borderBottom: "1px solid #ffb302" }}
       >
         <div className="author-nav-tab-wrapper" style={{ marginLeft: "30px" }}>
           {tabs.map((value, index) => (

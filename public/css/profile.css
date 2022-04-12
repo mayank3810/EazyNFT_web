@@ -77,35 +77,36 @@
 }
 
 /* Estrutura */
-.polyone-input-container {
+.ez-input-container {
   position: relative;
   margin-bottom: 30px;
   margin-top: 40px;
 }
 
-.polyone-input, .react-datepicker-wrapper input {
+.ez-input, .react-datepicker-wrapper input {
   border: 0;
   border-bottom: 2px solid #9e9e9e;
   outline: none;
   transition: 0.2s ease-in-out;
   box-sizing: border-box;
-  background: #f8f8f8;
-  border: 2px solid #e7e7e7;
+  background: #212529;
+  border: 2px solid #212529;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 10px 15px;
+  color: #fff;
 }
 .react-datepicker-wrapper input {
   width: 100%;
 }
-.polyone-input,
+.ez-input,
 label {
   width: 100%;
   height: 3rem;
   font-size: 1rem;
 }
 
-.polyone-input-container label {
+.ez-input-container label {
   left: 0;
   right: 0;
   display: flex;
@@ -119,34 +120,9 @@ label {
   top: -35px;
   pointer-events: none;
   line-height: 14px;
+  color: #fff;
 }
 
-.polyone-input[value=""] + label {
-  /* font-size: 1rem;
-  top: 0;
-  background: transparent;
-  height: 3rem;
-  opacity: 0.6; */
-}
-.polyone-input:focus + label {
-  font-size: 14px;
-  top: -25px;
-  pointer-events: none;
-  background: white;
-  width: fit-content;
-  height: 10px;
-  opacity: 0.6;
-}
-
-/* Interation */
-.polyone-input:focus + label {
-  opacity: 1;
-}
-
-.polyone-input:focus,
-.polyone-form-select:focus {
-  border: 2px solid #595959;
-}
 .text-danger {
   font-size: 12px !important;
   margin-top: 5px !important;

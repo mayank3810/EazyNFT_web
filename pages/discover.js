@@ -1,17 +1,15 @@
-import Navbar from "../components/Layout/Navbar";
-import PageBanner from '../components/Common/PageBanner';
+import NavbarAdmin from "../components/Layout/NavbarAdmin";
+import LeftNav from "../components/Admin/LeftNav";
 import DiscoverArea from '../components/Discover/DiscoverArea';
-import InvolvedArea from '../components/Common/InvolvedArea';
-import Footer from '../components/Layout/Footer';
-import Copyright from '../components/Common/Copyright';
 
 const DiscoverTwo = () => {
   return (
     <>
-      <Navbar />
-      <DiscoverArea />
-      <Footer />
-      <Copyright />
+      <NavbarAdmin />
+      <LeftNav />
+      <div className="admin-main">
+        <DiscoverArea />
+      </div>
     </>
   );
 };

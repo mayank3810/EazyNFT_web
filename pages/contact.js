@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 
 const Wrapper = styled.div`
-	.polyone-input, label {
+	.ez-input, label {
 		height: 10px !important;
 		font-size: 1rem !important;
 		color: #fff !important;

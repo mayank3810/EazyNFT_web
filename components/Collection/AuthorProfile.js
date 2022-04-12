@@ -16,7 +16,7 @@ const AuthorProfile = (props) => {
   };
   return (
     <>
-      <div className="author-profile-sidebar  mr-20">
+      <div className="author-profile-sidebar bg-dark mr-20">
         <div className="author-user mb-3">
           <img
             src={

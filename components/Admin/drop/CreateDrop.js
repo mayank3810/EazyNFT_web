@@ -402,7 +402,7 @@ const CreateDropArea = (props) => {
                 <form onSubmit={formik.handleSubmit}>
                   <CustomInput
                     id="name"
-                    class="polyone-input"
+                    class="ez-input"
                     type="text"
                     label="Enter Display Name"
                     errors={formik.errors}
@@ -413,7 +413,7 @@ const CreateDropArea = (props) => {
                   />
                   <CustomInput
                     id="description"
-                    class="polyone-input"
+                    class="ez-input"
                     type="textarea"
                     label="Description"
                     errors={formik.errors}
@@ -425,7 +425,7 @@ const CreateDropArea = (props) => {
                   />
                   <CustomInput
                     id="dropWallet"
-                    class="polyone-input"
+                    class="ez-input"
                     type="text"
                     label="User wallet address"
                     errors={formik.errors}
@@ -451,10 +451,10 @@ const CreateDropArea = (props) => {
                       ) : null
                     }
                   />
-                  <div className="mb-4 polyone-input-container">
+                  <div className="mb-4 ez-input-container">
                     <label>Select Category</label>
                     <select
-                      className="form-select polyone-form-select"
+                      className="form-select ez-form-select"
                       value={selectedCategories[0]}
                       onChange={(e) => handleCategories(e?.target?.value)}
                     >
@@ -466,10 +466,10 @@ const CreateDropArea = (props) => {
                     </select>
                   </div>
                   {!!userCollection.length && (
-                    <div className="mb-4 polyone-input-container">
+                    <div className="mb-4 ez-input-container">
                       <label>Select Collection</label>
                       <select
-                        className="form-select polyone-form-select"
+                        className="form-select ez-form-select"
                         value={selectedCollection}
                         onChange={(e) =>
                           setselectedCollection(e?.target?.value)
@@ -521,7 +521,7 @@ const CreateDropArea = (props) => {
                         type="text"
                         name="polyoneShare"
                         id="polyoneShare"
-                        class="polyone-input"
+                        class="ez-input"
                         label="Polyone Share %"
                         errors={formik.errors}
                         touched={formik.touched}
@@ -531,7 +531,7 @@ const CreateDropArea = (props) => {
                       />
                       <CustomInput
                         id="royalty"
-                        class="polyone-input"
+                        class="ez-input"
                         type="number"
                         label="Royalty %"
                         errors={formik.errors}
@@ -542,7 +542,7 @@ const CreateDropArea = (props) => {
                       />
                       <CustomInput
                         id="copies"
-                        class="polyone-input"
+                        class="ez-input"
                         type="number"
                         label="Number of copies"
                         errors={formik.errors}
@@ -553,7 +553,7 @@ const CreateDropArea = (props) => {
                       />
                       <CustomInput
                         id="websiteURL"
-                        class="polyone-input"
+                        class="ez-input"
                         type="text"
                         label="External Link"
                         errors={formik.errors}
@@ -583,7 +583,7 @@ const CreateDropArea = (props) => {
                           <>
                             <div className="col-6 mb-3">
                               <div
-                                class="polyone-input"
+                                class="ez-input"
                                 onClick={() =>
                                   setopenPropertiesDialog(!openPropertiesDialog)
                                 }
@@ -593,7 +593,7 @@ const CreateDropArea = (props) => {
                             </div>
                             <div className="col-6 mb-3">
                               <div
-                                class="polyone-input"
+                                class="ez-input"
                                 onClick={() =>
                                   setopenPropertiesDialog(!openPropertiesDialog)
                                 }

@@ -237,7 +237,7 @@ const AuthorProfile = (props) => {
           <div className="row mb-4">
             <div className="col-6">
               <div
-                class="polyone-input"
+                class="ez-input"
                 style={{ cursor: "pointer" }}
                 onClick={() => onButtonClick("pic")}
               >
@@ -246,7 +246,7 @@ const AuthorProfile = (props) => {
             </div>
             <div className="col-6">
               <div
-                class="polyone-input"
+                class="ez-input"
                 style={{ cursor: "pointer" }}
                 onClick={() => onButtonClick("banner")}
               >
@@ -257,7 +257,7 @@ const AuthorProfile = (props) => {
           <form onSubmit={formik.handleSubmit}>
             <CustomInput
               id="name"
-              class="polyone-input"
+              class="ez-input"
               type="text"
               label="Name"
               errors={formik.errors}
@@ -268,7 +268,7 @@ const AuthorProfile = (props) => {
             />
             <CustomInput
               id="aboutUser"
-              class="polyone-input"
+              class="ez-input"
               type="textarea"
               label="Bio"
               errors={formik.errors}
@@ -280,7 +280,7 @@ const AuthorProfile = (props) => {
             />
             <CustomInput
               id="email"
-              class="polyone-input"
+              class="ez-input"
               type="text"
               label="Email"
               errors={formik.errors}
@@ -307,7 +307,7 @@ const AuthorProfile = (props) => {
             </div>
             <CustomInput
               id="web"
-              class="polyone-input"
+              class="ez-input"
               type="text"
               label="Personal site"
               errors={formik.errors}
@@ -318,7 +318,7 @@ const AuthorProfile = (props) => {
             />
             <CustomInput
               id="instagram"
-              class="polyone-input"
+              class="ez-input"
               type="text"
               label="Instagram"
               errors={formik.errors}
@@ -329,7 +329,7 @@ const AuthorProfile = (props) => {
             />
             <CustomInput
               id="twitter"
-              class="polyone-input"
+              class="ez-input"
               type="text"
               label="Twitter"
               errors={formik.errors}

@@ -344,7 +344,7 @@ const CreateNFTArea = (props) => {
                 <form onSubmit={formik.handleSubmit}>
                   <CustomInput
                     id="name"
-                    class="polyone-input"
+                    class="ez-input"
                     type="text"
                     label="Enter Display Name"
                     errors={formik.errors}
@@ -355,7 +355,7 @@ const CreateNFTArea = (props) => {
                   />
                   <CustomInput
                     id="description"
-                    class="polyone-input"
+                    class="ez-input"
                     type="textarea"
                     label="Description"
                     errors={formik.errors}
@@ -365,10 +365,10 @@ const CreateNFTArea = (props) => {
                     onBlur={formik.handleBlur}
                     style={{ height: "141px" }}
                   />
-                  <div className="mb-4 polyone-input-container">
+                  <div className="mb-4 ez-input-container">
                     <label>Select Category</label>
                     <select
-                      className="form-select polyone-form-select"
+                      className="form-select ez-form-select"
                       value={selectedCategories[0]}
                       onChange={(e) => handleCategories(e?.target?.value)}
                     >
@@ -379,10 +379,10 @@ const CreateNFTArea = (props) => {
                       ))}
                     </select>
                   </div>
-                  <div className="mb-4 polyone-input-container">
+                  <div className="mb-4 ez-input-container">
                     <label>Select Collection</label>
                     <select
-                      className="form-select polyone-form-select"
+                      className="form-select ez-form-select"
                       value={selectedCollection}
                       onChange={(e) => setselectedCollection(e?.target?.value)}
                     >
@@ -418,7 +418,7 @@ const CreateNFTArea = (props) => {
                     <>
                       <CustomInput
                         id="royalty"
-                        class="polyone-input"
+                        class="ez-input"
                         type="number"
                         label="Royalty %"
                         errors={formik.errors}
@@ -429,7 +429,7 @@ const CreateNFTArea = (props) => {
                       />
                       <CustomInput
                         id="copies"
-                        class="polyone-input"
+                        class="ez-input"
                         type="number"
                         label="Number of copies"
                         errors={formik.errors}
@@ -440,7 +440,7 @@ const CreateNFTArea = (props) => {
                       />
                       <CustomInput
                         id="websiteURL"
-                        class="polyone-input"
+                        class="ez-input"
                         type="text"
                         label="External Link"
                         errors={formik.errors}
@@ -470,7 +470,7 @@ const CreateNFTArea = (props) => {
                           <>
                             <div className="col-6 mb-3">
                               <div
-                                class="polyone-input"
+                                class="ez-input"
                                 onClick={() =>
                                   setopenPropertiesDialog(!openPropertiesDialog)
                                 }
@@ -480,7 +480,7 @@ const CreateNFTArea = (props) => {
                             </div>
                             <div className="col-6 mb-3">
                               <div
-                                class="polyone-input"
+                                class="ez-input"
                                 onClick={() =>
                                   setopenPropertiesDialog(!openPropertiesDialog)
                                 }
@@ -561,7 +561,7 @@ const CreateNFTArea = (props) => {
                   </div>
                 </div>
                 <div className="create-nft-upload-title mt-4">
-                  Apload assets
+                  Upload assets
                 </div>
                 <div className="create-nft-upload-sub-title">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

@@ -15,7 +15,7 @@ export default function CustomInput({
     errors && errors[rest.id] && touched && touched[rest.id] ? true : false;
 
   return (
-    <div class="polyone-input-container">
+    <div class="ez-input-container">
       {(() => {
         switch (type) {
           case "text":
@@ -24,7 +24,7 @@ export default function CustomInput({
             return (
               <input
                 className={
-                  isError ? "polyone-input border-danger" : "polyone-input"
+                  isError ? "ez-input border-danger" : "ez-input"
                 }
                 type={type}
                 {...rest}
@@ -34,7 +34,7 @@ export default function CustomInput({
             return (
               <textarea
                 className={
-                  isError ? "polyone-input border-danger" : "polyone-input"
+                  isError ? "ez-input border-danger" : "ez-input"
                 }
                 {...rest}
               />

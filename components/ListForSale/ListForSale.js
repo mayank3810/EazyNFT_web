@@ -267,7 +267,7 @@ const CreateCollectionArea = (props) => {
                             type="text"
                             name="price"
                             id="price"
-                            class="polyone-input"
+                            class="ez-input"
                             label={
                               formik?.values?.nftType === "timed-auction"
                                 ? `Minimum accepting price in ${CHAINS[desiredChainId].currency}`
@@ -286,7 +286,7 @@ const CreateCollectionArea = (props) => {
                               type="text"
                               name="copies"
                               id="copies"
-                              class="polyone-input"
+                              class="ez-input"
                               label={"Number of copies to be listed"}
                               errors={formik.errors}
                               touched={formik.touched}
@@ -302,7 +302,7 @@ const CreateCollectionArea = (props) => {
                               type="date"
                               name="endTime"
                               id="endTime"
-                              class="polyone-input"
+                              class="ez-input"
                               label="Auction end time"
                               showTimeSelect
                               selected={endDate}
@@ -316,7 +316,7 @@ const CreateCollectionArea = (props) => {
                             type="text"
                             name="royalty"
                             id="royalty"
-                            class="polyone-input"
+                            class="ez-input"
                             label="Royalty %"
                             errors={formik.errors}
                             touched={formik.touched}

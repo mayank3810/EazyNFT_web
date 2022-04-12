@@ -10,8 +10,6 @@ const Collection = () => {
     <>
       <Navbar />
       <CollectionArea/>
-      
-      
       <Copyright />
     </>
   );

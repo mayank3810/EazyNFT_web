@@ -58,8 +58,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-size: var(--fontSize);
-  /* font-family: var(--bodyFonts); */
-  font-family: "Gordita" !important;
+  background-color: #000 !important;
 }
 
 p {
@@ -2779,8 +2778,7 @@ Trending Area
 .trending-item .trending-img {
   position: relative;
   z-index: 1;
-  border: 1px solid #00ff47;
-  border-radius: 40px 0px;
+  border-radius: 8px;
 }
 
 .trending-item .trending-img .nft {
@@ -2789,7 +2787,7 @@ Trending Area
   max-height: 500px;
   overflow: hidden;
   display: block;
-  border-radius: 40px 0px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -2797,7 +2795,7 @@ Trending Area
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 40px 0px;
+  border-radius: 8px;
 }
 
 .trending-item .trending-img .default-btn {
@@ -3907,10 +3905,11 @@ Collection Form Area
 .collection-form {
   padding: 35px 25px;
   margin-bottom: 30px;
-  background-color: var(--whiteColor);
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+  background: #000;
+  border-radius: 14px;
 }
+
+
 
 .collection-form .form-group {
   margin-bottom: 20px;
@@ -4113,8 +4112,9 @@ Collection Form Area
   font-size: 15.5077px;
   line-height: 23px;
   text-align: center;
-  color: #6e6e6e;
+  color: #fff;
   padding: 45px 0;
+  background: #212529 !important;
   border: 2.21538px solid rgba(4, 4, 5, 0.1);
   box-sizing: border-box;
   border-radius: 17.7231px;
@@ -10399,4 +10399,14 @@ ul.wallet-list {
 
 .iWnGvj {
   display: none !important;
+}
+.item-details-dsce {
+  color: #fff;
+}
+
+.form-control {
+  padding: 10px 15px !important;
+  color: #fff !important;
+  background-color: #212529 !important;
+  border: 2px solid #212529 !important;
 }

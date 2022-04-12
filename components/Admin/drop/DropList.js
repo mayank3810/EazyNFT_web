@@ -72,10 +72,9 @@ function DropList(props) {
   };
 
   return (
-    <div className="discover-area pt-20 pb-70 admin-user-list">
-      <div className="container">
+    <div className="discover-area pt-20 pb-70 ">
         <div className="section-title position-relative d-flex">
-          <h2>( Admin ) Drops</h2>
+          <h2>Manage Drops</h2>
           <div
             className="d-flex nav-widget-form nav-widget-form-bg position-absolute"
             style={{ right: 0 }}
@@ -208,7 +207,6 @@ function DropList(props) {
             </>
           )}
         </div>
-      </div>
     </div>
   );
 }

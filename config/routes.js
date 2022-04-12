@@ -14,7 +14,10 @@ export default {
       create: "/admin/drop/create",
     },
     collection: {
-      root: "/admin/collection",
+      root: "/collections",
+    },
+    dashboard: {
+      root: "/dashboard",
     },
   },
 };

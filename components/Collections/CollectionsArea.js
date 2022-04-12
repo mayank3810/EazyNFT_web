@@ -55,16 +55,16 @@ const DiscoverArea = (props) => {
 
   return (
     <>
-      <div className="discover-area collections-container bg-darker">
+      <div className="discover-area bg-darker">
         <div className="section-title d-flex justify-content-between">
-          <h2 style={{ display: "inline" }}>Collections </h2>
-          {/* <div
+          <h2 style={{ display: "inline" }}>Manage Collections </h2>
+          <div
             className="default-btn border-radius-5"
             onClick={() => router.push("/create-collection")}
             style={{ width: "220px" }}
           >
             Create Collection
-          </div> */}
+          </div>
         </div>
 
         <div className="w-100 mt-5" ref={ref}>
@@ -80,20 +80,20 @@ const DiscoverArea = (props) => {
               {list.map((value, index) => (
                 <div key={index} className="mb-5 d-flex justify-content-center">
                   <div className="hot-collection-card">
-                    {/* <Link href={`/collection/${value.name}`}> */}
+                    <Link href={`/collection/${value.name}`}>
                       <div className="hot-collection-image" role="button">
                         <img src={value?.banner}></img>
                       </div>
-                    {/* </Link> */}
-                    {/* <Link href={`/collection/${value.name}`}> */}
+                    </Link>
+                    <Link href={`/collection/${value.name}`}>
                       <div className="hot-collection-header">
                         <button className="btn btn-opacity-two truncate m-auto">
                           {value?.name}
                         </button>
                       </div>
-                    {/* </Link> */}
+                    </Link>
                     <div className="hot-collection-footer">
-                      {/* <Link href={`/artist/${value.owner?.[0]?.walletAddress}`}> */}
+                      <Link href={`/artist/${value.owner?.[0]?.walletAddress}`}>
                         <button className="btn btn-author truncate m-auto">
                           <img
                             className="author-img"
@@ -104,7 +104,7 @@ const DiscoverArea = (props) => {
                           ></img>
                           <span>@{value.owner?.[0]?.name || "Unnamed"}</span>
                         </button>
-                      {/* </Link> */}
+                      </Link>
                     </div>
                   </div>
                 </div>

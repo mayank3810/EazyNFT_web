@@ -2112,12 +2112,10 @@ span.verified {
 
 .hot-collection-card {
   position: relative;
-  /* width: 262px;
-  height: 445px; */
 
   width: 287px;
   height: 487px;
-  border-radius: 40px;
+  border-radius: 8px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2126,28 +2124,14 @@ span.verified {
 .hot-collection-image img {
   z-index: -1;
   position: absolute;
-  /* width: 262px;
-  height: 445px; */
-
   width: 287px;
   height: 487px;
-  border-radius: 40px;
-  border: 2px solid #00ff47;
+  border-radius: 8px;
+  border: 1px solid #212529;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
-.hot-collection-card::after {
-  content: "";
-  z-index: -2;
-  position: absolute;
-  background: url("/images/home-one/frame-green.svg");
-  width: 308px;
-  height: 508px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 1px;
-}
 
 .hot-collection-header .btn-opacity-two {
   font-style: normal;
@@ -2821,18 +2805,7 @@ span.verified {
     text-align: center;
     /* transform: translateY(375%); */
   }
-  .hot-collection-card::after {
-    content: "";
-    z-index: -2;
-    position: absolute;
-    background: url("/images/home-v1/hot-collect-bg.svg");
-    /* width: 225px;
-    height: 373px; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 1px;
-  }
+
   .qr-code {
     position: absolute;
     width: 16%;

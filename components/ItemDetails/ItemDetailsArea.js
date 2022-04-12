@@ -168,18 +168,8 @@ const ItemDetailsArea = ({ userinfo, getAllUserMediaDetails }) => {
           </div>
         </div>
 
-        <Tabs token={{ ...token, ...selectedDeal }} />
-        {/* {token?.collectionName && (
-          <div>
-            <CollectiblesList
-              name={token?.collectionName}
-              hideSort={true}
-              avoidTokenId={token?.tokenId}
-              showMoreTitle={true}
-              page="detail"
-            />
-          </div>
-        )} */}
+        {/* <Tabs token={{ ...token, ...selectedDeal }} /> */}
+       
       </div>
     </>
   );

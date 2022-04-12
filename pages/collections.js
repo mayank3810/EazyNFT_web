@@ -1,17 +1,15 @@
-import Navbar from "../components/Layout/Navbar";
-import PageBanner from "../components/Common/PageBanner";
+import NavbarAdmin from "../components/Layout/NavbarAdmin";
+import LeftNav from "../components/Admin/LeftNav";
 import CollectionsArea from "../components/Collections/CollectionsArea";
-import InvolvedArea from "../components/Common/InvolvedArea";
-import Footer from "../components/Layout/Footer";
-import Copyright from "../components/Common/Copyright";
-import Header from "../components/Header/header";
 
 const Collections = () => {
   return (
     <>
-      <Navbar />
-      <CollectionsArea />
-      <Copyright />
+      <NavbarAdmin />
+      <LeftNav />
+      <div className="admin-main">
+        <CollectionsArea />
+      </div>
     </>
   );
 };

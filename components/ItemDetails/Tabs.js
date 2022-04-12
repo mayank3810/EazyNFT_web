@@ -49,7 +49,7 @@ function Tabs(props) {
     <div className="mb-5">
       <div
         id="artist-nft-card-area"
-        style={{ borderBottom: "1px solid #c4c4c4" }}
+        style={{ borderBottom: "1px solid #ffb302" }}
         className="mt-5"
       >
         <div
