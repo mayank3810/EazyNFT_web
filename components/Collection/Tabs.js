@@ -78,7 +78,7 @@ const NavTabWrapper = (props) => {
   return (
     <div
       className="author-nav-tab"
-      style={props?.active ? { borderBottom: "4px solid #fff" } : {}}
+      style={props?.active ? { borderBottom: "4px solid #ddd" } : {}}
       onClick={() => props.setactiveTab(props?.value)}
     >
       <span style={{ color: "white" }}>{props?.value}</span>

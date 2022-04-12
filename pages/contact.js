@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 	.ez-input, label {
 		height: 10px !important;
 		font-size: 1rem !important;
-		color: #fff !important;
+		color: #ddd !important;
 	}
 `;
 

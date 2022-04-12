@@ -44,7 +44,7 @@ Default CSS
 :root {
   --bodyFonts: "Josefin Sans", sans-serif;
   --yellowColor: #ffb302;
-  --titleColor: #fff;
+  --titleColor: #ddd;
   --bodyColor: #b7b7b7;
   --lightblueColor: #00a19a;
   --whiteColor: #ffffff;
@@ -296,7 +296,7 @@ Navbar Area
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item a {
-  color: #fff;
+  color: #ddd;
   position: relative;
   z-index: 1;
   padding-left: 0;
@@ -326,8 +326,8 @@ Navbar Area
 .desktop-nav .navbar .navbar-nav .nav-item a:focus,
 .desktop-nav .navbar .navbar-nav .nav-item a.active {
   /* color: var(--yellowColor); */
-  color: #fff;
-  border-bottom: 2px solid #fff;
+  color: #ddd;
+  border-bottom: 2px solid #ddd;
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item a:hover::before,
@@ -360,8 +360,8 @@ Navbar Area
 .desktop-nav .navbar .navbar-nav .nav-item:hover a,
 .desktop-nav .navbar .navbar-nav .nav-item:focus a,
 .desktop-nav .navbar .navbar-nav .nav-item.active a {
-  border-bottom: 2px solid #fff;
-  color: #fff;
+  border-bottom: 2px solid #ddd;
+  color: #ddd;
   /* color: var(--yellowColor); */
 }
 
@@ -1175,7 +1175,7 @@ Navbar Area
   border: 0px;
   padding: 10px 40px;
   border-radius: 100px;
-  color: #fff !important;
+  color: #ddd !important;
 }
 
 .nav-widget-form .search-form .form-control::-webkit-input-placeholder,
@@ -4112,7 +4112,7 @@ Collection Form Area
   font-size: 15.5077px;
   line-height: 23px;
   text-align: center;
-  color: #fff;
+  color: #ddd;
   padding: 45px 0;
   background: #212529 !important;
   border: 2.21538px solid rgba(4, 4, 5, 0.1);
@@ -4350,7 +4350,7 @@ Activity Area
   border-radius: 4px;
   margin-bottom: 30px;
   position: relative;
-  color: #fff;
+  color: #ddd;
 }
 
 .activity-card .activity-img {
@@ -5274,7 +5274,7 @@ Featured Area
   padding: 12px 12px 10px;
   border-radius: 3px;
   border: 1px solid var(--lightblueColor);
-  color: #fff;
+  color: #ddd;
 }
 
 .featured-item .content .content-in span {
@@ -7713,7 +7713,7 @@ Contact Area
 
 .contact-form .form-group label {
   margin-bottom: 0px;
-  color: #fff;
+  color: #ddd;
   height: initial;
 }
 
@@ -8417,7 +8417,7 @@ Footer Area
 .copy-right-social .social-link li a i {
   /* width: 35px; */
   /* height: 35px; */
-  color: #fff;
+  color: #ddd;
   font-size: 24px;
   margin-right: 20px;
 }
@@ -9018,7 +9018,7 @@ input:checked + .slider:before {
 .connect-btn {
   font-family: "Rubik", sans-serif;
   margin: 10px;
-  color: #fff;
+  color: #ddd;
   border: 2px solid white;
   text-align: center;
   line-height: 1;
@@ -9031,7 +9031,7 @@ input:checked + .slider:before {
 
 .connect-btn:hover {
   color: #001f3f;
-  background-color: #fff;
+  background-color: #ddd;
   font-family: "Rubik", sans-serif;
   margin: 10px;
   border: 2px solid white;
@@ -9045,7 +9045,7 @@ input:checked + .slider:before {
 
 .connect-btn:active {
   color: #001f3f;
-  background-color: #fff;
+  background-color: #ddd;
   font-family: "Rubik", sans-serif;
   margin: 10px;
   border: 2px solid white;
@@ -9059,7 +9059,7 @@ input:checked + .slider:before {
 
 .header-icon {
   font-size: 25px;
-  color: #fff;
+  color: #ddd;
   position: relative;
   top: 7px;
 }
@@ -9098,7 +9098,7 @@ header:before {
 }
 
 .header-content h4 {
-  color: #fff;
+  color: #ddd;
   font-family: "Rubik", sans-serif;
   font-weight: 400;
 }
@@ -9133,7 +9133,7 @@ header:before {
 
 .header-title,
 .header-subtitle {
-  color: #fff;
+  color: #ddd;
 }
 
 .header-subtitle {
@@ -9177,20 +9177,20 @@ header:before {
 
 .btn-grad:hover {
   background-position: right center; /* change the direction of the change here */
-  color: #fff;
+  color: #ddd;
   text-decoration: none;
 }
 
 .btn-white {
-  background: #fff;
-  border: 1px solid #fff;
+  background: #ddd;
+  border: 1px solid #ddd;
   color: #000 !important;
 }
 
 .btn-white:hover {
   background: #000;
-  color: #fff !important;
-  border: 1px solid #fff;
+  color: #ddd !important;
+  border: 1px solid #ddd;
 }
 
 .background {
@@ -9218,7 +9218,7 @@ header:before {
 }
 
 .card-container i {
-  color: #fff;
+  color: #ddd;
   font-size: 20px;
   cursor: pointer;
 }
@@ -9244,7 +9244,7 @@ header:before {
   width: 200px;
   font-family: "Rubik", sans-serif;
 
-  color: #fff;
+  color: #ddd;
   text-align: center;
   padding: 10px 27px;
   /* border-style: solid;
@@ -9281,7 +9281,7 @@ header:before {
   border-radius: 15px;
   padding: 2px;
   background: linear-gradient(135deg, #01dcba 0%, #7f30cb 100%);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#ddd 0 0) content-box, linear-gradient(#ddd 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
@@ -9294,7 +9294,7 @@ header:before {
   border: 2px solid #000;
   border-radius: 15px;
   color: #000 !important;
-  background: #fff !important;
+  background: #ddd !important;
 }
 
 .section-subtitle {
@@ -9319,7 +9319,7 @@ header:before {
 }
 
 .list-active {
-  background: #fff;
+  background: #ddd;
   border-radius: 16px !important;
 }
 
@@ -9369,14 +9369,14 @@ header:before {
 .tag {
   padding: 15px 30px;
   border-radius: 36px;
-  color: #fff;
+  color: #ddd;
   padding: 5px 30px;
   border-radius: 36px;
   text-transform: capitalize;
 }
 
 .pricing-table {
-  background: #fff;
+  background: #ddd;
   box-shadow: 0px 1px 10px -6px rgba(0, 0, 0, 0.15);
   padding: 20px 55px;
   border-radius: 28px;
@@ -9643,7 +9643,7 @@ h2.road-map-subtitle.font-rubik {
 }
 .discord-btn:hover {
   border: 1px solid #000;
-  color: #fff;
+  color: #ddd;
   background: #000;
 }
 
@@ -9702,7 +9702,7 @@ h2.road-map-subtitle.font-rubik {
   padding: 15px 35px 35px 35px;
   width: 375px;
   height: fit-content;
-  background: #fff;
+  background: #ddd;
   border: 0.5px solid #ffffff;
   box-sizing: border-box;
   box-shadow: 10px 10px 21px 2px rgba(0, 0, 0, 0.22);
@@ -10185,7 +10185,7 @@ ul.wallet-list {
   border-radius: 15px;
   padding: 5px;
   background: linear-gradient(135deg, #01dcba 0%, #7f30cb 100%);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#ddd 0 0) content-box, linear-gradient(#ddd 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: -1;
@@ -10312,7 +10312,7 @@ ul.wallet-list {
   transition: padding 0.2s;
   border: 0;
   border-radius: 50px;
-  color: #fff;
+  color: #ddd;
 }
 .subcription button:hover {
   cursor: pointer;
@@ -10395,12 +10395,12 @@ ul.wallet-list {
   display: none !important;
 }
 .item-details-dsce {
-  color: #fff;
+  color: #ddd;
 }
 
 .form-control {
   padding: 10px 15px !important;
-  color: #fff !important;
+  color: #ddd !important;
   background-color: #464c51 !important;
   border: 2px solid #464c51 !important;
 }

@@ -90,7 +90,7 @@ export default function GenesisDrop() {
           </div>
           <div
             className="col-12 text-center"
-            style={{ position: "relative", color: "#fff", top: "185px" }}
+            style={{ position: "relative", color: "#ddd", top: "185px" }}
           >
             Live drops accessible to PolyOne ticket holders. Help refugees of
             war in Ukraine & Iraq. <br />

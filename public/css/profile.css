@@ -94,7 +94,7 @@
   box-sizing: border-box;
   border-radius: 5px;
   padding: 10px 15px;
-  color: #fff;
+  color: #ddd;
 }
 .react-datepicker-wrapper input {
   width: 100%;
@@ -120,7 +120,7 @@ label {
   top: -35px;
   pointer-events: none;
   line-height: 14px;
-  color: #fff;
+  color: #ddd;
 }
 
 .text-danger {

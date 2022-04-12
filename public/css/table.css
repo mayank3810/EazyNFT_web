@@ -17,7 +17,7 @@ table tr {
   border: 1px solid #000000;
   padding: 0.35em;
   align-items: center;
-  color: #fff;
+  color: #ddd;
 }
 table thead tr{
   background-color: #212529;
