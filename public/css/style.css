@@ -6578,9 +6578,7 @@ Author Area
 
 .author-profile-sidebar {
   margin-bottom: 30px;
-  background-color: var(--whiteColor);
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
+  background-color: #212529;
   border-radius: 15px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -7697,17 +7695,10 @@ Contact Area
 }
 
 .contact-form {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 30px;
-  background-color: var(--whiteColor);
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.06);
-  padding: 40px 30px;
-  border-radius: 15px;
-  max-width: 870px;
-  margin-left: auto;
-  margin-right: auto;
+    background-color: #000000;
+    max-width: 870px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-form h3 {
@@ -7721,7 +7712,9 @@ Contact Area
 }
 
 .contact-form .form-group label {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
+  color: #fff;
+  height: initial;
 }
 
 .contact-form .form-group.checkbox-option {
@@ -7756,7 +7749,7 @@ Contact Area
   font-size: 15px;
   padding: 15px 20px;
   width: 100%;
-  border-radius: 30px;
+  border-radius: 8px;
 }
 
 .contact-form .form-group .form-control:focus {
@@ -8927,6 +8920,7 @@ html {
   display: inline-block;
   width: 48px;
   height: 24px !important;
+  margin: 8px 0px;
 }
 
 .switch input {
@@ -8942,7 +8936,7 @@ html {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 102, 255, 0.1);
+  background-color: #464c51;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   height: 100%;
@@ -8955,7 +8949,7 @@ html {
   width: 18px;
   left: 4px;
   bottom: 3px;
-  background-color: #8d99ff;
+  background-color: #00a19a;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -10407,6 +10401,6 @@ ul.wallet-list {
 .form-control {
   padding: 10px 15px !important;
   color: #fff !important;
-  background-color: #212529 !important;
-  border: 2px solid #212529 !important;
+  background-color: #464c51 !important;
+  border: 2px solid #464c51 !important;
 }

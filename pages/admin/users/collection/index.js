@@ -1,4 +1,4 @@
-import NavbarTwo from "../../../../components/Layout/NavbarTwo";
+// import NavbarTwo from "../../../../components/Layout/NavbarTwo";
 import Footer from "../../../../components/Layout/Footer";
 import Copyright from "../../../../components/Common/Copyright";
 import LeftNav from "../../../../components/Admin/LeftNav";
@@ -7,7 +7,7 @@ import EditCollection from "../../../../components/Admin/Collection/EditCollecti
 const Users = () => {
   return (
     <>
-      <NavbarTwo />
+      {/* <NavbarTwo /> */}
       <LeftNav />
       <div className="admin-main" style={{ paddingRight: "50px" }}>
         <EditCollection />

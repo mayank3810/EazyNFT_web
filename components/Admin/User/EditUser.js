@@ -171,7 +171,6 @@ const AuthorProfile = (props) => {
       {buyer && (
         <>
           <div className="discover-area pt-50 pb-70">
-            <div className="container">
               <div className="section-title">
                 <h2>Update user profile</h2>
               </div>
@@ -343,7 +342,6 @@ const AuthorProfile = (props) => {
                   </div>
                 </>
               </div>
-            </div>
           </div>
         </>
       )}

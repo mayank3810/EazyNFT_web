@@ -12,54 +12,81 @@ const LeftNav = () => {
   return (
     <nav className="admin-nav-menu bg-dark">
       <div className="smartphone-menu-trigger"></div>
+      <div className="sidebar-header-s">MANAGE NFTS</div>
       <ul>
         <li>
-          <a href="/discover">All NFTs</a>
-        </li>
-        <li
-          className={isUser ? "active" : ""}
-          onClick={() => router.push(routes.admin.users.root)}
-        >
-          <span>User</span>
-        </li>
-        <li
-          className={asPath === routes.admin.category.root ? "active" : ""}
-          onClick={() => router.push(routes.admin.category.root)}
-        >
-          <span>Category</span>
-        </li>
-        <li
-          className={asPath === routes.admin.drop.root ? "active" : ""}
-          onClick={() => router.push(routes.admin.drop.root)}
-        >
-          <span>Drops</span>
-        </li>
 
-
-        <li
-          className={asPath === routes.admin.collection.root ? "active" : ""}
-          onClick={() => router.push(routes.admin.collection.root)}
-        >
-          <span>Collections</span>
+          <Link href="/discover">
+            <a>All NFTs</a>
+          </Link>
         </li>
 
         <li>
-          <a href="/create-collection">Create Collections</a>
-        </li>
-
-        <li
-          className={asPath === routes.admin.dashboard.root ? "active" : ""}
-          onClick={() => router.push(routes.admin.dashboard.root)}
-        >
-          <span>Dashboard</span>
+          <Link href="/admin/users">
+            <a>Users</a>
+          </Link>
         </li>
 
 
+        <li>
+          <Link href="/admin/category">
+            <a>Category</a>
+          </Link>
+        </li>
+
+        <li>
+          <Link href="/admin/drop">
+            <a >Drops</a>
+          </Link>
+        </li>
+
+        <li>
+          <Link href="/collections">
+            <a>Collections</a>
+          </Link>
+        </li>
+
+      </ul>
+
+      <div className="sidebar-header-s">MANAGE STORE</div>
+      <ul>
+        <li>
+          <Link href="/admin/store-features">
+            <a >Store Settings</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/admin/store-features">
+            <a >SEO and Analytics</a>
+          </Link>
+
+        </li>
+        <li>
+          <Link href="/admin/store-features">
+            <a>Store Fees</a>
+          </Link>
+        </li>
+
+      </ul>
 
 
-        {/* <li tabindex="3" className="icon-settings">
-          <span>Settings</span>
-        </li> */}
+      <div className="sidebar-header-s">YOUR ACCOUNT</div>
+      <ul>
+        <li>
+          <Link href="/admin/store-features">
+            <a>General</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/admin/store-features">
+            <a>Plans & Billing</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/admin/store-features">
+            <a>Notifications</a>
+          </Link>
+        </li>
       </ul>
     </nav>
   );

@@ -4,17 +4,15 @@ import LeftNav from "../../../../components/Admin/LeftNav";
 import EditUser from "../../../../components/Admin/User/EditUser";
 import DetailsArea from "../../../../components/Admin/User/DetailsArea";
 import Navbar from "../../../../components/Layout/Navbar";
+import NavbarAdmin from "../../../../components/Layout/NavbarAdmin";
 
 const Users = () => {
   return (
     <>
-      <Navbar />
+      <NavbarAdmin />
       <LeftNav />
       <div className="admin-main">
         <EditUser />
-        <DetailsArea />
-        <Footer />
-        <Copyright />
       </div>
     </>
   );

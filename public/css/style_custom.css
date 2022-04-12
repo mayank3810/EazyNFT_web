@@ -3864,3 +3864,23 @@ h4 {
 .launch-detail-col form {
   margin-bottom: 65px;
 }
+.sidebar-header-s {
+  font-size: 12px !important;
+  color: #00a19a;
+  padding: 10px 10px 10px 20px;
+  font-weight: bolder !important;
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+}
+.form-wrap-admin {
+  padding: 15px;
+  background: #212529;
+  border-radius: 8px;
+}
+.form-wrap-admin .form-group{
+  margin-bottom: 15px;
+}
+.col-form-label, .form-control-plaintext {
+  color: #fff;
+}
