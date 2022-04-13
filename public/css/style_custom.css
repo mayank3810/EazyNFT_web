@@ -3877,6 +3877,7 @@ h4 {
   padding: 15px;
   background: #212529;
   border-radius: 8px;
+  overflow: hidden;
 }
 .form-wrap-admin .form-group{
   margin-bottom: 15px;

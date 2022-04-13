@@ -56,34 +56,38 @@ const LeftNav = () => {
           </Link>
         </li>
         <li>
-          <Link href="/admin/store-features">
+          <Link href="/admin/seo-analytics">
             <a >SEO and Analytics</a>
           </Link>
 
         </li>
         <li>
-          <Link href="/admin/store-features">
+          <Link href="/admin/store-fees">
             <a>Store Fees</a>
           </Link>
         </li>
-
+        <li>
+          <Link href="/admin/cms">
+            <a>CMS</a>
+          </Link>
+        </li>
       </ul>
 
 
       <div className="sidebar-header-s">YOUR ACCOUNT</div>
       <ul>
         <li>
-          <Link href="/admin/store-features">
+          <Link href="/admin/account-settings">
             <a>General</a>
           </Link>
         </li>
         <li>
-          <Link href="/admin/store-features">
+          <Link href="/admin/plans-billing">
             <a>Plans & Billing</a>
           </Link>
         </li>
         <li>
-          <Link href="/admin/store-features">
+          <Link href="/admin/notifications">
             <a>Notifications</a>
           </Link>
         </li>

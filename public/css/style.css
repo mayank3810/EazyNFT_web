@@ -206,19 +206,16 @@ Default Btn CSS
 =================================================*/
 .default-btn {
   position: relative;
-
-  padding: 15px 30px;
+  padding: 12px 30px;
   font-style: normal;
   font-weight: 400;
-  font-size: 12.8648px;
-  line-height: 13px;
+  font-size: 15px;
   text-align: center;
-
-  color: #ffffff;
+  color: #000000;
   z-index: 0;
   background: var(--yellowColor);
   border: none;
-  border-radius: 16px !important;
+  border-radius: 32px !important;
   cursor: pointer;
 }
 
