@@ -2,7 +2,7 @@ import LeftNav from "../../../components/Admin/LeftNav";
 import NavbarAdmin from "../../../components/Layout/NavbarAdmin";
 import TermsConditions from "./terms-conditions";
 import PrivacyPolicy from "./privacy-policy";
-
+import Bloglist from "./blog-list"
 import dynamic from "next/dynamic";
 
 const Tabs = dynamic(
@@ -45,6 +45,9 @@ const Users = () => {
                   <TermsConditions></TermsConditions>
                 </TabPanel>
 
+                <TabPanel>
+                  <Bloglist></Bloglist>
+                </TabPanel>
               </div>
             </Tabs>
           </div>
