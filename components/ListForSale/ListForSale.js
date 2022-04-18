@@ -65,12 +65,14 @@ const CreateCollectionArea = (props) => {
   const desiredChainId = tokenDetails?.blockchainChainId || 1;
 
   useEffect(() => {
+    debugger;
     if (provider && tokenDetails?.contractTokenId && user?.walletAddress) {
       handleGetListingBalance();
     }
   }, [provider, tokenDetails?.contractTokenId, user?.walletAddress]);
 
   const handleGetListingBalance = async () => {
+    debugger;
     let web3 = new Web3(config.infure[1]);
     let contract = await new web3.eth.Contract(
       PolyoneNFTABI,
@@ -79,6 +81,7 @@ const CreateCollectionArea = (props) => {
     let data = await contract.methods
       .balanceOf(user?.walletAddress, tokenDetails?.contractTokenId)
       .call();
+      console.log(data);
     setremianingListing(Number(data || 0));
   };
 
@@ -191,6 +194,7 @@ const CreateCollectionArea = (props) => {
 
   useEffect(async () => {
     if (tokenId) {
+      debugger;
       setIsLoading(true);
       let token = await API.getCollectible(tokenId);
       setTokenDetails(token);

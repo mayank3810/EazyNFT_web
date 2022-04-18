@@ -82,20 +82,20 @@ export const CHAINS: {
   //   icon: "/images/icons/Ethereum.png",
   //   chainId: 3,
   // },
-  // 4: {
-  //   urls: [
-  //     process.env.NEXT_PUBLIC_INFURA_KEY
-  //       ? `https://rinkeby.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_KEY}`
-  //       : undefined,
-  //   ].filter((url) => url !== undefined),
-  //   name: "Rinkeby",
-  //   shortName: "Ethereum Testnet",
-  //   icon: "/images/icons/Ethereum.png",
-  //   chainId: 4,
-  //   currency: "ETH",
-  //   status: false,
-  //   index: 1,
-  // },
+  4: {
+    urls: [
+      process.env.NEXT_PUBLIC_INFURA_KEY
+        ? `https://rinkeby.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_KEY}`
+        : undefined,
+    ].filter((url) => url !== undefined),
+    name: "Rinkeby",
+    shortName: "Ethereum Testnet",
+    icon: "/images/icons/Ethereum.png",
+    chainId: 4,
+    currency: "ETH",
+    status: true,
+    index: 1,
+  },
   // Polygon
   137: {
     urls: [

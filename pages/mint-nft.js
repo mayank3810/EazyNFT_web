@@ -70,6 +70,7 @@ function MintPage(props) {
   };
 
   const checkValidations = () => {
+    debugger;
     if (!props?.userinfo?.user?.walletAddress) {
       props?.openConnectModal(true);
       return true;

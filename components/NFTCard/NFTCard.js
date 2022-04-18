@@ -56,18 +56,6 @@ const NFTCard = ({ token, userinfo, getAllUserMediaDetails, main }) => {
     []
   );
 
-  const _handleLikeButton = () => {
-    if (!user?.walletAddress) return;
-    let _new = !userMedia[tokenDetails?.tokenId];
-    const _currentCount = tokenDetails?.likeCount + (_new ? 1 : -1);
-    setuserMedia({ ...userMedia, [tokenDetails?.tokenId]: _new });
-    settokenDetails({
-      ...tokenDetails,
-      likeCount: _currentCount <= 0 ? 0 : _currentCount,
-    });
-    debouncedProfiles(_new);
-  };
-
   return (
     <div key={tokenDetails?.tokenId} className="featured-card box-shadow">
       <div className="featured-card-img">
@@ -85,24 +73,6 @@ const NFTCard = ({ token, userinfo, getAllUserMediaDetails, main }) => {
             objectFit="cover"
           />
         </a>
-        {userMedia && (
-          <p
-            role="button"
-            className={userMedia[tokenDetails?.tokenId] ? "active" : ""}
-            onClick={() => _handleLikeButton()}
-          >
-            <>
-              <i className={"ri-heart-line"}></i>{" "}
-              {tokenDetails?.likeCount || ""}
-            </>
-          </p>
-        )}
-
-        {tokenDetails?.auctionLive && (
-          <div className="featured-card-clock" data-countdown="2021/10/10">
-            <Timer token={tokenDetails} />
-          </div>
-        )}
 
         {tokenDetails?.isMintOnSale && tokenDetails?.currentOwner !== account && (
           <button
@@ -151,28 +121,7 @@ const NFTCard = ({ token, userinfo, getAllUserMediaDetails, main }) => {
             </a>
           </div>
         )}
-        <Link
-          href={`/artist/${
-            tokenDetails?.currentOwner?.walletAddress ||
-            tokenDetails?.createdBy?.walletAddress
-          }`}
-        >
-          <a className="featured-user-option">
-            <img
-              src={
-                tokenDetails?.createdBy?.profilePic ||
-                "https://po-web-prod.vercel.app/images/profile-picture.webp"
-              }
-              alt="Images"
-            />
-            <span>
-              Created by @
-              {tokenDetails?.createdBy?.username ||
-                tokenDetails?.createdBy?.name ||
-                "Unnamed"}
-            </span>
-          </a>
-        </Link>
+     
       </div>
     </div>
   );

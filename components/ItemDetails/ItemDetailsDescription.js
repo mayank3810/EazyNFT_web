@@ -384,7 +384,7 @@ const ItemDetailsDescription = ({
         </div>
       </div>
 
-      {!!remianingListing && (
+      {!remianingListing && (
         <div className="mb-5">
           <div className="item-details-btn" role="button">
             <Link href={"/list-for-sale?tokenId=" + token?.tokenId}>

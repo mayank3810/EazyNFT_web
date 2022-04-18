@@ -145,12 +145,12 @@ const ItemDetailsArea = ({ userinfo, getAllUserMediaDetails }) => {
               </div>
             </div>
             <div className="w-100">
-              {/* {token.nftType === "timed-auction" && (
+              {token.nftType === "timed-auction" && (
                 <ItemDetailsUser
                   token={token}
                   fetchTokenDetails={fetchTokenDetails}
                 />
-              )} */}
+              )}
               <ItemDetailsHistory token={token} />
             </div>
           </div>

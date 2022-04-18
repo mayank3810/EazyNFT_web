@@ -15,7 +15,7 @@ export default function CustomInput({
     errors && errors[rest.id] && touched && touched[rest.id] ? true : false;
 
   return (
-    <div class="ez-input-container">
+    <div className="ez-input-container">
       {(() => {
         switch (type) {
           case "text":
@@ -45,9 +45,9 @@ export default function CustomInput({
       })()}
       {label && (
         <label
-          class={"label"}
+          className={"label"}
           style={isError ? { color: "#dc3545" } : {}}
-          for={rest.id}
+          htmlFor={rest.id}
         >
           {label}
         </label>

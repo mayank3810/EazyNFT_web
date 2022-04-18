@@ -113,6 +113,7 @@ const CreateNFTArea = (props) => {
   };
 
   const checkValidations = () => {
+    debugger;
     const maxSize = 150; // in mb
     let error = "";
     if (!uploadFile?.size) error = "Please upload NFT";
@@ -326,21 +327,21 @@ const CreateNFTArea = (props) => {
       <div className="create-nft-container">
         <div className="row create-nft-header">
           <div className="col-lg-4">
-            <div className="title">Create new Art</div>
+            <div className="title">Create New Item</div>
           </div>
-          <div className="col-lg-8">
+          {/* <div className="col-lg-8">
             <div className="web-only upload-title">Upload NFT</div>
-          </div>
+          </div> */}
         </div>
 
         <div className="row create-nft-form-section">
           <div className="col-lg-4 pl-0">
             {state === 0 ? (
               <>
-                <div className="create-nft-sub-header">
+                {/* <div className="create-nft-sub-header">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do
-                </div>
+                </div> */}
                 <form onSubmit={formik.handleSubmit}>
                   <CustomInput
                     id="name"
@@ -373,7 +374,7 @@ const CreateNFTArea = (props) => {
                       onChange={(e) => handleCategories(e?.target?.value)}
                     >
                       {categories.map((value, index) => (
-                        <option key={value.key} value={value.key}>
+                        <option key={index} value={value.key}>
                           {value.value}
                         </option>
                       ))}
@@ -470,7 +471,7 @@ const CreateNFTArea = (props) => {
                           <>
                             <div className="col-6 mb-3">
                               <div
-                                class="ez-input"
+                                className="ez-input"
                                 onClick={() =>
                                   setopenPropertiesDialog(!openPropertiesDialog)
                                 }
@@ -480,7 +481,7 @@ const CreateNFTArea = (props) => {
                             </div>
                             <div className="col-6 mb-3">
                               <div
-                                class="ez-input"
+                                className="ez-input"
                                 onClick={() =>
                                   setopenPropertiesDialog(!openPropertiesDialog)
                                 }
@@ -564,10 +565,8 @@ const CreateNFTArea = (props) => {
                   Upload assets
                 </div>
                 <div className="create-nft-upload-sub-title">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod
-                  <br />
-                  tempor incididunt ut labore et dolore magna aliqua.
+                  Image, Video, Audio, or 3D Model <br />
+                  File types supported: JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG, GLB, GLTF. Max size: 100 MB
                 </div>
               </div>
             )}

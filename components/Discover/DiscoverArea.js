@@ -74,7 +74,7 @@ const DiscoverArea = (props) => {
           <h2 style={{"display" : "inline"}}>All NFTs</h2>
           <a style={{"float" : "right"}} href="/create" className="default-btn btn pull-right" >Create New</a>
         </div>
-        <div className="row pt-45">
+        <div className="row pt-45" style={{"width" : "100%"}}>
           <div className="col-lg-12">
             <DiscoverTopbar
               handleChange={handleFilters}
