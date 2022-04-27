@@ -4,8 +4,11 @@ import config from "../config/config";
 let web3 = new Web3(config.infure[1]);
 
 export const getTokenId = async (txn) => { 
+  debugger;
   let tx_data = await web3.eth.getTransactionReceipt(txn);
+  debugger;
   for (let i in tx_data.logs) {
+    debugger;
     for (let j = 0; j < tx_data.logs[i]?.topics.length; j++) {
       if (
         tx_data.logs[i]?.topics[j] ==

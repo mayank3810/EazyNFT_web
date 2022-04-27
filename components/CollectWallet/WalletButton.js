@@ -109,6 +109,18 @@ function WalletButton(props) {
                   </div>
                   <div className="header-profile-title">Dashboard</div>
                 </div>
+
+                <div
+                  className="d-flex mt-3"
+                  onClick={() => router.push("/profile")}
+                >
+                  <div className="header-profile-logo-section complete-center m-0">
+                    <i className="ri-dashboard-3-line ri-lg"></i>
+                  </div>
+                  <div className="header-profile-title">My Profile</div>
+                </div>
+
+
                 <div
                   className="d-flex mt-3"
                   onClick={() => router.push("/collections")}

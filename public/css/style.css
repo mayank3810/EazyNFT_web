@@ -59,6 +59,7 @@ body {
   font-weight: 400;
   font-size: var(--fontSize);
   background-color: #000 !important;
+  color: #fff !important;
 }
 
 p {
@@ -3432,16 +3433,7 @@ Item Details Area
   margin-bottom: 20px;
 }
 
-.item-details-content .item-details-into {
-  max-height: 325px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  /* padding-right: 20px; */
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-}
+
 .item-details-content .item-details-into .row {
   grid-gap: 20px;
 }
@@ -3463,14 +3455,9 @@ Item Details Area
 }
 
 .item-details-content .item-details-card {
-  /* margin-bottom: 20px; */
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  background-color: #f8f8f8;
+  background-color: #212529;
   padding: 20px;
   position: relative;
 }
@@ -3513,7 +3500,6 @@ Item Details Area
 .item-details-content .item-details-card .item-details-card-content h3 {
   font-size: 16px;
   margin-bottom: 7px;
-  color: black;
 }
 
 .item-details-content .item-details-card .item-details-card-content h3 b {
@@ -4219,7 +4205,7 @@ Collection Form Area
   cursor: pointer;
   display: block;
   font-weight: 600;
-  color: #172541;
+  color: #fff;
   position: relative;
   margin-bottom: 15px;
 }
@@ -5378,6 +5364,7 @@ Featured Area
 .featured-card .featured-card-img a img {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+  height: 440px;
 }
 
 .featured-card .featured-card-img .featured-card-clock {
@@ -10400,4 +10387,7 @@ ul.wallet-list {
   color: #ddd !important;
   background-color: #464c51 !important;
   border: 2px solid #464c51 !important;
+}
+.text-light {
+  color: #fff !important;
 }

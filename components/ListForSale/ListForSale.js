@@ -65,14 +65,12 @@ const CreateCollectionArea = (props) => {
   const desiredChainId = tokenDetails?.blockchainChainId || 1;
 
   useEffect(() => {
-    debugger;
     if (provider && tokenDetails?.contractTokenId && user?.walletAddress) {
       handleGetListingBalance();
     }
   }, [provider, tokenDetails?.contractTokenId, user?.walletAddress]);
 
   const handleGetListingBalance = async () => {
-    debugger;
     let web3 = new Web3(config.infure[1]);
     let contract = await new web3.eth.Contract(
       PolyoneNFTABI,
@@ -194,7 +192,6 @@ const CreateCollectionArea = (props) => {
 
   useEffect(async () => {
     if (tokenId) {
-      debugger;
       setIsLoading(true);
       let token = await API.getCollectible(tokenId);
       setTokenDetails(token);
@@ -205,18 +202,18 @@ const CreateCollectionArea = (props) => {
   const loadingSection = (state) => {
     switch (state) {
       case 1:
-        return <h2 className="text-dark">Approve Token</h2>;
+        return <h2 className="text-light">Approve Token</h2>;
       case 2:
-        return <h2 className="text-dark">Your NFT is being escrowed</h2>;
+        return <h2 className="text-light">Your NFT is being escrowed</h2>;
       case 3:
-        return <h2 className="text-dark">Your NFT is being listed</h2>;
+        return <h2 className="text-light">Your NFT is being listed</h2>;
       case 4:
         return (
           <>
-            <h2 className="text-dark">
+            <h2 className="text-light">
               Your NFT has been listed congratulations!
             </h2>
-            <h5 className="text-dark mt-3">
+            <h5 className="text-light mt-3">
               You have successfully listed your NFT
             </h5>
             <div>

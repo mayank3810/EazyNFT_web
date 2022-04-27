@@ -136,7 +136,7 @@ const SuggestionList = (props) => {
                     <div className="d-table">
                       <div className="d-table-cell">
                         <div className="error-content">
-                          <h3 className="text-dark">No NFT Found</h3>
+                          <h3 className="text-light">No NFT Found</h3>
                         </div>
                       </div>
                     </div>

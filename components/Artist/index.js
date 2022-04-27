@@ -97,7 +97,7 @@ function index(props) {
                 <div className="artist-avatar position-relative">
                   {user?.walletAddress === artist && (
                     <Link href="/profile">
-                      <div className="artist-update-button complete-center text-dark">
+                      <div className="artist-update-button complete-center text-light">
                         <i class="ri-settings-line" />
                       </div>
                     </Link>

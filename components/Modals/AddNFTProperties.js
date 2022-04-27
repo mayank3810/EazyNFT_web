@@ -90,7 +90,7 @@ function AddNFTProperties(props) {
 
             <div className="col-2"></div>
           </div>
-          <div style={{ maxHeight: "225px", overflow: "auto" }}>
+          <div style={{ maxHeight: "225px", overflow: "hidden" }}>
             {array.map((value, index) => (
               <div key={index} className="row" style={{ overflow: "hidden" }}>
                 <div className="col-5">

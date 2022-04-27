@@ -11,22 +11,22 @@ export default {
   },
   contractDetails: {
     1: {
-      polyoneContractAddress: "0x49c866aB77f30112F3fBBcfC5947947885537074",
-      marketplaceContractAddress: "0xdD79112B58DD70394a75FD4a8A6Aa1E23973360c",
+      polyoneContractAddress: "0x7f12D70786A584430425Ec0F9Dc42e36ba7eF2BF",
+      marketplaceContractAddress: "0xF32E4fEF3f6AEF6Ff02F4Af7eF963F7Eda5ce44b",
       polyoneOwnerAddress: "0xe04AA2F94F43AdDc3574548AD8AF68FE4bc86A38",
     },
     4: {
-      polyoneContractAddress: "0x49c866aB77f30112F3fBBcfC5947947885537074",
-      marketplaceContractAddress: "0xdD79112B58DD70394a75FD4a8A6Aa1E23973360c",
+      polyoneContractAddress: "0x7f12D70786A584430425Ec0F9Dc42e36ba7eF2BF",
+      marketplaceContractAddress: "0xF32E4fEF3f6AEF6Ff02F4Af7eF963F7Eda5ce44b",
       polyoneOwnerAddress: "0xe04AA2F94F43AdDc3574548AD8AF68FE4bc86A38",
     },
     137: {
-      polyoneContractAddress: "0x49c866aB77f30112F3fBBcfC5947947885537074",
+      polyoneContractAddress: "0xdD79112B58DD70394a75FD4a8A6Aa1E23973360c",
       marketplaceContractAddress: "0xB07512102D48131f6f4fA33fCa2e08bf80f84613",
       polyoneOwnerAddress: "0xe04AA2F94F43AdDc3574548AD8AF68FE4bc86A38",
     },
     80001: {
-      polyoneContractAddress: "0x49c866aB77f30112F3fBBcfC5947947885537074",
+      polyoneContractAddress: "0xdD79112B58DD70394a75FD4a8A6Aa1E23973360c",
       marketplaceContractAddress: "0xB07512102D48131f6f4fA33fCa2e08bf80f84613",
       polyoneOwnerAddress: "0xe04AA2F94F43AdDc3574548AD8AF68FE4bc86A38",
     },

@@ -56,7 +56,7 @@ const ItemDetailsHistory = ({ token, userinfo, main }) => {
   return (
     <>
       <div className="item-details-content">
-        <h3 className="text-dark">History</h3>
+        <h3 className="text-light">History</h3>
         <div className="item-details-into">
           <div className="row">
             {history.map((value, index) => (
@@ -155,7 +155,7 @@ function Details({ avatar, key, event, time, currency, seller, buyer, price }) {
               </>
             )}
           </h3>
-          <h6 className="text-dark f-14 m-0 truncate">
+          <h6 className="text-light f-14 m-0 truncate">
             From{" "}
             <Link href={`/artist/${seller?.walletAddress}`}>
               <span role="button">@{seller?.name}</span>

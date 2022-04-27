@@ -113,7 +113,6 @@ const CreateNFTArea = (props) => {
   };
 
   const checkValidations = () => {
-    debugger;
     const maxSize = 150; // in mb
     let error = "";
     if (!uploadFile?.size) error = "Please upload NFT";
@@ -294,8 +293,8 @@ const CreateNFTArea = (props) => {
     if (!state) return null;
     return (
       <>
-        {message && <h2 className="text-dark">{message}</h2>}
-        {subMessage && <h5 className="text-dark mt-3">{subMessage}</h5>}
+        {message && <h2 className="text-light">{message}</h2>}
+        {subMessage && <h5 className="text-light mt-3">{subMessage}</h5>}
         {state === 4 && (
           <Link href={`/asset/${tokenDetails?.tokenId}`}>
             <button className="default-btn border-radius-5 mt-5">View</button>

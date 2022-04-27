@@ -384,7 +384,7 @@ const ItemDetailsDescription = ({
         </div>
       </div>
 
-      {!remianingListing && (
+      {remianingListing && (
         <div className="mb-5">
           <div className="item-details-btn" role="button">
             <Link href={"/list-for-sale?tokenId=" + token?.tokenId}>
@@ -516,7 +516,7 @@ const ItemDetailsDescription = ({
                                 </>
                               )}
                             </h3>
-                            <h6 className="text-dark f-14 m-0 truncate">
+                            <h6 className="text-light f-14 m-0 truncate">
                               From{" "}
                               <Link href={`/artist/${value?.owner}`}>
                                 <span role="button">
@@ -533,7 +533,7 @@ const ItemDetailsDescription = ({
                           style={{ textAlign: "right" }}
                         >
                           <div
-                            className="text-dark"
+                            className="text-light"
                             onClick={() => handlesetselectedDeal(value)}
                           >
                             {value.currentPrice}{" "}

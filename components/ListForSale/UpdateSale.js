@@ -320,18 +320,18 @@ const CreateCollectionArea = (props) => {
   const loadingSection = (state) => {
     switch (state) {
       case 1:
-        return <h2 className="text-dark">Approve Token</h2>;
+        return <h2 className="text-light">Approve Token</h2>;
       case 2:
-        return <h2 className="text-dark">Your NFT is being escrowed</h2>;
+        return <h2 className="text-light">Your NFT is being escrowed</h2>;
       case 3:
-        return <h2 className="text-dark">Your NFT is being listed</h2>;
+        return <h2 className="text-light">Your NFT is being listed</h2>;
       case 4:
         return (
           <>
-            <h2 className="text-dark">
+            <h2 className="text-light">
               Your NFT has been listed congratulations!
             </h2>
-            <h3 className="text-dark">You have successfully listed your NFT</h3>
+            <h3 className="text-light">You have successfully listed your NFT</h3>
             <div>
               <Link href={`/asset/${tokenDetails?.tokenId}`}>
                 <button className="default-btn border-radius-5 mt-5">

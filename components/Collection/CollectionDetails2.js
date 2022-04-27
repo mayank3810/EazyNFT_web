@@ -70,7 +70,7 @@ function index(props) {
                 <div className="artist-avatar position-relative">
                   {user?.owner === owner && (
                     <Link href={`edit-collection?name=My%20collection2`}>
-                      <div className="artist-update-button complete-center text-dark">
+                      <div className="artist-update-button complete-center text-light">
                         <i class="ri-settings-line" />
                       </div>
                     </Link>
