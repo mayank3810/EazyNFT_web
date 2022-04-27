@@ -115,7 +115,6 @@ export default function CategoryArea() {
           {editData ? (
             <div
               className="row contact-form"
-              style={{ backgroundColor: "white" }}
             >
               <div className="col-lg-6">
                 <div className="form-group">

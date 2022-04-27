@@ -172,11 +172,6 @@ const AuthorProfile = (props) => {
         <div className="section-title">
           <div className="profile-page-title">Edit Profile</div>
         </div>
-        <div className="profile-page-sub-title">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br />
-          do eiusmod tempor incididunt.
-        </div>
-
         <div className="pt-45">
           <div className="author-user">
             <div

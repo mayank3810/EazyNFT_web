@@ -387,7 +387,7 @@ const CreateDropArea = (props) => {
             <div className="title">Create new Drop</div>
           </div>
           <div className="col-lg-8">
-            <div className="web-only upload-title">Upload NFT</div>
+            {/* <div className="web-only upload-title">Upload NFT</div> */}
           </div>
         </div>
 
@@ -395,10 +395,6 @@ const CreateDropArea = (props) => {
           <div className="col-lg-4 pl-0">
             {state === 0 ? (
               <>
-                <div className="create-nft-sub-header">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do
-                </div>
                 <form onSubmit={formik.handleSubmit}>
                   <CustomInput
                     id="name"
@@ -677,12 +673,6 @@ const CreateDropArea = (props) => {
                 </div>
                 <div className="create-nft-upload-title mt-4">
                   Upload assets
-                </div>
-                <div className="create-nft-upload-sub-title">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod
-                  <br />
-                  tempor incididunt ut labore et dolore magna aliqua.
                 </div>
               </div>
             )}

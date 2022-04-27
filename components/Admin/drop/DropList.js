@@ -73,140 +73,133 @@ function DropList(props) {
 
   return (
     <div className="discover-area pt-20 pb-70 ">
-        <div className="section-title position-relative d-flex">
-          <h2>Manage Drops</h2>
-          <div
-            className="d-flex nav-widget-form nav-widget-form-bg position-absolute"
-            style={{ right: 0 }}
-          >
-            <div className="search-form">
-              <input
-                type="search"
-                className="form-control"
-                placeholder="Search via name or address"
-                onChange={(e) => {
-                  debounceSearch(e?.target?.value);
-                }}
-              />
-            </div>
-            <div style={{ marginLeft: "15px" }}>
-              <Link href={routes?.admin?.drop?.create}>
-                <button className="default-btn">Create Drop</button>
-              </Link>
-            </div>
+      <div className="section-title position-relative d-flex">
+        <h2>Manage Drops</h2>
+        <div
+          className="d-flex nav-widget-form nav-widget-form-bg position-absolute"
+          style={{ right: 0 }}
+        >
+          <div className="search-form">
+            <input
+              type="search"
+              className="form-control"
+              placeholder="Search via name or address"
+              onChange={(e) => {
+                debounceSearch(e?.target?.value);
+              }}
+            />
+          </div>
+          <div style={{ marginLeft: "15px" }}>
+            <Link href={routes?.admin?.drop?.create}>
+              <button className="default-btn">Create Drop</button>
+            </Link>
           </div>
         </div>
-        <div className="mt-5">
-          {isLoading ? (
-            <div className="mt-5 mb-5 text-center">
-              <Loading />
-            </div>
-          ) : (
-            <>
-              <table className="mb-5">
-                <thead>
-                  <tr>
-                    <th scope="col" style={{ paddingLeft: "20px" }}>
-                      Name
-                    </th>
-                    <th scope="col">Owner</th>
-                    <th scope="col">Admin</th>
-                    <th scope="col" style={{ width: "130px" }}>
-                      Views
-                    </th>
-                    <th scope="col" style={{ width: "130px" }}>
-                      Listed
-                    </th>
-                    <th scope="col" style={{ width: "150px" }}>
-                      Status
-                    </th>
-                    <th scope="col" style={{ width: "130px" }}></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {list.map((value, index) => (
-                    <tr key={index}>
-                      <td
-                        data-label=""
-                        className="avatar-wrapper"
-                        style={{ marginLeft: "20px" }}
-                      >
-                        <Link href={`/asset/${value?.tokenId}`}>
-                          <div role="button">
-                            <span className="profile-pic">
+      </div>
+      <div className="mt-5">
+        {isLoading ? (
+          <div className="mt-5 mb-5 text-center">
+            <Loading />
+          </div>
+        ) : (
+          <>
+            <table className="mb-5">
+              <thead>
+                <tr>
+                  <th scope="col" style={{ paddingLeft: "20px" }}>
+                    Name
+                  </th>
+                  <th scope="col">Owner</th>
+                  <th scope="col">Admin</th>
+                  <th scope="col" style={{ width: "130px" }}>
+                    Views
+                  </th>
+                  <th scope="col" style={{ width: "130px" }}>
+                    Listed
+                  </th>
+                  <th scope="col" style={{ width: "150px" }}>
+                    Status
+                  </th>
+                  <th scope="col" style={{ width: "130px" }}></th>
+                </tr>
+              </thead>
+              <tbody>
+                {list.map((value, index) => (
+                  <tr key={index}>
+                    <td>
+                      <Link href={`/asset/${value?.tokenId}`}>
+                        {/*<div role="button">
+                         <span className="profile-pic">
                               <img
                                 src={value?.contentImage}
                                 alt={value?.contentImage}
                               />
-                            </span>
-                            <span
-                              style={{ position: "relative", top: "-10px" }}
-                            >
-                              {value.title || "Unnamed"}
-                            </span>
-                          </div>
-                        </Link>
-                      </td>
-                      <td data-label="Owner">
-                        <Link
-                          href={`/artist/${value?.createdBy?.[0]?.walletAddress}`}
-                        >
-                          <span role="button">
-                            {value?.createdBy?.[0].name}
-                          </span>
-                        </Link>
-                      </td>
-                      <td
-                        data-label="Admin"
-                        onClick={() => copyLink(value?.dropDetails?.through)}
+                            </span> 
+                        </div>*/}
+                        {value.title || "Unnamed"}
+
+                      </Link>
+                    </td>
+                    <td data-label="Owner">
+                      <Link
+                        href={`/artist/${value?.createdBy?.[0]?.walletAddress}`}
                       >
                         <span role="button">
-                          {walletShotener(value?.dropDetails?.through)}
+                          {value?.createdBy?.[0].name}
                         </span>
-                      </td>
-                      <td data-label="Views">{value?.totalViews || "-"}</td>
+                      </Link>
+                    </td>
+                    <td
+                      data-label="Admin"
+                      onClick={() => copyLink(value?.dropDetails?.through)}
+                    >
+                      <span role="button">
+                        {walletShotener(value?.dropDetails?.through)}
+                      </span>
+                    </td>
+                    <td data-label="Views">{value?.totalViews || "-"}</td>
 
-                      <td data-label="Listed">
-                        {value?.isMintOnSale ? (
-                          <span className="badge badge-danger text-success">
-                            Listed
-                          </span>
-                        ) : (
-                          <span className="badge badge-danger text-danger">
-                            Not Listed
-                          </span>
-                        )}
-                      </td>
-                      <td data-label="Created At">
-                        {value?.dropDetails?.liveAt < _currentTime ? (
-                          <span className="badge badge-danger text-success">
-                            Live
-                          </span>
-                        ) : (
-                          <span className="badge badge-danger text-danger">
-                            {moment(value?.dropDetails?.liveAt).format(
-                              "hh:mm   MMMM DD YY"
-                            )}
-                          </span>
-                        )}
-                      </td>
-                      <td data-label="">
-                        <Link href={`/asset/${value?.tokenId}`}>View</Link>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-              {!isLoading && !!list.length && lastPage > 1 && (
-                <Pagination
-                  onChange={handlePage}
-                  page={page}
-                  lastPage={lastPage}
-                />
-              )}
-            </>
-          )}
-        </div>
+                    <td data-label="Listed">
+                      {value?.isMintOnSale ? (
+                        <span className="badge badge-danger text-success">
+                          Listed
+                        </span>
+                      ) : (
+                        <span className="badge badge-danger text-danger">
+                          Not Listed
+                        </span>
+                      )}
+                    </td>
+                    <td data-label="Created At">
+                      {value?.dropDetails?.liveAt < _currentTime ? (
+                        <span className="badge badge-danger text-success">
+                          Live
+                        </span>
+                      ) : (
+                        <span className="badge badge-danger text-danger">
+                          {moment(value?.dropDetails?.liveAt).format(
+                            "hh:mm   MMMM DD YY"
+                          )}
+                        </span>
+                      )}
+                    </td>
+                    <td data-label="">
+                      <Link href={`/asset/${value?.tokenId}`}>View</Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            {!isLoading && !!list.length && lastPage > 1 && (
+              <Pagination
+                onChange={handlePage}
+                page={page}
+                lastPage={lastPage}
+              />
+            )}
+          </>
+        )}
+      </div>
     </div>
   );
 }

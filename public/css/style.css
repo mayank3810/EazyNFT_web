@@ -7679,10 +7679,12 @@ Contact Area
 }
 
 .contact-form {
-    background-color: #000000;
-    max-width: 870px;
-    margin-left: auto;
-    margin-right: auto;
+  background-color: #212529;
+  max-width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  border-radius: 8px;
 }
 
 .contact-form h3 {

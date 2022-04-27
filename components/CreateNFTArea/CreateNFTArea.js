@@ -337,10 +337,6 @@ const CreateNFTArea = (props) => {
           <div className="col-lg-4 pl-0">
             {state === 0 ? (
               <>
-                {/* <div className="create-nft-sub-header">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do
-                </div> */}
                 <form onSubmit={formik.handleSubmit}>
                   <CustomInput
                     id="name"
