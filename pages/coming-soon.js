@@ -59,12 +59,6 @@ const ComingSoon = () => {
             <div className='container'>
               <div className='coming-soon-content'>
                 <h1>Coming Soon</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Quis ipsum suspendisse ultrices.
-                </p>
-
                 <div id='timer'>
                   <div id='days'>{days}<span>days</span></div>
                   <div id='hours'>{hours}<span>hours</span></div>
