@@ -63,7 +63,7 @@ const NFTCard = ({ token, userinfo, getAllUserMediaDetails, main }) => {
           onClick={() => {
             if (isUserEligible) router.push(`/asset/${tokenDetails?.tokenId}`);
           }}
-          style={{ height: "440px" }}
+          style={{ height: "440px", textAlign: "center" }}
         >
           <Asset
             type={tokenDetails?.metaData?.type || "image"}

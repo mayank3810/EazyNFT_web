@@ -5346,7 +5346,7 @@ Featured Area
 
 .featured-card {
   margin-bottom: 30px;
-  background-color: var(--whiteColor);
+  background-color: #212529;
   border-radius: 15px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -8498,8 +8498,8 @@ Pagination Area
   margin-right: 3px;
   font-size: 16px;
   border-radius: 5px;
-  background: #ffffff;
-  border: 2px solid #f0f0f0;
+  background: #212529;
+  border: 2px solid #212529;
   box-sizing: border-box;
   border-radius: 40px;
   padding: 0 15px;

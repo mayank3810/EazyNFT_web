@@ -294,7 +294,7 @@ const EditCollection = (props) => {
                   href={`/admin/users/collection?name=${collectionDetails?.name}`}
                 >
                   <>
-                    <a style={{ height: "150px" }}>
+                    <a style={{ height: "150px", textAlign: "center" }}>
                       <img
                         src={collectionDetails?.banner}
                         alt="Images"
