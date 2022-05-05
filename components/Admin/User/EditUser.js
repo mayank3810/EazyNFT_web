@@ -133,6 +133,7 @@ const AuthorProfile = (props) => {
     e.preventDefault(); // Stop form submit
     try {
       let response = await fileUpload();
+      debugger;
       let payload = {
         walletAddress: props?.userinfo?.user?.walletAddress,
         signature: props?.userinfo?.user?.signature,

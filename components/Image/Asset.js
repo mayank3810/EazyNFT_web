@@ -57,10 +57,7 @@ const Image = ({
     <>
       <img
         loading="lazy"
-        src={imageSrc?.replace(
-          "polyone.blob.core.windows.net",
-          "polyone.azureedge.net"
-        )}
+        src={imageSrc}
         className={cx("asset-img-wrapper", className)}
         onError={onError}
         onLoad={onLoad}

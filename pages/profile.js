@@ -105,17 +105,15 @@ const AuthorProfile = (props) => {
       setisLoading(true);
       let _profilePic = displayPicURL;
       if (profilePicFile) {
-        _profilePic =
-          process.env.NEXT_PUBLIC_IMAGE_URL +
-          (await fileUpload(profilePicFile));
+        let imageUrl = await fileUpload(profilePicFile);
+        _profilePic = process.env.NEXT_PUBLIC_IMAGE_URL + imageUrl;
         setDisplayPicURL(_profilePic);
         setprofilePicFile(null);
       }
       let _coverPic = displayBannerURL;
       if (profileBannerFile) {
-        _coverPic =
-          process.env.NEXT_PUBLIC_IMAGE_URL +
-          (await fileUpload(profileBannerFile));
+        let imageUrl = await fileUpload(profileBannerFile);
+        _coverPic = process.env.NEXT_PUBLIC_IMAGE_URL + imageUrl;
         setDisplayBannerURL(_coverPic);
         setprofileBannerFile(null);
       }
@@ -156,6 +154,7 @@ const AuthorProfile = (props) => {
   };
 
   const handleImage = (media) => {
+    debugger;
     setprofilePicFile(media);
     setDisplayPicURL(URL.createObjectURL(media));
   };
