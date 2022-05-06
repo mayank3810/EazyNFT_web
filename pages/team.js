@@ -1,5 +1,4 @@
-import NavbarTwo from '../components/Layout/NavbarTwo';
-import PageBanner from '../components/Common/PageBanner';
+import Navbar from '../components/Layout/Navbar';import PageBanner from '../components/Common/PageBanner';
 import TeamArea from '../components/Common/TeamArea';
 import Testimonial from '../components/Common/Testimonial';
 import InvolvedArea from '../components/Common/InvolvedArea';
@@ -9,7 +8,7 @@ import Copyright from '../components/Common/Copyright';
 const Team = () => {
   return (
     <>
-      <NavbarTwo />
+      <Navbar /> />
    
       <TeamArea/>
       <Testimonial/>

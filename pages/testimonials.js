@@ -1,5 +1,4 @@
-import NavbarTwo from '../components/Layout/NavbarTwo';
-import PageBanner from '../components/Common/PageBanner';
+import Navbar from '../components/Layout/Navbar';import PageBanner from '../components/Common/PageBanner';
 import Testimonial from '../components/Common/Testimonial';
 import InvolvedArea from '../components/Common/InvolvedArea';
 import Footer from '../components/Layout/Footer';
@@ -8,7 +7,7 @@ import Copyright from '../components/Common/Copyright';
 const Testimonials = () => {
   return (
     <>
-      <NavbarTwo />
+      <Navbar /> />
 
       <Testimonial />
 

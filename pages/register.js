@@ -1,4 +1,5 @@
-import NavbarTwo from "../components/Layout/NavbarTwo";
+import Navbar from '../components/Layout/Navbar';
+
 import PageBanner from "../components/Common/PageBanner";
 import Footer from "../components/Layout/Footer";
 import Copyright from "../components/Common/Copyright";
@@ -60,7 +61,7 @@ const Register = (props) => {
 
   return (
     <>
-      <NavbarTwo />
+      <Navbar /> />
 
       <div className="user-area pt-100 pb-70">
         <div className="container">

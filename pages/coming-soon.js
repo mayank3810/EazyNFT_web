@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import NavbarTwo from '../components/Layout/NavbarTwo';
-import PageBanner from '../components/Common/PageBanner';
+import Navbar from '../components/Layout/Navbar';import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/Layout/Footer';
 import Copyright from '../components/Common/Copyright';
 
@@ -50,7 +49,7 @@ const ComingSoon = () => {
   }, []);
   return (
     <>
-      <NavbarTwo />
+      <Navbar /> />
  
 
       <div className='coming-soon-area ptb-100'>

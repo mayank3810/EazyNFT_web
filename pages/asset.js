@@ -1,4 +1,4 @@
-import NavbarTwo from '../components/Layout/NavbarTwo';
+import Navbar from '../components/Layout/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import ItemDetailsArea from '../components/ItemDetails/ItemDetailsArea';
 import TrendingArea from '../components/Common/TrendingArea';
@@ -8,7 +8,7 @@ import Copyright from '../components/Common/Copyright';
 const ItemDetails = () => {
   return (
     <>
-      <NavbarTwo />
+      <Navbar />
       <ItemDetailsArea/>
       <TrendingArea bg="trending-area-bg-two"/>
       <Footer />

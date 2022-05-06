@@ -7,7 +7,7 @@ import EditCollection from "../../../../components/Admin/Collection/EditCollecti
 const Users = () => {
   return (
     <>
-      {/* <NavbarTwo /> */}
+      {/* <Navbar /> /> */}
       <LeftNav />
       <div className="admin-main" style={{ paddingRight: "50px" }}>
         <EditCollection />

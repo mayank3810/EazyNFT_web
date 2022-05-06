@@ -1,5 +1,4 @@
-import NavbarTwo from '../components/Layout/NavbarTwo';
-import PageBanner from '../components/Common/PageBanner';
+import Navbar from '../components/Layout/Navbar';import PageBanner from '../components/Common/PageBanner';
 import Footer from '../components/Layout/Footer';
 import Copyright from '../components/Common/Copyright';
 import Link from 'next/link'
@@ -30,7 +29,7 @@ const VerifiedEmail = (props) => {
 
   return (
     <>
-      <NavbarTwo />
+      <Navbar /> />
 
       <div className='error-area ptb-100'>
         <div className='d-table'>
