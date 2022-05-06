@@ -60,7 +60,7 @@ function index(props) {
   return (
     <div>
       <div className="cover-container">
-        <img src={collection?.banner} className="img-100" />
+        <img src={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + collection?.banner} className="img-100" />
       </div>
       <div className="artist-detail-section">
         <div className="row">
@@ -76,7 +76,7 @@ function index(props) {
                     </Link>
                   )}
                   <img
-                    src={collection?.logo}
+                    src={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + collection?.logo}
                     className="img-100"
                     style={{ borderRadius: "50%", overflow: "hidden" }}
                   />
