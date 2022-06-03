@@ -31,14 +31,15 @@ export default function HomeBanner() {
       <div className="container bg-dark-one font-gordita ">
         <div className="row padding">
           <div className="col-7">
-            <div style={{paddingRight: "80px", paddingTop: "80px"}}>
+            <div style={{ paddingRight: "80px", paddingTop: "80px" }}>
               <h1>Launch Your Own NFT Store in Minutes. </h1>
               <p className="mt-4 mb-4">
                 Eazy NFT empowers you to create your own nft marketplace without any technical knowledge.
                 Enable NFTs in your Video, Tweets, Audio, Images, PDF documents and make your content exclusive to your community.
               </p>
-
-              <button className="btn btn-warning">Explore NFTs</button>
+              <Link href={`/discover`}>
+                <a className="btn btn-warning">Explore NFTs</a>
+              </Link>
             </div>
           </div>
 

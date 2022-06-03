@@ -276,7 +276,7 @@ function MintPage(props) {
                     Congratulation your NFT has been Minted!
                   </h1>
                   <div className="d-flex justify-content-between">
-                    <Link href="/dashboard">
+                    <Link href="/discover">
                       <button className="default-btn mt-5">
                         View Dashboard
                       </button>

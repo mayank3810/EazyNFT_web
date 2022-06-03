@@ -108,7 +108,7 @@ const TrendingArea = ({ bg, userinfo }) => {
 
             <div className="col-12">
               <div className="trending-btn text-end mt-5">
-                <Link href="/dashboard">
+                <Link href="/discover">
                   <a className="default-btn border-radius-5 mr-2">
                     See More <i class="ri-arrow-right-line icon"></i>
                   </a>
