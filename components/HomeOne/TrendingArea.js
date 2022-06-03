@@ -17,7 +17,7 @@ const options = {
   nav: true,
   mouseDrag: false,
   dots: false,
-  autoplay: true,
+  autoplay: false,
   smartSpeed: 500,
   navText: [
     "<div class='nav-btn-left'><i class='ri-arrow-left-s-line'></i></div>",
@@ -77,53 +77,46 @@ const TrendingArea = ({ bg, userinfo }) => {
 
   return (
     <>
-      <div className={`trending-area ${bg} pb-4`}>
-        <div className="container">
+      <div className={`trending-area ${bg} `}>
+        <div className="container  pt-5 pb-5">
           <div className="row">
-            <div className="col-12 heading-area">
-              <h1 className="text-center section-heading m-5 font-druk">
-                Erbil Launch collection
-              </h1>
-              <p className="text-center">
-                Collectors & Creators - join our roster of international artists
-                who have chosen to stand on PolyOne’s platform for peace to
-                raise our voices with music, dance and art. All creations seen
-                on PolyOne’s historic launch event at the ancient Citadel of
-                Erbil, plus a remarkable selection of original art by the same &
-                other creators will be available for purchase upon launch
-                starting 3.21.22. First access to PolyOne ticket holders.
-              </p>
+          <div className="col-lg-8 col-md-6">
+            <div className="section-title">
+              <h2>
+               Trending NFTs
+              </h2>
             </div>
-            <div className="col-lg-8 col-md-6 mt-5">
-              <div className="section-title">
-                <h2>Featured Artworks from Erbil</h2>
+          </div>
+            <div className="col-12">
+              <div className="trending-slider pt-45">
+                {!display ? (
+                  <div className="mt-5 mb-t">
+                    <Loading />
+                  </div>
+                ) : (
+                  <OwlCarousel {...options}>
+                    {list.map((value, index) => (
+                      <DashboardNFTCard
+                        key={`live-drop-${index}=${Math.random()}`}
+                        token={value}
+                      />
+                    ))}
+                  </OwlCarousel>
+                )}
+              </div>
+            </div>
+
+            <div className="col-12">
+              <div className="trending-btn text-end mt-5">
+                <Link href="/dashboard">
+                  <a className="default-btn border-radius-5 mr-2">
+                    See More <i class="ri-arrow-right-line icon"></i>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
 
-          <div className="trending-slider pt-45">
-            {!display ? (
-              <div className="mt-5 mb-t">
-                <Loading />
-              </div>
-            ) : (
-              <OwlCarousel {...options}>
-                {list.map((value, index) => (
-                  <DashboardNFTCard
-                    key={`live-drop-${index}=${Math.random()}`}
-                    token={value}
-                  />
-                ))}
-              </OwlCarousel>
-            )}
-          </div>
-          <div className="trending-btn text-end mt-5">
-            <Link href="/collection/Erbil%20Collection">
-              <a className="default-btn border-radius-5 mr-2">
-                See More <i class="ri-arrow-right-line icon"></i>
-              </a>
-            </Link>
-          </div>
         </div>
       </div>
     </>

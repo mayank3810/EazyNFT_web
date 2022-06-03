@@ -58,7 +58,7 @@ const AuthorArea = () => {
                       Follow
                       <ul className='author-social'>
                         <li>
-                          <a href='https://discord.com/invite/polyoneNFT' target='_blank'>
+                          <a href='https://discord.com/' target='_blank'>
                             <i className='ri-facebook-fill'></i>
                           </a>
                         </li>
@@ -68,7 +68,7 @@ const AuthorArea = () => {
                           </a>
                         </li>
                         <li>
-                          <a href='https://twitter.com/polyoneNFT' target='_blank'>
+                          <a href='https://twitter.com/' target='_blank'>
                             <i className='ri-twitter-fill'></i>
                           </a>
                         </li>
@@ -115,7 +115,7 @@ const AuthorArea = () => {
                       Follow
                       <ul className='author-social'>
                         <li>
-                          <a href='https://discord.com/invite/polyoneNFT' target='_blank'>
+                          <a href='https://discord.com/' target='_blank'>
                             <i className='ri-facebook-fill'></i>
                           </a>
                         </li>
@@ -125,7 +125,7 @@ const AuthorArea = () => {
                           </a>
                         </li>
                         <li>
-                          <a href='https://twitter.com/polyoneNFT' target='_blank'>
+                          <a href='https://twitter.com/' target='_blank'>
                             <i className='ri-twitter-fill'></i>
                           </a>
                         </li>
@@ -172,7 +172,7 @@ const AuthorArea = () => {
                       Follow
                       <ul className='author-social'>
                         <li>
-                          <a href='https://discord.com/invite/polyoneNFT' target='_blank'>
+                          <a href='https://discord.com/' target='_blank'>
                             <i className='ri-facebook-fill'></i>
                           </a>
                         </li>
@@ -182,7 +182,7 @@ const AuthorArea = () => {
                           </a>
                         </li>
                         <li>
-                          <a href='https://twitter.com/polyoneNFT' target='_blank'>
+                          <a href='https://twitter.com/' target='_blank'>
                             <i className='ri-twitter-fill'></i>
                           </a>
                         </li>
@@ -229,7 +229,7 @@ const AuthorArea = () => {
                       Follow
                       <ul className='author-social'>
                         <li>
-                          <a href='https://discord.com/invite/polyoneNFT' target='_blank'>
+                          <a href='https://discord.com/' target='_blank'>
                             <i className='ri-facebook-fill'></i>
                           </a>
                         </li>
@@ -239,7 +239,7 @@ const AuthorArea = () => {
                           </a>
                         </li>
                         <li>
-                          <a href='https://twitter.com/polyoneNFT' target='_blank'>
+                          <a href='https://twitter.com/' target='_blank'>
                             <i className='ri-twitter-fill'></i>
                           </a>
                         </li>

@@ -3,8 +3,8 @@ import Link from "next/link";
 const TopSeller = ({ topSellers }) => {
   return (
     <>
-      <div className={`top-sellers-area pb-4`}>
-        <div className="container">
+      <div className={`bg-dard pb-4 pt-4`}>
+        <div className="container pt-4">
           <div className="row">
             <div className="col-lg-8 col-md-7">
               <div className="section-title">

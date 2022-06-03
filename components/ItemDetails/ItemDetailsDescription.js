@@ -368,6 +368,7 @@ const ItemDetailsDescription = ({
             {token?.collectionName}
           </div>
         </div>
+        
         <div className="d-flex justify-content-between">
           <div style={{ minWidth: "130px" }}>
             <b>Category</b>

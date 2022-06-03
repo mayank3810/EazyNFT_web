@@ -67,9 +67,9 @@ const NFTCard = ({ token, userinfo, getAllUserMediaDetails, main }) => {
         >
           <Asset
             type={tokenDetails?.metaData?.type || "image"}
-            imageSrc={tokenDetails?.metaData?.preview}
-            thumbnail={tokenDetails?.metaData?.preview}
-            videoSrc={[tokenDetails?.metaData?.preview]}
+            imageSrc={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + tokenDetails?.metaData?.preview}
+            thumbnail={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + tokenDetails?.metaData?.preview}
+            videoSrc={[process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + tokenDetails?.metaData?.preview]}
             objectFit="cover"
           />
         </a>

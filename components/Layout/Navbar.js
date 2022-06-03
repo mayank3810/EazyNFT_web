@@ -104,7 +104,7 @@ const Navbar = (ctx) => {
           className={
             showMenu
               ? "show desktop-nav desktop-nav-one nav-area"
-              : "desktop-nav desktop-nav-one nav-area bg-darker"
+              : "desktop-nav desktop-nav-one nav-area bg-dark"
           }
         >
           <div className="container">
@@ -168,20 +168,20 @@ const Navbar = (ctx) => {
                 <div className="header-link d-flex align-items-center">
                   <a
                     className="hide-mobile"
-                    href="https://instagram.com/polyoneNFT"
+                    href="https://instagram.com/"
                   >
                     <img src="/images/icons/insta-icon.svg" alt="insta" />
                   </a>
                   <a
                     className="hide-mobile"
-                    href="https://twitter.com/polyoneNFT"
+                    href="https://twitter.com/"
                   >
                     <img src="/images/icons/twitter-icon.svg" alt="twitter" />
                   </a>
                   <a
                     target="_blank"
                     className="hide-mobile"
-                    href="https://discord.com/invite/polyoneNFT"
+                    href="https://discord.com/"
                   >
                     <img src="/images/icons/discord-icon.svg" alt="discord" />
                   </a>

@@ -101,7 +101,7 @@ const DiscoverTopbar = (props) => {
 
           <div className="col">
             <div className="side-bar-widget">
-              <h3 className="title">Mediums</h3>
+              <h3 className="title">Category</h3>
               <div className="form-group select-group">
                 <select
                   className="form-select form-control"

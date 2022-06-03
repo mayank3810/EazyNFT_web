@@ -107,7 +107,7 @@ function LandingPage(props) {
                 <a
                   target="_blank"
                   className="hide-mobile"
-                  href="https://instagram.com/polyoneNFT"
+                  href="https://instagram.com/"
                 >
                   {/* <i className="ri-instagram-fill header-icon"></i> */}
                   <img src="/images/instagram.svg"></img>
@@ -124,7 +124,7 @@ function LandingPage(props) {
                 <a
                   className="hide-mobile"
                   target="_blank"
-                  href="https://discord.com/invite/polyoneNFT"
+                  href="https://discord.com/"
                 >
                   <img src="/images/discord.svg"></img>
                 </a>
@@ -408,7 +408,7 @@ function LandingPage(props) {
                   src="/images/landing-page/facebook.svg"
                 ></img>
 
-                <a href="https://instagram.com/polyoneNFT" target="_blank">
+                <a href="https://instagram.com/" target="_blank">
                   <img
                     className="img-fluid"
                     src="/images/landing-page/instagram.svg"
@@ -426,7 +426,7 @@ function LandingPage(props) {
                       Don't miss out on all the action here
                     </h1>
                     <a
-                      href="https://discord.com/invite/polyoneNFT"
+                      href="https://discord.com/"
                       target="_blank"
                       type="button"
                       className="discord-btn"

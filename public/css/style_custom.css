@@ -2921,7 +2921,7 @@ button.search-btn {
 
 /* Home Banner */
 .padding {
-  padding: 140px 0;
+  padding: 60px 0;
 }
 
 .nft-detail h1 {
@@ -3038,13 +3038,9 @@ h6 {
 .nft-card-new {
   height: 500px !important;
   width: 300px;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 10px;
-
-  border: 3px solid #1f1c27;
   box-sizing: border-box;
   border-radius: 8px;
   position: relative;
@@ -3111,7 +3107,7 @@ h6 {
 
 .newsletter {
   display: flex;
-  padding: 140px 0;
+  padding: 60px 0;
   align-content: center;
   justify-content: center;
   text-align: center;
@@ -3175,18 +3171,12 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 262px;
   height: 265px;
-  border: 3px solid #1f1c27;
   border-radius: 8px;
-  transition: all 0.25s ease;
   margin-bottom: 70px;
+  border: 0px !important;
 }
-.genre-card:hover {
-  -webkit-transform: translateY(-5px) scale(1.02);
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 5px 12px rgb(126 142 177 / 20%);
-}
+
 
 .genre-card span {
   position: absolute;
@@ -3416,6 +3406,7 @@ h6 {
 
 .banner-card {
   width: 400px;
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3743,7 +3734,7 @@ img.planet-author-img {
 
 .btn-subscribe {
   border-radius: 40px !important;
-  padding: 24px 35px;
+  padding: 18px 35px;
 }
 
 .btn-big {

@@ -20,13 +20,13 @@ const PrelaunchFooterArea = () => {
         </div>
         <div className="col-sm-6 d-flex justify-content-end">
           <div className="header-link ">
-            <a className="hide-mobile" href="https://twitter.com/polyoneNFT">
+            <a className="hide-mobile" href="https://twitter.com/">
               <i className="ri-twitter-fill header-icon"></i>
             </a>
-            <a className="hide-mobile" href="https://discord.com/invite/polyoneNFT">
+            <a className="hide-mobile" href="https://discord.com/">
               <i className="ri-discord-fill header-icon"></i>
             </a>
-            <a target="_blank" className="hide-mobile" href="https://instagram.com/polyoneNFT">
+            <a target="_blank" className="hide-mobile" href="https://instagram.com/">
                   <i className="ri-instagram-fill header-icon"></i>
                 </a>
           </div>

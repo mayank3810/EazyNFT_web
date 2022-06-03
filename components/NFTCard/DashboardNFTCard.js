@@ -95,9 +95,9 @@ const DashboardNFTCard = ({
         >
           <Asset
             type={"image"}
-            imageSrc={_preview}
-            thumbnail={_preview}
-            videoSrc={[_preview]}
+            imageSrc={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + _preview}
+            thumbnail={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + _preview}
+            videoSrc={[process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + _preview]}
             id={`dashboard_${tokenDetails?.metaData?.preview}_${random}`}
             objectFit="cover"
           />

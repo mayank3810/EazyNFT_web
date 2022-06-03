@@ -129,9 +129,9 @@ const ItemDetailsArea = ({ userinfo, getAllUserMediaDetails }) => {
                 )}
                 <Asset
                   type={token?.metaData?.type || "image"}
-                  imageSrc={token?.metaData?.preview}
-                  thumbnail={token?.metaData?.preview}
-                  videoSrc={[token?.metaData?.preview]}
+                  imageSrc={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + token?.metaData?.preview}
+                  thumbnail={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + token?.metaData?.preview}
+                  videoSrc={[process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + token?.metaData?.preview]}
                   objectFit="cover"
                   controls={true}
                 />

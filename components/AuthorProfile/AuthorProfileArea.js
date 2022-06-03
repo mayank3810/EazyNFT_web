@@ -92,7 +92,7 @@ const AuthorProfileArea = () => {
 										<ul className="author-social">
 											<li>
 												<a
-													href="https://discord.com/invite/polyoneNFT"
+													href="https://discord.com/"
 													target="_blank" 
 													rel="noreferrer"
 												>
@@ -110,7 +110,7 @@ const AuthorProfileArea = () => {
 											</li>
 											<li>
 												<a
-													href="https://twitter.com/polyoneNFT"
+													href="https://twitter.com/"
 													target="_blank" 
 													rel="noreferrer"
 												>

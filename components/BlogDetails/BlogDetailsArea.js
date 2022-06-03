@@ -288,7 +288,7 @@ const BlogDetailsArea = ({ data, relatedPostsData }) => {
                             <li className="title">Share Post</li>
                             <li>
                               <a
-                                href="https://discord.com/invite/polyoneNFT"
+                                href="https://discord.com/"
                                 target="_blank"
                                 rel="noreferrer"
                               >
@@ -306,7 +306,7 @@ const BlogDetailsArea = ({ data, relatedPostsData }) => {
                             </li>
                             <li>
                               <a
-                                href="https://twitter.com/polyoneNFT"
+                                href="https://twitter.com/"
                                 target="_blank"
                                 rel="noreferrer"
                               >

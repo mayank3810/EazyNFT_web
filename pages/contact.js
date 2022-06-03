@@ -219,13 +219,13 @@ const Contact = () => {
 								<i className="ri-mail-send-line"></i>
 								<h3>Email Address</h3>
 								<p>
-									<a href="mailto:info@tezor.com">
-										info@polyone.com
+									<a href="mailto:info@eazynft.co">
+										info@eazynft.co
 									</a>
 								</p>
 								<p>
-									<a href="mailto:hello@tezor.com">
-										hello@polyone.com
+									<a href="mailto:info@eazynft.co">
+									info@eazynft.co
 									</a>
 								</p>
 							</div>

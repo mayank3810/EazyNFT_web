@@ -6,13 +6,11 @@ export default function FooterNew() {
       <div className="container footer-new">
         <div className="row">
           <div className="col-lg-4 mr-20">
-            <h4 className="mb-4">Spooky action Labs</h4>
+            <h4 className="mb-4">Eazy NFT</h4>
             <p className="mb-5">
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim.por incididunt mpor incididunt ut labore et dolore magna
-              aliqua. Ut enim.por incididunt
+              Eazy NFT is an emerging NFT enabler. We believe in decentralized Web / Web3 and our aim is to make is easier for everyone to switch to a NFT infrastructure.
             </p>
-            <p>Copyright 2021 Spooky Studios. Already registered. </p>
+            <p>Copyright 2022. </p>
           </div>
           <div className="col-lg-2">
             <div className="link-container">
@@ -50,9 +48,7 @@ export default function FooterNew() {
               <div className="icons">
                 <i class="ri-facebook-fill"></i>
                 <i class="ri-linkedin-fill"></i>
-                <i class="ri-google-fill"></i>
                 <i class="ri-twitter-fill"></i>
-                <i class="ri-whatsapp-line"></i>
               </div>
             </div>
           </div>

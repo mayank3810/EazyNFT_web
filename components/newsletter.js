@@ -48,19 +48,11 @@ export default function NewsLetter() {
       <div className="bg-darker newsletter font-tomica">
         <div className="from-container">
           <h1 className="text-center section-heading m-5 font-druk mt-0 mb-2">
-            Catch Every Drops{" "}
-            <img
-              style={{
-                height: "40px",
-                width: "40px",
-                verticalAlign: "baseline",
-              }}
-              src="/images/home-v1/fire.svg"
-            ></img>
+            Catch Every Drop
           </h1>
 
           <p>
-            Receive PolyOne newsletters for updates on our artist drops and
+            Receive our newsletters for updates on our artist drops and
             events
           </p>
           <form className="email-input" onSubmit={handleSubmit}>

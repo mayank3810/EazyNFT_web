@@ -31,7 +31,7 @@ const AboutInvolved = () => {
 									</li>
 									<li>
 										<a
-											href="https://discord.com/invite/polyoneNFT"
+											href="https://discord.com/"
 											target="_blank" 
 											rel="noreferrer"
 										>
@@ -49,7 +49,7 @@ const AboutInvolved = () => {
 									</li>
 									<li>
 										<a
-											href="https://twitter.com/polyoneNFT"
+											href="https://twitter.com/"
 											target="_blank" 
 											rel="noreferrer"
 										>

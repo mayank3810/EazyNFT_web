@@ -21,7 +21,7 @@ export default function LiveDrops() {
     nav: true,
     mouseDrag: true,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     smartSpeed: 500,
     navText: [
       "<div class='nav-btn-left'><i class='ri-arrow-left-s-line'></i></div>",
@@ -62,7 +62,7 @@ export default function LiveDrops() {
         // isDrop: true,
         // "dropDetails.liveAt": { $lte: time },
       },
-       perPage: 22,
+      perPage: 22,
     };
     setisLoading(true);
     API.getAllCollectiables(data)
@@ -79,7 +79,7 @@ export default function LiveDrops() {
   }, []);
 
   return (
-    <div className="bg-darker">
+    <div className="bg-dark">
       <div className="container pt-5 pb-5">
         <div className="row">
           <div className="col-lg-8 col-md-6">
@@ -94,7 +94,7 @@ export default function LiveDrops() {
             </div>
           </div>
 
-          <div className="col-12 mt-5">
+          <div className="col-12 mt-4">
             <div className="nft-container">
               <OwlCarousel {...options}>
                 {list.map((value, index) => (
@@ -138,9 +138,9 @@ function Card({ value, index }) {
     >
       <Asset
         type={"image"}
-        imageSrc={_preview}
-        thumbnail={_preview}
-        videoSrc={[_preview]}
+        imageSrc={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + _preview}
+        thumbnail={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + _preview}
+        videoSrc={[process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + _preview]}
         objectFit="cover"
         id={`live_drop_${value?.metaData?.preview}_${random}`}
       />

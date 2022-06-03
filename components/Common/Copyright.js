@@ -31,7 +31,7 @@ const Copyright = () => {
                   <li>
                     <a
                       className="hide-mobile"
-                      href="https://instagram.com/polyoneNFT"
+                      href="https://instagram.com/"
                     >
                       <img src="/images/icons/insta-icon.svg" alt="insta" />
                     </a>
@@ -39,7 +39,7 @@ const Copyright = () => {
                   <li>
                     <a
                       className="hide-mobile"
-                      href="https://twitter.com/polyoneNFT"
+                      href="https://twitter.com/"
                     >
                       <img src="/images/icons/twitter-icon.svg" alt="twitter" />
                     </a>
@@ -48,7 +48,7 @@ const Copyright = () => {
                     <a
                       target="_blank"
                       className="hide-mobile"
-                      href="https://discord.com/invite/polyoneNFT"
+                      href="https://discord.com/"
                     >
                       <img src="/images/icons/discord-icon.svg" alt="discord" />
                     </a>

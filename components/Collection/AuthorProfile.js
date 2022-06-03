@@ -55,7 +55,7 @@ const AuthorProfile = (props) => {
             <ul className="author-social">
               <li>
                 <a
-                  href="https://discord.com/invite/polyoneNFT"
+                  href="https://discord.com/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -72,7 +72,7 @@ const AuthorProfile = (props) => {
                 </a>
               </li>
               <li>
-                <a href="https://twitter.com/polyoneNFT" target="_blank" rel="noreferrer">
+                <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                   <i className="ri-twitter-fill"></i>
                 </a>
               </li>

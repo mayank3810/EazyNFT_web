@@ -19,7 +19,7 @@ function GenreArea(props) {
                 <div key={index} className="col-lg-3 col-md-4 col-sm-12 mb-4">
                   <div
                     style={{
-                      backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 80), rgba(0, 0, 0, 0.2)), url("images/category/${
+                      backgroundImage: `url("images/category/${
                         index + 1
                       }.jpg")`,
                     }}
