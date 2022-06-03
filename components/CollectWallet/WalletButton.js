@@ -102,7 +102,7 @@ function WalletButton(props) {
                 </div> */}
                 <div
                   className="d-flex mt-3"
-                  onClick={() => router.push("/dashboard")}
+                  onClick={() => router.push("/artist/" + user?.walletAddress)}
                 >
                   <div className="header-profile-logo-section complete-center m-0">
                     <i className="ri-dashboard-3-line ri-lg"></i>
@@ -121,15 +121,7 @@ function WalletButton(props) {
                 </div>
 
 
-                <div
-                  className="d-flex mt-3"
-                  onClick={() => router.push("/collections")}
-                >
-                  <div className="header-profile-logo-section complete-center m-0">
-                    <i className="ri-gallery-line ri-lg"></i>
-                  </div>
-                  <div className="header-profile-title">Collection</div>
-                </div>
+               
                 {isAdmin && (
                   <div
                     className="d-flex mt-3"

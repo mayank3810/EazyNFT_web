@@ -82,7 +82,7 @@ const DiscoverArea = (props) => {
                   <div className="hot-collection-card">
                     <Link href={`/collection/${value.name}`}>
                       <div className="hot-collection-image" role="button">
-                        <img src={value?.banner}></img>
+                        <img src={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + value?.banner}></img>
                       </div>
                     </Link>
                     <Link href={`/collection/${value.name}`}>
@@ -109,8 +109,8 @@ const DiscoverArea = (props) => {
                   </div>
                 </div>
               ))}
-              {isLoading &&
-                [1, 2, 3, 4, 5, 6].map((index) => (
+              {/* {isLoading &&
+                [0].map((index) => ( 
                   <div key={index}>
                     <div className="hot-collection-card mb-5">
                       <div className="hot-collection-image" role="button"></div>
@@ -132,7 +132,7 @@ const DiscoverArea = (props) => {
                       </div>
                     </div>
                   </div>
-                ))}
+                ))} */}
             </div>
           </InfiniteScroll>
 

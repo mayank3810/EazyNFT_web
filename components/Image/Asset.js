@@ -57,7 +57,7 @@ const Image = ({
     <>
       <img
         loading="lazy"
-        src={imageSrc}
+        src={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + imageSrc}
         className={cx("asset-img-wrapper", className)}
         onError={onError}
         onLoad={onLoad}

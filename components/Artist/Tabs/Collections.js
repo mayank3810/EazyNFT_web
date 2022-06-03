@@ -91,7 +91,7 @@ const Collections = (props) => {
                 <div className="hot-collection-card">
                   <Link href={`/collection/${value.name}`}>
                     <div className="hot-collection-image" role="button">
-                      <img src={value?.banner}></img>
+                      <img src={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + value?.banner}></img>
                     </div>
                   </Link>
                   <Link href={`/collection/${value.name}`}>

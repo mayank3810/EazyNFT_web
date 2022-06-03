@@ -138,22 +138,6 @@ const Navbar = (ctx) => {
                     </Link>
                   </li>
 
-                  <li
-                    className="nav-item"
-                    onClick={() => checkRedirect("/dashboard")}
-                  >
-                    <a
-                      className={
-                        pathname === "/dashboard"
-                          ? "nav-link active"
-                          : "nav-link "
-                      }
-                      role="button"
-                    >
-                      Dashboard
-                    </a>
-                  </li>
-
 
                   <li className="nav-item">
                     <Link href="/collections">
