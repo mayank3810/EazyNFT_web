@@ -69,12 +69,18 @@ const DiscoverArea = (props) => {
 
   return (
     <>
-      <div className="discover-area pb-20">
+      <div className="discover-area pb-20 m-4">
         <div className="section-title">
-          <h2 style={{"display" : "inline"}}>All NFTs</h2>
-          <a style={{"float" : "right"}} href="/create" className="default-btn btn pull-right" >Create New</a>
+          <h2 style={{ display: "inline" }}>All Products</h2>
+          <a
+            style={{ float: "right" }}
+            href="/create"
+            className="default-btn btn pull-right"
+          >
+            Create New
+          </a>
         </div>
-        <div className="row pt-45" style={{"width" : "100%"}}>
+        <div className="row pt-45" style={{ width: "100%" }}>
           <div className="col-lg-12">
             <DiscoverTopbar
               handleChange={handleFilters}

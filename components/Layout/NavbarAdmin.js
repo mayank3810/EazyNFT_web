@@ -68,14 +68,22 @@ const NavbarAdmin = (ctx) => {
         <div className="mobile-responsive-nav">
           <div>
             <Link href="/">
-              <img src="/images/polyone-white.png" style={{ display: "block", maxWidth: "115px" }} role="button" />
+              <img
+                src="/images/polyone-white.png"
+                style={{ display: "block", maxWidth: "115px" }}
+                role="button"
+              />
             </Link>
           </div>
           <div className="container-fluid">
             <div className="mobile-responsive-menu">
               <div onClick={() => toggleMenu()} className="hamburger-menu">
                 <span className="nav-mobile-user-avatar">
-                  <img src={currentUser?.profilePic} height="27px" style={{ display: "block" }} />
+                  <img
+                    src={currentUser?.profilePic}
+                    height="27px"
+                    style={{ display: "block" }}
+                  />
                 </span>
                 <span style={{ position: "relative", top: "-3px" }}>
                   {showMenu ? (
@@ -116,18 +124,32 @@ const NavbarAdmin = (ctx) => {
               </Link>
 
               <div
-                className="collapse navbar-collapse mean-menu"
+                className="collapse navbar-collapse mean-menu justify-content-center"
                 id="navbarSupportedContent"
               >
                 <ul className="navbar-nav">
+                  <li>
+                    <Link href="/discover">
+                      <a>All Products</a>
+                    </Link>
+                  </li>
 
+                  <li>
+                    <Link href="/admin/users">
+                      <a>Users</a>
+                    </Link>
+                  </li>
 
+                  <li>
+                    <Link href="/admin/category">
+                      <a>Category</a>
+                    </Link>
+                  </li>
                 </ul>
               </div>
 
               <div className="currentUserName d-flex justify-content-end">
-                <div className="header-link d-flex align-items-center">
-                </div>
+                <div className="header-link d-flex align-items-center"></div>
 
                 <WalletButton showMore={true} isAdmin={isAdmin} />
               </div>
@@ -139,8 +161,7 @@ const NavbarAdmin = (ctx) => {
           <div
             className="search-btn global-pointer"
             onClick={() => toggleSearchModal()}
-          >
-          </div>
+          ></div>
         </div>
 
         <div className="side-nav-responsive">
@@ -148,8 +169,7 @@ const NavbarAdmin = (ctx) => {
             <div
               className="dot-menu dot-menu-mt"
               onClick={() => toggleWallet()}
-            >
-            </div>
+            ></div>
 
             <div
               className={

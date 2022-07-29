@@ -72,122 +72,120 @@ function UserList(props) {
   };
 
   return (
-    <div className="admin-user-list">
-        <div className="section-title position-relative d-flex">
-          <h2>Users</h2>
-          <div
-            className="nav-widget-form nav-widget-form-bg position-absolute"
-            style={{ right: 0 }}
-          >
-            <div className="search-form">
-              <input
-                type="search"
-                className="form-control"
-                placeholder="Search via name or address"
-                onChange={(e) => {
-                  debounceSearch(e?.target?.value);
-                }}
-              />
-              {/* <button>
+    <div className="admin-user-list m-4">
+      <div className="section-title position-relative d-flex">
+        <h2>Users</h2>
+        <div
+          className="nav-widget-form nav-widget-form-bg position-absolute"
+          style={{ right: 0 }}
+        >
+          <div className="search-form">
+            <input
+              type="search"
+              className="form-control"
+              placeholder="Search via name or address"
+              onChange={(e) => {
+                debounceSearch(e?.target?.value);
+              }}
+            />
+            {/* <button>
                 <i className="ri-search-line"></i>
               </button> */}
-            </div>
           </div>
         </div>
-        <div className="mt-3">
-          {isLoading ? (
-            <div className="mt-5 mb-5 text-center">
-              <Loading />
-            </div>
-          ) : (
-            <>
-              <table className="mb-5">
-                <thead>
-                  <tr>
-                    <th scope="col" style={{ paddingLeft: "20px" }}>
-                      Name
-                    </th>
-                    <th scope="col">Wallet</th>
-                    <th scope="col">Email</th>
-                    <th scope="col" style={{ width: "130px" }}></th>
-                    <th scope="col">Created At</th>
-                    <th scope="col" style={{ width: "100px" }}></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {userlist.map((value, index) => (
-                    <tr key={index}>
-                      <td
-                        data-label=""
-                        className="avatar-wrapper"
-                        style={{ marginLeft: "20px" }}
+      </div>
+      <div className="mt-3">
+        {isLoading ? (
+          <div className="mt-5 mb-5 text-center">
+            <Loading />
+          </div>
+        ) : (
+          <>
+            <table className="mb-5">
+              <thead>
+                <tr>
+                  <th scope="col" style={{ paddingLeft: "20px" }}>
+                    Name
+                  </th>
+                  <th scope="col">Wallet</th>
+                  <th scope="col">Email</th>
+                  <th scope="col" style={{ width: "130px" }}></th>
+                  <th scope="col">Created At</th>
+                  <th scope="col" style={{ width: "100px" }}></th>
+                </tr>
+              </thead>
+              <tbody>
+                {userlist.map((value, index) => (
+                  <tr key={index}>
+                    <td
+                      data-label=""
+                      className="avatar-wrapper"
+                      style={{ marginLeft: "20px" }}
+                    >
+                      <span
+                        onClick={() =>
+                          router.push(
+                            routes?.admin?.users?.edit(value?.walletAddress)
+                          )
+                        }
+                        role="button"
                       >
-                        <span
-                          onClick={() =>
-                            router.push(
-                              routes?.admin?.users?.edit(value?.walletAddress)
-                            )
-                          }
-                          role="button"
-                        >
-                          <span className="profile-pic">
-                            <img
-                              src={value?.profilePic}
-                              alt={value?.profilePic}
-                            />
-                          </span>
-                          <span style={{ position: "relative", top: "-8px" }}>
-                            {value.name || "Unnamed"}
-                          </span>
+                        <span className="profile-pic">
+                          <img
+                            src={value?.profilePic}
+                            alt={value?.profilePic}
+                          />
                         </span>
-                      </td>
-                      <td
-                        data-label="Wallet"
-                        onClick={() => copyLink(value?.walletAddress)}
-                      >
-                        <span role="button">
-                          {walletShotener(value?.walletAddress)}
+                        <span style={{ position: "relative", top: "-8px" }}>
+                          {value.name || "Unnamed"}
                         </span>
-                      </td>
-                      <td data-label="Email">{value?.email || "-"}</td>
+                      </span>
+                    </td>
+                    <td
+                      data-label="Wallet"
+                      onClick={() => copyLink(value?.walletAddress)}
+                    >
+                      <span role="button">
+                        {walletShotener(value?.walletAddress)}
+                      </span>
+                    </td>
+                    <td data-label="Email">{value?.email || "-"}</td>
 
-                      <td data-label="Email Verified">
-                        {value?.isEmailVerified ? (
-                          <span className="badge badge-danger text-success">
-                            Verified
-                          </span>
-                        ) : (
-                          <span className="badge badge-danger text-danger">
-                            Not Verified
-                          </span>
-                        )}
-                      </td>
-                      <td data-label="Created At">
-                        {moment(value?.createdAt).format("MMMM DD YYYY")}
-                      </td>
-                      <td data-label="">
-                        <Link
-                          href={routes?.admin?.users?.edit(
-                            value?.walletAddress
-                          )}
-                        >
-                          Edit
-                        </Link>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-              {!isLoading && !!userlist.length && lastPage > 1 && (
-                <Pagination
-                  onChange={handlePage}
-                  page={page}
-                  lastPage={lastPage}
-                />
-              )}
-            </>
-          )}
-        </div>
+                    <td data-label="Email Verified">
+                      {value?.isEmailVerified ? (
+                        <span className="badge badge-danger text-success">
+                          Verified
+                        </span>
+                      ) : (
+                        <span className="badge badge-danger text-danger">
+                          Not Verified
+                        </span>
+                      )}
+                    </td>
+                    <td data-label="Created At">
+                      {moment(value?.createdAt).format("MMMM DD YYYY")}
+                    </td>
+                    <td data-label="">
+                      <Link
+                        href={routes?.admin?.users?.edit(value?.walletAddress)}
+                      >
+                        Edit
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            {!isLoading && !!userlist.length && lastPage > 1 && (
+              <Pagination
+                onChange={handlePage}
+                page={page}
+                lastPage={lastPage}
+              />
+            )}
+          </>
+        )}
+      </div>
     </div>
   );
 }

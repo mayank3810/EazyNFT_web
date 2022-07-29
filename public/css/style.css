@@ -10393,3 +10393,17 @@ ul.wallet-list {
 .text-light {
   color: #fff !important;
 }
+
+
+  .connect-btn-center {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.navbar-nav a {
+  color: #fff;
+  margin-right: 40px;
+}

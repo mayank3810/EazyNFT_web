@@ -6,14 +6,14 @@ import UserList from "../../../components/Admin/User/UserList";
 import NavbarAdmin from "../../../components/Layout/NavbarAdmin";
 
 const Users = () => {
-
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
+      <UserList />
+      {/* <LeftNav />
       <div className="admin-main">
-        <UserList />
-      </div>
+        
+      </div> */}
     </>
   );
 };

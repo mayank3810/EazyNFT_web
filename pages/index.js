@@ -11,8 +11,14 @@ import UpcomingDrops from "../components/upcoming-drops";
 import Navbar from "../components/Layout/Navbar";
 import TrendingArea from "../components/HomeOne/TrendingArea";
 import TopSeller from "../components/Common/TopSeller";
+import WalletButton from "../components/CollectWallet/WalletButton";
+import { connect, useDispatch } from "react-redux";
+import { setRedirect, openConnectModal } from "../redux/actions/main";
+import { wrapper } from "../redux/store";
 
-export default function HomeNew() {
+function HomeNew(ctx) {
+  const currentUser = ctx?.user?.user;
+  const isAdmin = (currentUser.roles || []).includes("admin");
   // const [topAuthors, setTopAuthors] = useState();
 
   // useEffect(async () => {
@@ -28,7 +34,10 @@ export default function HomeNew() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className="connect-btn-center">
+        <WalletButton showMore={true} isAdmin={isAdmin} />
+      </div>
       {/* <HomeBanner /> */}
       {/* <TrendingArea /> */}
       {/* <TopSeller topSellers={topAuthors} /> */}
@@ -42,3 +51,19 @@ export default function HomeNew() {
     </>
   );
 }
+
+export const getInitialPageProps = wrapper.getInitialPageProps(
+  ({ store, req, res }) => {
+    const state = store.getState();
+  }
+);
+
+const mapStateToProps = (state) => {
+  return { main: state.main, user: state.user };
+};
+
+const mapDispatchToProps = {
+  setRedirect,
+  openConnectModal,
+};
+export default connect(mapStateToProps, mapDispatchToProps)(HomeNew);

@@ -15,7 +15,6 @@ const LeftNav = () => {
       <div className="sidebar-header-s">MANAGE NFTS</div>
       <ul>
         <li>
-
           <Link href="/discover">
             <a>All NFTs</a>
           </Link>
@@ -27,7 +26,6 @@ const LeftNav = () => {
           </Link>
         </li>
 
-
         <li>
           <Link href="/admin/category">
             <a>Category</a>
@@ -36,7 +34,7 @@ const LeftNav = () => {
 
         <li>
           <Link href="/admin/drop">
-            <a >Drops</a>
+            <a>Drops</a>
           </Link>
         </li>
 
@@ -45,21 +43,19 @@ const LeftNav = () => {
             <a>Collections</a>
           </Link>
         </li>
-
       </ul>
 
       <div className="sidebar-header-s">MANAGE STORE</div>
       <ul>
         <li>
           <Link href="/admin/store-features">
-            <a >Store Settings</a>
+            <a>Store Settings</a>
           </Link>
         </li>
         <li>
           <Link href="/admin/seo-analytics">
-            <a >SEO and Analytics</a>
+            <a>SEO and Analytics</a>
           </Link>
-
         </li>
         <li>
           <Link href="/admin/store-fees">
@@ -72,7 +68,6 @@ const LeftNav = () => {
           </Link>
         </li>
       </ul>
-
 
       <div className="sidebar-header-s">YOUR ACCOUNT</div>
       <ul>

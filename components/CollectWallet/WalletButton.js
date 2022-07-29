@@ -110,7 +110,7 @@ function WalletButton(props) {
                   <div className="header-profile-title">Dashboard</div>
                 </div>
 
-                <div
+                {/* <div
                   className="d-flex mt-3"
                   onClick={() => router.push("/profile")}
                 >
@@ -118,10 +118,8 @@ function WalletButton(props) {
                     <i className="ri-dashboard-3-line ri-lg"></i>
                   </div>
                   <div className="header-profile-title">My Profile</div>
-                </div>
+                </div> */}
 
-
-               
                 {isAdmin && (
                   <div
                     className="d-flex mt-3"

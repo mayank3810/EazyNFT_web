@@ -6,10 +6,11 @@ const Category = () => {
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
+      <CategoryArea />
+
+      {/* <LeftNav />
       <div className="admin-main">
-        <CategoryArea />
-      </div>
+      </div> */}
     </>
   );
 };
