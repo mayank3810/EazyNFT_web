@@ -72,7 +72,7 @@ function UserList(props) {
   };
 
   return (
-    <div className="admin-user-list m-4">
+    <div className="admin-user-list mt-4 container">
       <div className="section-title position-relative d-flex">
         <h2>Users</h2>
         <div

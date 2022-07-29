@@ -2,22 +2,10 @@ import React, { useState, useEffect } from "react";
 import { toast } from "react-toastify";
 import { connect } from "react-redux";
 import Link from "next/link";
-import Web3 from "web3";
-
-import WalletButton from "../components/CollectWallet/WalletButton";
 import { setConfetti } from "../redux/actions/main";
-import {
-  PreSaleEarthContractABI,
-  PreSaleSunContractABI,
-  PreSaleMoonContractABI,
-  PreSaleExpoContractABI,
-} from "../utils/abs/abs";
-import config from "../config/config";
-import PlanetDetailCard from "../components/PreLaunch/PlanetDetailCard";
 // import useActiveWeb3React from "../hooks/useActiveWeb3React";
 import { openConnectModal } from "../redux/actions/main";
 import { ethers } from "ethers";
-import PrelaunchFooterArea from "../components/PreLaunch/PrelaunchFooterArea";
 import { useRouter } from "next/router";
 import API from "../services/API";
 import { CHAINS } from "../chains.ts";
@@ -420,7 +408,7 @@ function MintPage(props) {
                 </p> */}
               </div>
             </div>
-            <div className="row justify-content-around m-0 mt-5">
+            {/* <div className="row justify-content-around m-0 mt-5">
               {planetList.map((value, index) => {
                 if (value != id)
                   return (
@@ -432,7 +420,7 @@ function MintPage(props) {
                     </div>
                   );
               })}
-            </div>
+            </div> */}
             <div className="col-12">
               <div className="col-lg-8 col-md-8 col-sm-12 m-auto">
                 <div className="section-para mt-5">

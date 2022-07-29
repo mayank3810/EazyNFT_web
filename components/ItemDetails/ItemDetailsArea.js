@@ -7,10 +7,8 @@ import ItemDetailsUser from "./ItemDetailsUser";
 import { toast } from "react-toastify";
 import API from "../../services/API";
 import Loading from "../Loading/Loading";
-import CollectiblesList from "../Collection/CollectiblesList";
 import { getAllUserMediaDetails } from "../../redux/actions/user";
 import { debounce } from "lodash";
-import Tabs from "./Tabs";
 import Asset from "../Image/Asset";
 
 const ItemDetailsArea = ({ userinfo, getAllUserMediaDetails }) => {

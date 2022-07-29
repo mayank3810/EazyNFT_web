@@ -1,16 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import About from "../components/about";
-import BrandArea from "../components/brand-area";
-import FooterNew from "../components/footer-new";
-import GatewayArea from "../components/gateway-area";
-import GenreArea from "../components/genre-area";
-import HomeBanner from "../components/home-banner";
-import LiveDrops from "../components/live-drops";
-import NewsLetter from "../components/newsletter";
-import UpcomingDrops from "../components/upcoming-drops";
-import Navbar from "../components/Layout/Navbar";
-import TrendingArea from "../components/HomeOne/TrendingArea";
-import TopSeller from "../components/Common/TopSeller";
 import WalletButton from "../components/CollectWallet/WalletButton";
 import { connect, useDispatch } from "react-redux";
 import { setRedirect, openConnectModal } from "../redux/actions/main";

@@ -65,14 +65,14 @@ export default function CategoryArea() {
   };
 
   return (
-    <div className="discover-area pt-20 pb-70 admin-user-list m-4">
+    <div className="discover-area pt-20 pb-70 admin-user-list container">
       <div className="section-title position-relative d-lg-flex">
         <h2>Manage category</h2>
         <div
           className="nav-widget-form nav-widget-form-bg position-absolute d-flex"
           style={{ right: 0, color: "white" }}
         >
-          <div style={{ marginLeft: "15px" }}>
+          {/* <div style={{ marginLeft: "15px" }}>
             <div
               role="button"
               onClick={() => settype("nft")}
@@ -99,7 +99,7 @@ export default function CategoryArea() {
             >
               Collection Categories
             </div>
-          </div>
+          </div> */}
           <div style={{ marginLeft: "15px" }}>
             <button
               className="default-btn"
