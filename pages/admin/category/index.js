@@ -7,10 +7,6 @@ const Category = () => {
     <>
       <NavbarAdmin />
       <CategoryArea />
-
-      {/* <LeftNav />
-      <div className="admin-main">
-      </div> */}
     </>
   );
 };
