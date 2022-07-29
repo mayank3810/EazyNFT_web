@@ -7,10 +7,6 @@ const ItemDetails = () => {
     <>
       <NavbarAdmin />
       <ItemDetailsArea />
-
-      {/* <LeftNav />
-      <div className="admin-main">
-      </div> */}
     </>
   );
 };
