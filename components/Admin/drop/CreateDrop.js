@@ -232,7 +232,7 @@ const CreateDropArea = (props) => {
       //   _metaDataResponse?.ipfs
       // );
       // console.log("NFT txn hash: ", transaction?.hash);
-      setmessage("Your NFT is being minted");
+      setmessage("Your Certificate is being minted");
       setsubMessage("");
       // _metaDataResponse["etherScan"] = transaction?.hash;
       const _createNFT = {
@@ -279,7 +279,7 @@ const CreateDropArea = (props) => {
       setTokenDetails(nftRes?.result);
       props.setConfetti(true);
       setnftTxn(null);
-      setmessage("Your NFT has been uploaded congratulations!");
+      setmessage("Your Certificate has been uploaded congratulations!");
       setsubMessage("You have successfully uploaded your NFT");
       setState(4);
       toast.success("NFT created successfully");

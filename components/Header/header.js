@@ -59,12 +59,12 @@ function index(props) {
               </a> */}
 
               <div className="dropdown">
-                <Link href="/discover">
+                <Link href="/certificates">
                   <a className=" nav-link drop-link">Discover</a>
                 </Link>
 
                 <div className="dropdown-content">
-                  <Link href="/discover">
+                  <Link href="/certificates">
                     <a href="#">
                       <img src="/images/home-v1/apps.svg"></img>Discover
                       <i className="ri-arrow-drop-right-line"></i>

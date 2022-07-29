@@ -322,14 +322,14 @@ const CreateCollectionArea = (props) => {
       case 1:
         return <h2 className="text-light">Approve Token</h2>;
       case 2:
-        return <h2 className="text-light">Your NFT is being escrowed</h2>;
+        return <h2 className="text-light">Your Certificate is being escrowed</h2>;
       case 3:
-        return <h2 className="text-light">Your NFT is being listed</h2>;
+        return <h2 className="text-light">Your Certificate is being listed</h2>;
       case 4:
         return (
           <>
             <h2 className="text-light">
-              Your NFT has been listed congratulations!
+              Your Certificate has been listed congratulations!
             </h2>
             <h3 className="text-light">You have successfully listed your NFT</h3>
             <div>
@@ -344,7 +344,7 @@ const CreateCollectionArea = (props) => {
       case 5:
         return (
           <>
-            <h2>Your NFT has been delisted!</h2>
+            <h2>Your Certificate has been delisted!</h2>
             <div>
               <Link href={`/asset/${tokenDetails?.tokenId}`}>
                 <button className="default-btn border-radius-5 mt-5">
@@ -387,7 +387,7 @@ const CreateCollectionArea = (props) => {
               ) : (
                 <div>
                   <div className="section-title">
-                    <div style={{ fontSize: "28px" }}>Update Listing</div>
+                    <div style={{ fontSize: "28px" }}>Publish Certificate</div>
                   </div>
                   <div>
                     <form onSubmit={formik.handleSubmit}>
@@ -443,7 +443,7 @@ const CreateCollectionArea = (props) => {
                           </div>
                         )}
 
-                        <div className="col-lg-12">
+                        {/* <div className="col-lg-12">
                           <div className="checkbox-method-area">
                             <div className="row">
                               {type == "fixed-price" && (
@@ -486,7 +486,7 @@ const CreateCollectionArea = (props) => {
                               )}
                             </div>
                           </div>
-                        </div>
+                        </div> */}
 
                         <div className="col-lg-12 col-md-12">
                           {tokenDetails.nftType === "fixed-price" && (
@@ -494,7 +494,7 @@ const CreateCollectionArea = (props) => {
                               type="submit"
                               className="default-btn border-radius-5"
                             >
-                              Update Listing
+                              Publish
                             </button>
                           )}
                           <button

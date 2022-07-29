@@ -91,34 +91,17 @@ function WalletButton(props) {
                     </div>
                   </div>
                 </div>
-                {/* <div
-                  className="d-flex mt-3"
-                  onClick={() => router.push(`/artist/${user?.walletAddress}`)}
-                >
-                  <div className="header-profile-logo-section complete-center m-0">
-                    <i className="ri-user-line ri-lg"></i>
-                  </div>
-                  <div className="header-profile-title">Profile</div>
-                </div> */}
+               
                 <div
                   className="d-flex mt-3"
-                  onClick={() => router.push("/artist/" + user?.walletAddress)}
+                  onClick={() => router.push("/certificates/")}
                 >
                   <div className="header-profile-logo-section complete-center m-0">
                     <i className="ri-dashboard-3-line ri-lg"></i>
                   </div>
-                  <div className="header-profile-title">Dashboard</div>
+                  <div className="header-profile-title">Certificates</div>
                 </div>
 
-                {/* <div
-                  className="d-flex mt-3"
-                  onClick={() => router.push("/profile")}
-                >
-                  <div className="header-profile-logo-section complete-center m-0">
-                    <i className="ri-dashboard-3-line ri-lg"></i>
-                  </div>
-                  <div className="header-profile-title">My Profile</div>
-                </div> */}
 
                 {isAdmin && (
                   <div
@@ -128,7 +111,7 @@ function WalletButton(props) {
                     <div className="header-profile-logo-section complete-center m-0">
                       <i className="ri-admin-line ri-lg"></i>
                     </div>
-                    <div className="header-profile-title">Admin</div>
+                    <div className="header-profile-title">Users</div>
                   </div>
                 )}
 

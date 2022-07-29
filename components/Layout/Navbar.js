@@ -127,7 +127,7 @@ const Navbar = (ctx) => {
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/discover" activeClassName="active">
+                    <Link href="/certificates" activeClassName="active">
                       <a className="nav-link">Discover</a>
                     </Link>
                   </li>

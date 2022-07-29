@@ -237,7 +237,7 @@ function MintPage(props) {
                     {isLoading ? (
                       <>
                         <h1 className="section-subtitle">
-                          Your NFT is being reserved
+                          Your Certificate is being reserved
                         </h1>
                         <img
                           className="position-absolute underline"
@@ -273,12 +273,12 @@ function MintPage(props) {
               ) : successfullyreserved ? (
                 <div className="text-center complete-center">
                   <h1 className="section-subtitle" style={{ fontSize: "25px" }}>
-                    Congratulation your NFT has been Minted!
+                    Congratulation your Certificate NFT has been Minted!
                   </h1>
                   <div className="d-flex justify-content-between">
-                    <Link href="/discover">
+                    <Link href="/certificates">
                       <button className="default-btn mt-5">
-                        View Dashboard
+                        View Products
                       </button>
                     </Link>
                     <Link href="/">

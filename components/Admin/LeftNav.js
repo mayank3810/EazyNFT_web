@@ -15,7 +15,7 @@ const LeftNav = () => {
       <div className="sidebar-header-s">MANAGE NFTS</div>
       <ul>
         <li>
-          <Link href="/discover">
+          <Link href="/certificates">
             <a>All NFTs</a>
           </Link>
         </li>

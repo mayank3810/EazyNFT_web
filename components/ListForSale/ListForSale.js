@@ -204,17 +204,17 @@ const CreateCollectionArea = (props) => {
       case 1:
         return <h2 className="text-light">Approve Token</h2>;
       case 2:
-        return <h2 className="text-light">Your NFT is being escrowed</h2>;
+        return <h2 className="text-light">Your Certificate is being escrowed</h2>;
       case 3:
-        return <h2 className="text-light">Your NFT is being listed</h2>;
+        return <h2 className="text-light">Your Certificate is being listed</h2>;
       case 4:
         return (
           <>
             <h2 className="text-light">
-              Your NFT has been listed congratulations!
+              Your Certificate has been listed congratulations!
             </h2>
             <h5 className="text-light mt-3">
-              You have successfully listed your NFT
+              You have successfully listed your Certificate
             </h5>
             <div>
               <Link href={`/asset/${tokenDetails?.tokenId}`}>

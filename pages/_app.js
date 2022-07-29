@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
     // <Web3ReactProvider getLibrary={getLibrary}>
     <>
       <Head>
-        <title>Eazy NFT</title>
+        <title>NFC Product Authenticatior</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <InitialPhase />

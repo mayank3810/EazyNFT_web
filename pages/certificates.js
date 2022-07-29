@@ -7,10 +7,6 @@ const DiscoverTwo = () => {
     <>
       <NavbarAdmin />
       <DiscoverArea />
-
-      {/* <LeftNav /> */}
-      {/* <div className="ml-5 mr-5"> */}
-      {/* </div> */}
     </>
   );
 };

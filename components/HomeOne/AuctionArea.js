@@ -79,7 +79,7 @@ const AuctionArea = ({ bg, userinfo }) => {
 
             <div className="col-lg-4 col-md-6">
               <div className="trending-btn text-end">
-                <Link href="/discover?market=auction">
+                <Link href="/certificates?market=auction">
                   <a className="default-btn border-radius-5">Explore More</a>
                 </Link>
               </div>

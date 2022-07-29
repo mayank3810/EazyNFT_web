@@ -117,41 +117,44 @@ const NavbarAdmin = (ctx) => {
         >
           <div className="ml-3">
             <nav className="navbar navbar-expand-md navbar-light ">
-              <Link href="/">
-                <a className="navbar-brand">
-                  <img src="/images/logo.svg" alt="Logo" />
-                </a>
-              </Link>
 
-              <div
-                className="collapse navbar-collapse mean-menu justify-content-center"
-                id="navbarSupportedContent"
-              >
-                <ul className="navbar-nav">
-                  <li>
-                    <Link href="/discover">
-                      <a>All Products</a>
-                    </Link>
-                  </li>
+              <div className="container">
+                <Link href="/">
+                  <a className="navbar-brand">
+                    <img src="/images/logo.svg" alt="Logo" />
+                  </a>
+                </Link>
 
-                  <li>
-                    <Link href="/admin/users">
-                      <a>Users</a>
-                    </Link>
-                  </li>
+                <div
+                  className="collapse navbar-collapse mean-menu justify-content-center"
+                  id="navbarSupportedContent"
+                >
+                  <ul className="navbar-nav">
+                    <li>
+                      <Link href="/discover">
+                        <a>All Certificates</a>
+                      </Link>
+                    </li>
 
-                  <li>
-                    <Link href="/admin/category">
-                      <a>Category</a>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+                    <li>
+                      <Link href="/admin/users">
+                        <a>Users</a>
+                      </Link>
+                    </li>
 
-              <div className="currentUserName d-flex justify-content-end">
-                <div className="header-link d-flex align-items-center"></div>
+                    <li>
+                      <Link href="/admin/category">
+                        <a>Category</a>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
 
-                <WalletButton showMore={true} isAdmin={isAdmin} />
+                <div className="currentUserName d-flex justify-content-end">
+                  <div className="header-link d-flex align-items-center"></div>
+
+                  <WalletButton showMore={true} isAdmin={isAdmin} />
+                </div>
               </div>
             </nav>
           </div>

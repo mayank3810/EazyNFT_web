@@ -19,35 +19,18 @@ import { wrapper } from "../redux/store";
 function HomeNew(ctx) {
   const currentUser = ctx?.user?.user;
   const isAdmin = (currentUser.roles || []).includes("admin");
-  // const [topAuthors, setTopAuthors] = useState();
-
-  // useEffect(async () => {
-  //   if (typeof window !== "undefined") {
-  //     const topAuthorsData = await fetch(
-  //       process.env.NEXT_PUBLIC_API_URL + "/user/topAuthors"
-  //     );
-  //     const jsonTopAuthors = await topAuthorsData.json();
-  //     setTopAuthors(jsonTopAuthors?.data);
-
-  //   }
-  // }, []);
 
   return (
     <>
-      {/* <Navbar /> */}
+    <div style={{paddingTop: '25vh', height: '100vh'}}>
+
+      <h1 className="text-center"> Get started with Authenticatior Certificates.</h1>
+      <p className="text-center"> Please connect your metamask wallet to mint certificates.</p>
       <div className="connect-btn-center">
         <WalletButton showMore={true} isAdmin={isAdmin} />
       </div>
-      {/* <HomeBanner /> */}
-      {/* <TrendingArea /> */}
-      {/* <TopSeller topSellers={topAuthors} /> */}
-      {/* <LiveDrops /> */}
-      {/* <UpcomingDrops /> */}
-      {/* <NewsLetter /> */}
-      {/* <GenreArea /> */}
-      {/* <GatewayArea /> */}
-      {/* <BrandArea /> */}
-      {/* <FooterNew /> */}
+    </div>
+
     </>
   );
 }

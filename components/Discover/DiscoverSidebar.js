@@ -7,7 +7,7 @@ const DiscoverSidebar = () => {
       <div className='side-bar-area pl-20'>
         <div className='side-bar-widget'>
           <h3 className='title'>
-            Filter <Link href='/discover-2'><a>Clear All</a></Link>
+            Filter <Link href='/certificates-2'><a>Clear All</a></Link>
           </h3>
           <form className='search-form'>
             <input

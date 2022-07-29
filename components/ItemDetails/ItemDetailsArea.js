@@ -106,7 +106,7 @@ const ItemDetailsArea = ({ userinfo, getAllUserMediaDetails }) => {
     </div>
   ) : (
     <>
-      <div className="item-details-area m-4">
+      <div className=" container item-details-area">
         <div className="row justify-content-between">
           <div
             className="col-lg-6 complete-center"

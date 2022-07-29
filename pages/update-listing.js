@@ -1,4 +1,4 @@
-import Navbar from "../components/Layout/Navbar";
+import NavbarAdmin from "../components/Layout/NavbarAdmin";
 import Footer from '../components/Layout/Footer';
 import Copyright from '../components/Common/Copyright';
 import UpdateSale from '../components/ListForSale/UpdateSale';
@@ -6,7 +6,7 @@ import UpdateSale from '../components/ListForSale/UpdateSale';
 const ListToken = () => {
   return (
     <>
-      <Navbar />
+      <NavbarAdmin />
       <UpdateSale/>
       <Footer />
       <Copyright />

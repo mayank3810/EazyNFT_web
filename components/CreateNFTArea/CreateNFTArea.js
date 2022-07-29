@@ -205,7 +205,7 @@ const CreateNFTArea = (props) => {
         _metaDataResponse?.ipfs
       );
       console.log("NFT txn hash: ", transaction?.hash);
-      setmessage("Your NFT is being minted");
+      setmessage("Your Certificate is being minted");
       setsubMessage("");
       _metaDataResponse["etherScan"] = transaction?.hash;
       const _createNFT = {
@@ -247,10 +247,10 @@ const CreateNFTArea = (props) => {
       setTokenDetails(nftRes?.result);
       props.setConfetti(true);
       setnftTxn(null);
-      setmessage("Your NFT has been minted congratulations!");
+      setmessage("Your Certificate has been minted congratulations!");
       setsubMessage("You have successfully minted your NFT");
       setState(4);
-      toast.success("NFT created successfully");
+      toast.success("Certificate created successfully");
     } catch (error) {
       setState(0);
       if (typeof error?.message === "string") toast.error(error?.message);
@@ -323,10 +323,10 @@ const CreateNFTArea = (props) => {
 
   return (
     <>
-      <div className="create-nft-container">
+      <div className="container">
         <div className="row create-nft-header">
           <div className="col-lg-4">
-            <div className="title">Create New Item</div>
+            <div className="title">Create Certificate</div>
           </div>
           {/* <div className="col-lg-8">
             <div className="web-only upload-title">Upload NFT</div>
@@ -338,11 +338,24 @@ const CreateNFTArea = (props) => {
             {state === 0 ? (
               <>
                 <form onSubmit={formik.handleSubmit}>
+
+                <CustomInput
+                    id="name"
+                    class="ez-input"
+                    type="text"
+                    label="NFC Hash"
+                    errors={formik.errors}
+                    touched={formik.touched}
+                    value={formik.values.name}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                  />
+                  
                   <CustomInput
                     id="name"
                     class="ez-input"
                     type="text"
-                    label="Enter Display Name"
+                    label="Product Name"
                     errors={formik.errors}
                     touched={formik.touched}
                     value={formik.values.name}
@@ -375,7 +388,7 @@ const CreateNFTArea = (props) => {
                       ))}
                     </select>
                   </div>
-                  <div className="mb-4 ez-input-container">
+                  {/* <div className="mb-4 ez-input-container">
                     <label>Select Collection</label>
                     <select
                       className="form-select ez-form-select"
@@ -388,7 +401,7 @@ const CreateNFTArea = (props) => {
                         </option>
                       ))}
                     </select>
-                  </div>
+                  </div> */}
 
                   <div className="d-flex justify-content-between">
                     <div
@@ -412,7 +425,7 @@ const CreateNFTArea = (props) => {
                   </div>
                   {openOptional && (
                     <>
-                      <CustomInput
+                      {/* <CustomInput
                         id="royalty"
                         class="ez-input"
                         type="number"
@@ -422,7 +435,7 @@ const CreateNFTArea = (props) => {
                         value={formik.values.royalty}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
-                      />
+                      /> */}
                       <CustomInput
                         id="copies"
                         class="ez-input"
@@ -493,7 +506,7 @@ const CreateNFTArea = (props) => {
                     type="submit"
                     className="button default-btn border-radius-5 mb-5 mt-4"
                   >
-                    Mint NFT
+                    Mint Certificate
                   </button>
                 </form>
               </>

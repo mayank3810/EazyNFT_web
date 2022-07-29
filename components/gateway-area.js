@@ -13,11 +13,11 @@ export default function GatewayArea() {
               </h2>
               <div className="content-col mt-3 col-center ">
                 <p>
-                  Eazy NFT is the simplest way to quickly launch your NFT storefront. You can create your own nft marketplace website for your unlockable digital content and ticketing access.
+                  NFC Product Authenticatior is the simplest way to quickly launch your NFT storefront. You can create your own nft marketplace website for your unlockable digital content and ticketing access.
                 </p>
 
                 <p>
-                  Eazy NFT offers no code store builder for NFTs and Token gated content. In addition we assign personal developers to each customer to ease out the launch process.
+                  NFC Product Authenticatior offers no code store builder for NFTs and Token gated content. In addition we assign personal developers to each customer to ease out the launch process.
                 </p>
               </div>
 

@@ -193,7 +193,7 @@ function Minting(props) {
                   {isMinting ? (
                     <>
                       <h1 className="section-subtitle">
-                        Your NFT is being reserved
+                        Your Certificate is being reserved
                       </h1>
                       <img
                         className="position-absolute underline"
@@ -224,7 +224,7 @@ function Minting(props) {
                   ) : (
                     <div className="text-center">
                       <h1 className="section-subtitle">
-                        Your NFT is successfully reserved
+                        Your Certificate is successfully reserved
                       </h1>
                       <Link href="/">
                         <button className="default-btn mt-5">Home</button>
