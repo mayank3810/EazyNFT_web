@@ -14,7 +14,6 @@ const Users = () => {
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
       <div className="admin-main">
         <h1>SEO and Analytics</h1>
         <div className="tab featured-tab-area">
@@ -41,7 +40,6 @@ const Users = () => {
                 <TabPanel>
                   <Analytics></Analytics>
                 </TabPanel>
-
               </div>
             </Tabs>
           </div>

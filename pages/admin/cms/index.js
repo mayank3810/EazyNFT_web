@@ -2,7 +2,7 @@ import LeftNav from "../../../components/Admin/LeftNav";
 import NavbarAdmin from "../../../components/Layout/NavbarAdmin";
 import TermsConditions from "./terms-conditions";
 import PrivacyPolicy from "./privacy-policy";
-import Bloglist from "./blog-list"
+import Bloglist from "./blog-list";
 import dynamic from "next/dynamic";
 
 const Tabs = dynamic(
@@ -14,7 +14,6 @@ const Users = () => {
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
       <div className="admin-main">
         <h1>CMS</h1>
         <div className="tab featured-tab-area">

@@ -106,7 +106,7 @@ const ItemDetailsArea = ({ userinfo, getAllUserMediaDetails }) => {
     </div>
   ) : (
     <>
-      <div className="item-details-area">
+      <div className="item-details-area m-4">
         <div className="row justify-content-between">
           <div
             className="col-lg-6 complete-center"
@@ -129,9 +129,21 @@ const ItemDetailsArea = ({ userinfo, getAllUserMediaDetails }) => {
                 )}
                 <Asset
                   type={token?.metaData?.type || "image"}
-                  imageSrc={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + token?.metaData?.preview}
-                  thumbnail={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + token?.metaData?.preview}
-                  videoSrc={[process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + token?.metaData?.preview]}
+                  imageSrc={
+                    process.env.NEXT_PUBLIC_IMAGE_URL +
+                    "images/" +
+                    token?.metaData?.preview
+                  }
+                  thumbnail={
+                    process.env.NEXT_PUBLIC_IMAGE_URL +
+                    "images/" +
+                    token?.metaData?.preview
+                  }
+                  videoSrc={[
+                    process.env.NEXT_PUBLIC_IMAGE_URL +
+                      "images/" +
+                      token?.metaData?.preview,
+                  ]}
                   objectFit="cover"
                   controls={true}
                 />
@@ -169,7 +181,6 @@ const ItemDetailsArea = ({ userinfo, getAllUserMediaDetails }) => {
         </div>
 
         {/* <Tabs token={{ ...token, ...selectedDeal }} /> */}
-       
       </div>
     </>
   );

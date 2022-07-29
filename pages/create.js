@@ -6,10 +6,11 @@ const CreateCollection = () => {
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
+      <CreateNFTArea />
+
+      {/* <LeftNav />
       <div className="admin-main">
-        <CreateNFTArea />
-      </div>
+      </div> */}
     </>
   );
 };

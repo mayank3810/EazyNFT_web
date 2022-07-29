@@ -6,10 +6,11 @@ const Collection = () => {
 
     <>
       <NavbarAdmin />
-      <LeftNav />
-      <div className="admin-main">
       <CollectionArea/>
-      </div>
+
+      {/* <LeftNav />
+      <div className="admin-main">
+      </div> */}
     </>
   );
 };

@@ -5,13 +5,13 @@ import LeftNav from "../../components/Admin/LeftNav";
 import NavbarAdmin from "../../components/Layout/NavbarAdmin";
 export default function Author() {
   return (
-
     <>
-    <NavbarAdmin />
-    <LeftNav />
+      <NavbarAdmin />
+      <ArtistArea />
+      {/* <LeftNav />
     <div className="admin-main">
-    <ArtistArea />
-      </div>
-      </>
+    
+      </div> */}
+    </>
   );
 }

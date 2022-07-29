@@ -8,12 +8,12 @@ const Users = () => {
   return (
     <>
       {/* <Navbar /> /> */}
-      <LeftNav />
-      <div className="admin-main" style={{ paddingRight: "50px" }}>
-        <EditCollection />
-        <Footer />
-        <Copyright />
-      </div>
+      <EditCollection />
+      <Footer />
+      <Copyright />
+      {/* <div className="admin-main" style={{ paddingRight: "50px" }}>
+        
+      </div> */}
     </>
   );
 };

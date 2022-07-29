@@ -12,7 +12,6 @@ const Users = () => {
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
       <div className="admin-main">
         <h1>Notofications</h1>
         <div className="tab featured-tab-area">
@@ -26,7 +25,12 @@ const Users = () => {
                   <div className="form-wrap-admin">
                     <form>
                       <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Newsletter subscription</label>
+                        <label
+                          for="inputPassword"
+                          class="col-sm-2 col-form-label"
+                        >
+                          Newsletter subscription
+                        </label>
                         <div class="col-sm-10">
                           <label className="switch">
                             <input type="checkbox" />
@@ -36,7 +40,12 @@ const Users = () => {
                       </div>
 
                       <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Home page slider</label>
+                        <label
+                          for="inputPassword"
+                          class="col-sm-2 col-form-label"
+                        >
+                          Home page slider
+                        </label>
                         <div class="col-sm-10">
                           <label className="switch">
                             <input type="checkbox" />
@@ -46,7 +55,12 @@ const Users = () => {
                       </div>
 
                       <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Home page categories</label>
+                        <label
+                          for="inputPassword"
+                          class="col-sm-2 col-form-label"
+                        >
+                          Home page categories
+                        </label>
                         <div class="col-sm-10">
                           <label className="switch">
                             <input type="checkbox" />
@@ -56,7 +70,12 @@ const Users = () => {
                       </div>
 
                       <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Home page drops</label>
+                        <label
+                          for="inputPassword"
+                          class="col-sm-2 col-form-label"
+                        >
+                          Home page drops
+                        </label>
                         <div class="col-sm-10">
                           <label className="switch">
                             <input type="checkbox" />
@@ -66,7 +85,12 @@ const Users = () => {
                       </div>
 
                       <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">Home page slider</label>
+                        <label
+                          for="inputPassword"
+                          class="col-sm-2 col-form-label"
+                        >
+                          Home page slider
+                        </label>
                         <div class="col-sm-10">
                           <label className="switch">
                             <input type="checkbox" />
@@ -74,7 +98,6 @@ const Users = () => {
                           </label>
                         </div>
                       </div>
-
                     </form>
                   </div>
                 </div>

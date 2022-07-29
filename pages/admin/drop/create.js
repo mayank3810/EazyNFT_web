@@ -6,10 +6,7 @@ const CreateDropArea = () => {
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
-      <div className="admin-main">
-        <CreateDrop />
-      </div>
+      <CreateDrop />
     </>
   );
 };

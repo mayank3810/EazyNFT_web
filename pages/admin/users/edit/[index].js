@@ -10,10 +10,11 @@ const Users = () => {
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
+      <EditUser />
+
+      {/* <LeftNav />
       <div className="admin-main">
-        <EditUser />
-      </div>
+      </div> */}
     </>
   );
 };

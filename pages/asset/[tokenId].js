@@ -4,13 +4,13 @@ import ItemDetailsArea from "../../components/ItemDetails/ItemDetailsArea";
 
 const ItemDetails = () => {
   return (
-
     <>
       <NavbarAdmin />
-      <LeftNav />
-      <div className="admin-main">
       <ItemDetailsArea />
-      </div>
+
+      {/* <LeftNav />
+      <div className="admin-main">
+      </div> */}
     </>
   );
 };

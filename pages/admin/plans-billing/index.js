@@ -12,7 +12,6 @@ const Users = () => {
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
       <div className="admin-main">
         <h1>Plans & Billing</h1>
         <div className="tab featured-tab-area">
@@ -26,19 +25,20 @@ const Users = () => {
                   <div className="form-wrap-admin">
                     <form>
                       <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label">Plan name</label>
+                        <label
+                          for="staticEmail"
+                          class="col-sm-2 col-form-label"
+                        >
+                          Plan name
+                        </label>
                         <div class="col-sm-10">
                           <input class="form-control" type="text" />
                         </div>
                       </div>
-
-                     
                     </form>
                   </div>
                 </div>
               </div>
-
-
 
               <div className="row mt-5">
                 <div className="col-12">

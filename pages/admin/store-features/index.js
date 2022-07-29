@@ -15,7 +15,6 @@ const Users = () => {
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
       <div className="admin-main">
         <h1>Store Settings</h1>
         <div className="tab featured-tab-area">
@@ -42,16 +41,13 @@ const Users = () => {
                   <General></General>
                 </TabPanel>
 
-
                 <TabPanel>
                   <Appearance></Appearance>
                 </TabPanel>
 
                 <TabPanel>
-                 <Advanced></Advanced>
+                  <Advanced></Advanced>
                 </TabPanel>
-
-
               </div>
             </Tabs>
           </div>

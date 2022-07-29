@@ -6,10 +6,11 @@ const Users = () => {
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
+      <DropList />
+
+      {/* <LeftNav />
       <div className="admin-main">
-        <DropList />
-      </div>
+      </div> */}
     </>
   );
 };

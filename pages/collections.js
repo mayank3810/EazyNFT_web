@@ -6,10 +6,10 @@ const Collections = () => {
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
-      <div className="admin-main">
-        <CollectionsArea />
-      </div>
+      <CollectionsArea />
+      {/* <div className="admin-main">
+        
+      </div> */}
     </>
   );
 };

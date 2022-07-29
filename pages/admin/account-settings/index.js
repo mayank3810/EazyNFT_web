@@ -12,7 +12,6 @@ const Users = () => {
   return (
     <>
       <NavbarAdmin />
-      <LeftNav />
       <div className="admin-main">
         <h1>Account Settings</h1>
         <div className="tab featured-tab-area">
@@ -26,28 +25,48 @@ const Users = () => {
                   <div className="form-wrap-admin">
                     <form>
                       <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label">Your name</label>
+                        <label
+                          for="staticEmail"
+                          class="col-sm-2 col-form-label"
+                        >
+                          Your name
+                        </label>
                         <div class="col-sm-10">
                           <input class="form-control" type="text" />
                         </div>
                       </div>
 
                       <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label">Your email</label>
+                        <label
+                          for="staticEmail"
+                          class="col-sm-2 col-form-label"
+                        >
+                          Your email
+                        </label>
                         <div class="col-sm-10">
                           <input class="form-control" type="text" />
                         </div>
                       </div>
 
                       <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label">Your phone</label>
+                        <label
+                          for="staticEmail"
+                          class="col-sm-2 col-form-label"
+                        >
+                          Your phone
+                        </label>
                         <div class="col-sm-10">
                           <input class="form-control" type="text" />
                         </div>
                       </div>
 
                       <div class="form-group row">
-                        <label for="staticEmail" class="col-sm-2 col-form-label">Your Address</label>
+                        <label
+                          for="staticEmail"
+                          class="col-sm-2 col-form-label"
+                        >
+                          Your Address
+                        </label>
                         <div class="col-sm-10">
                           <textarea class="form-control" type="text" />
                         </div>
@@ -56,8 +75,6 @@ const Users = () => {
                   </div>
                 </div>
               </div>
-
-
 
               <div className="row mt-5">
                 <div className="col-12">
