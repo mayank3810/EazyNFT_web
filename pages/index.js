@@ -13,34 +13,32 @@ import TrendingArea from "../components/HomeOne/TrendingArea";
 import TopSeller from "../components/Common/TopSeller";
 
 export default function HomeNew() {
+  // const [topAuthors, setTopAuthors] = useState();
 
-  const [topAuthors, setTopAuthors] = useState();
+  // useEffect(async () => {
+  //   if (typeof window !== "undefined") {
+  //     const topAuthorsData = await fetch(
+  //       process.env.NEXT_PUBLIC_API_URL + "/user/topAuthors"
+  //     );
+  //     const jsonTopAuthors = await topAuthorsData.json();
+  //     setTopAuthors(jsonTopAuthors?.data);
 
-  useEffect(async () => {
-    if (typeof window !== "undefined") {
-      const topAuthorsData = await fetch(
-        process.env.NEXT_PUBLIC_API_URL + "/user/topAuthors"
-      );
-      const jsonTopAuthors = await topAuthorsData.json();
-      setTopAuthors(jsonTopAuthors?.data);
-
-    }
-  }, []);
-
+  //   }
+  // }, []);
 
   return (
     <>
       <Navbar />
-      <HomeBanner />
-      <TrendingArea />
-      <TopSeller topSellers={topAuthors} />
-      <LiveDrops />
+      {/* <HomeBanner /> */}
+      {/* <TrendingArea /> */}
+      {/* <TopSeller topSellers={topAuthors} /> */}
+      {/* <LiveDrops /> */}
       {/* <UpcomingDrops /> */}
-      <NewsLetter />
-      <GenreArea />
-      <GatewayArea />
+      {/* <NewsLetter /> */}
+      {/* <GenreArea /> */}
+      {/* <GatewayArea /> */}
       {/* <BrandArea /> */}
-      <FooterNew />
+      {/* <FooterNew /> */}
     </>
   );
 }
