@@ -29,7 +29,7 @@ table thead tr td{
 
 table th,
 table td {
-  padding: 15px 10px;
+  padding: 15px;
   text-align: left;
 }
 
@@ -38,7 +38,7 @@ table th {
     letter-spacing: 0.1em;
     text-transform: uppercase !important;
     text-align: left;
-    padding: 15px 10px;
+    padding: 15px;
 }
 
 @media screen and (max-width: 600px) {
@@ -87,4 +87,11 @@ table th {
   table td:last-child {
     border-bottom: 0;
   }
+}
+
+table th:last-child {
+  border-top-right-radius: 15px;
+}
+table th:first-child {
+  border-top-left-radius: 15px;
 }
