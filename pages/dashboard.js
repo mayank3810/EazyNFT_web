@@ -7,13 +7,12 @@ import React, { useState, useEffect, useRef } from "react";
 import { connect } from "react-redux";
 import { getCollection, getUserWishlist } from "../redux/actions/collection";
 import "react-toastify/dist/ReactToastify.css";
-import Dashboard from "../components/Dashboard";
 
 const DiscoverOne = (props) => {
   return (
     <>
       <Navbar />
-      <Dashboard />
+      {/* <Dashboard /> */}
       <Copyright />
     </>
   );
