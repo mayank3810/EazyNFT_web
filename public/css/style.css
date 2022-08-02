@@ -43,7 +43,7 @@ Default CSS
 
 :root {
   --bodyFonts: "Josefin Sans", sans-serif;
-  --yellowColor: #ffb302;
+  --yellowColor: #d7a241;
   --titleColor: #ddd;
   --bodyColor: #b7b7b7;
   --lightblueColor: #00a19a;
@@ -214,15 +214,15 @@ Default Btn CSS
   text-align: center;
   color: #000000;
   z-index: 0;
-  background: var(--yellowColor);
   border: none;
-  border-radius: 32px !important;
+  border-radius: 0.35rem !important;
   cursor: pointer;
+  background: #fbce71;
+  background: -webkit-linear-gradient(left, #fbce71 0%, #d7a241 100%);
+  background: linear-gradient(to right, #fbce71 0%, #d7a241 100%);
+  border-color: #d7a241;
 }
 
-.default-btn:hover {
-  color: var(--whiteColor) !important;
-}
 
 .default-btn:hover:before {
   background: #000;
@@ -9805,4 +9805,40 @@ ul.wallet-list {
 .navbar-nav a {
   color: #fff;
   margin-right: 40px;
+}
+.tag-details .details {
+  font-size: 11px;
+  line-height: 25px;
+}
+.tag-details .details span{
+  color: #d7a241;
+  text-transform: uppercase;
+  padding-right: 5px;
+  width: 50px;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: bolder;
+  text-align: right;
+}
+.minted-success {
+  font-size: 12px;
+  background: #4caf50;
+  display: initial;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: #000;
+}
+.btn-xs-gold {
+    padding: 2px 10px;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    border: none;
+    border-radius: 0.35rem !important;
+    cursor: pointer;
+    background: #fbce71;
+    background: linear-gradient(to right, #fbce71 0%, #d7a241 100%);
+    border-color: #d7a241;
 }

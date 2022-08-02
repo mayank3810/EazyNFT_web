@@ -71,59 +71,75 @@ const DiscoverArea = (props) => {
     <>
       <div className="container discover-area pt-4">
         <div className="section-title">
-          <h2 style={{ display: "inline" }}>All Cerificates</h2>
+          <h2 style={{ display: "inline" }}>All Tags</h2>
           <a
             style={{ float: "right" }}
             href="/create"
-            className="default-btn btn pull-right"
-          >
-            Add new certificate
+            className="default-btn btn pull-right">
+            Add new tag
           </a>
         </div>
-        <div className="row pt-45" style={{ width: "100%" }}>
-          {isLoading ? (
-            <div className="mt-5 mb-5 text-center">
-              <Loading />
-            </div>
-          ) : (
-            <div className="col-lg-12">
-              <div className="row">
-                {list.map((value, index) => (
-                  <div key={index} className="col-lg-3 col-md-6">
-                    <NFTCard token={value} />
-                  </div>
-                ))}
-                {!isLoading && !!list.length && lastPage > 1 && (
-                  <Pagination
-                    onChange={handlePage}
-                    page={page}
-                    lastPage={lastPage}
-                  />
-                )}
-                {!list.length && (
-                  <div className="tabs_item">
-                    <div className="row">
-                      <div className="col-12">
-                        <div className="error-area ptb-100">
-                          <div className="d-table">
-                            <div className="d-table-cell">
-                              <div className="error-content">
-                                <h3>No NFT Found</h3>
-                                <p>
-                                  Try different filters. Start selling today!
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-          )}
-        </div>
+        {isLoading ? (
+          <div className="mt-5 mb-5 text-center">
+            <Loading />
+          </div>
+        ) : (
+          <table className="mt-5">
+            <thead>
+              <tr>
+                <th>Virtual Image</th>
+                <th>Tag </th>
+                <th>Manufacture</th>
+                <th>Status</th>
+                <th>Owner</th>
+                <th>Blockchain</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              {list.map((value, index) => (
+                <tr className="tag-details">
+                  <td>
+                    <img src={process.env.NEXT_PUBLIC_IMAGE_URL + 'images/' + value?.metaData?.preview} style={{ width: "100px" }} />
+                  </td>
+                  <td>
+                    <div className="details"><span>Name</span> {value.title}</div>
+                    <div className="details"><span>Serial</span> {value.tokenId} </div>
+                  </td>
+                  <td>
+                    <div className="details"><span> on</span> 22 Aug 2022</div>
+                    <div className="details"><span> by</span> NIKE India</div>
+                    <div className="details"><span> expiry</span> NEVER</div>
+                  </td>
+                  <td>
+                    <label className="minted-success">
+                      {value.status}
+                    </label>
+                  </td>
+                  <td>
+                    <div className="details"><span> Resale</span> Possible</div>
+                    <div className="details"><span> Now</span> Manish Gautam</div>
+                    <div className="details"><span> Past</span> Mayank Gautam</div>
+                  </td>
+                  <td>
+                    <div className="details"><span> Verify</span> <button className="btn btn-xs-gold"> on Blockchain</button></div>
+                    <div className="details"><span> Chain</span> Polygon</div>
+                    <div className="details"><span> Address</span> 0x00251...</div>
+                  </td>
+                  <td>ETH {value.price}</td>
+                </tr>
+              ))}
+              {!isLoading && !!list.length && lastPage > 1 && (
+                <Pagination
+                  onChange={handlePage}
+                  page={page}
+                  lastPage={lastPage}
+                />
+              )}
+            </tbody>
+          </table>
+
+        )}
       </div>
     </>
   );

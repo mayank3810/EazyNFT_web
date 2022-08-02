@@ -1,5 +1,4 @@
 import Navbar from "../components/Layout/Navbar";
-import Footer from '../components/Layout/Footer';
 import Copyright from '../components/Common/Copyright';
 import Link from 'next/link'
 
@@ -30,7 +29,6 @@ const FourZeroFour = () => {
         </div>
       </div>
 
-      <Footer />
       <Copyright />
     </>
   );

@@ -29,14 +29,16 @@ table thead tr td{
 
 table th,
 table td {
-  padding: 0.625em;
+  padding: 15px 10px;
   text-align: left;
 }
 
 table th {
-  font-size: 0.85em;
-  letter-spacing: 0.1em;
-  /* text-transform: uppercase; */
+  font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase !important;
+    text-align: left;
+    padding: 15px 10px;
 }
 
 @media screen and (max-width: 600px) {

@@ -3,8 +3,6 @@ import useActiveWeb3React from "../hooks/useActiveWeb3React";
 import { injected, walletconnect, walletLink } from "../utils/connectors";
 
 import Navbar from "../components/Layout/Navbar";
-import PageBanner from "../components/Common/PageBanner";
-import Footer from "../components/Layout/Footer";
 import Copyright from "../components/Common/Copyright";
 import Link from "next/link";
 import MetaMaskOnboarding from "@metamask/onboarding";
@@ -208,8 +206,6 @@ const AddWallet = (props) => {
           </div>
         </div>
       </div>
-
-      <Footer />
 
       <Copyright />
     </>

@@ -10,14 +10,14 @@ function HomeNew(ctx) {
 
   return (
     <>
-    <div style={{paddingTop: '25vh', height: '100vh'}}>
-
-      <h1 className="text-center"> Get started with Authenticatior Certificates.</h1>
-      <p className="text-center"> Please connect your metamask wallet to mint certificates.</p>
-      <div className="connect-btn-center">
-        <WalletButton showMore={true} isAdmin={isAdmin} />
+      <div className="text-center" style={{ paddingTop: '25vh', height: '100vh' }}>
+        <img src="/images/logo.svg" alt="Logo" />
+        <h1 className="text-center"> Create physical authenticity tags on blockchain.</h1>
+        <p className="text-center"> Please connect your metamask wallet to mint certificates.</p>
+        <div className="connect-btn-center">
+          <WalletButton showMore={true} isAdmin={isAdmin} />
+        </div>
       </div>
-    </div>
 
     </>
   );

@@ -132,7 +132,7 @@ const NavbarAdmin = (ctx) => {
                   <ul className="navbar-nav">
                     <li>
                       <Link href="/certificates">
-                        <a>All Certificates</a>
+                        <a>All Tags</a>
                       </Link>
                     </li>
 
