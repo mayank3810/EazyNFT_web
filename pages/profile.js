@@ -5,7 +5,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 
 import { UpdateUser, sendEmailOtp } from "../redux/actions/user";
-import Footer from "../components/Layout/Footer";
+
 import Copyright from "../components/Common/Copyright";
 import CustomInput from "../components/Common/CustomInput";
 import API from "../services/API";
@@ -342,7 +342,7 @@ const AuthorProfile = (props) => {
           </form>
         </div>
       </div>
-      <Footer />
+      
       <Copyright />
     </>
   );

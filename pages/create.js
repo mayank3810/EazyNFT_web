@@ -1,6 +1,5 @@
 import CreateNFTArea from "../components/CreateNFTArea/CreateNFTArea";
 import NavbarAdmin from "../components/Layout/NavbarAdmin";
-import LeftNav from "../components/Admin/LeftNav";
 
 const CreateCollection = () => {
   return (

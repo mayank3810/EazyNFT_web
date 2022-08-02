@@ -1,5 +1,5 @@
 import NavbarAdmin from "../components/Layout/NavbarAdmin";
-import Footer from '../components/Layout/Footer';
+
 import Copyright from '../components/Common/Copyright';
 import UpdateSale from '../components/ListForSale/UpdateSale';
 
@@ -8,7 +8,7 @@ const ListToken = () => {
     <>
       <NavbarAdmin />
       <UpdateSale/>
-      <Footer />
+      
       <Copyright />
     </>
   );

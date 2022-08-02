@@ -1,7 +1,7 @@
 import Navbar from '../components/Layout/Navbar';
 
 import PageBanner from "../components/Common/PageBanner";
-import Footer from "../components/Layout/Footer";
+
 import Copyright from "../components/Common/Copyright";
 import { useState } from "react";
 import axios from "axios";
@@ -94,7 +94,7 @@ const ForgotPassword = () => {
           </div>
         </div>
 
-        <Footer />
+        
         <Copyright />
       </>
       );
@@ -147,7 +147,7 @@ const ForgotPassword = () => {
           </div>
         </div>
 
-        <Footer />
+        
         <Copyright />
       </>
     );

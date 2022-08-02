@@ -1,13 +1,9 @@
 import Navbar from '../components/Layout/Navbar';
 
-import PageBanner from "../components/Common/PageBanner";
-import Footer from "../components/Layout/Footer";
 import Copyright from "../components/Common/Copyright";
-import Link from "next/link";
 import { useState } from "react";
 import axios from "axios";
 import { useStateIfMounted } from "use-state-if-mounted";
-import { useRouter } from "next/router";
 
 const BuyerProfile = () => {
   //let history = useHistory();
@@ -295,7 +291,7 @@ const BuyerProfile = () => {
         </div>
       </div>
 
-      <Footer />
+      
       <Copyright />
     </>
   );

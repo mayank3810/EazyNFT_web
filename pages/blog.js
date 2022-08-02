@@ -1,7 +1,5 @@
 import Navbar from "../components/Layout/Navbar";
-import Footer from "../components/Layout/Footer";
 import Copyright from "../components/Common/Copyright";
-import Pagination from "../components/Common/Pagination";
 import Loading from "../components/Loading/Loading";
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -80,7 +78,7 @@ const BlogOne = () => {
         </div>
       </div>
 
-      <Footer />
+      
 
       <Copyright />
     </>

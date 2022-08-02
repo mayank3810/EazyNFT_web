@@ -9857,3 +9857,6 @@ ul.wallet-list {
   background: linear-gradient(to right, #fbce71 0%, #d7a241 100%);
   border-color: #d7a241;
 }
+.btn-block {
+  width: 100%;
+}

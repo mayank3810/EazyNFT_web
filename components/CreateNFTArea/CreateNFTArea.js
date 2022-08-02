@@ -48,7 +48,6 @@ const CreateNFTArea = (props) => {
   const [tokenDetails, setTokenDetails] = useState({});
   const [userCollection, setuserCollection] = useState([]);
   const [selectedCollection, setselectedCollection] = useState("");
-  const [openOptional, setopenOptional] = useState(false);
   const [openPropertiesDialog, setopenPropertiesDialog] = useState(false);
   const [nftProperties, setnftProperties] = useState([]);
   const [uploadFile, setuploadFile] = useState(null);
@@ -326,20 +325,21 @@ const CreateNFTArea = (props) => {
       <div className="container">
         <div className="row create-nft-header">
           <div className="col-lg-4">
-            <div className="title">Create Certificate</div>
+            <div className="title">Create Tags</div>
           </div>
           {/* <div className="col-lg-8">
             <div className="web-only upload-title">Upload NFT</div>
           </div> */}
         </div>
 
-        <div className="row create-nft-form-section">
-          <div className="col-lg-4 pl-0">
-            {state === 0 ? (
-              <>
-                <form onSubmit={formik.handleSubmit}>
+        {state === 0 ? (
+          <>
+            <form onSubmit={formik.handleSubmit}>
+              <div className="row create-nft-form-section">
 
-                <CustomInput
+                <div className="col-lg-4">
+
+                  <CustomInput
                     id="name"
                     class="ez-input"
                     type="text"
@@ -350,7 +350,7 @@ const CreateNFTArea = (props) => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
-                  
+
                   <CustomInput
                     id="name"
                     class="ez-input"
@@ -388,206 +388,135 @@ const CreateNFTArea = (props) => {
                       ))}
                     </select>
                   </div>
-                  {/* <div className="mb-4 ez-input-container">
-                    <label>Select Collection</label>
-                    <select
-                      className="form-select ez-form-select"
-                      value={selectedCollection}
-                      onChange={(e) => setselectedCollection(e?.target?.value)}
-                    >
-                      {userCollection.map((value, index) => (
-                        <option key={index} value={value?.name}>
-                          {value?.name}
-                        </option>
-                      ))}
-                    </select>
-                  </div> */}
 
-                  <div className="d-flex justify-content-between">
-                    <div
-                      className="create-nft-sub-header"
-                      role="button"
-                      onClick={() => setopenOptional(!openOptional)}
-                    >
-                      Advance (Optional)
-                    </div>
-                    <div
-                      className="create-nft-sub-header"
-                      role="button"
-                      onClick={() => setopenOptional(!openOptional)}
-                    >
-                      {!openOptional ? (
-                        <i className="ri-add-line icon"></i>
-                      ) : (
-                        <i className="ri-subtract-line icon"></i>
-                      )}
-                    </div>
-                  </div>
-                  {openOptional && (
-                    <>
-                      {/* <CustomInput
-                        id="royalty"
-                        class="ez-input"
-                        type="number"
-                        label="Royalty %"
-                        errors={formik.errors}
-                        touched={formik.touched}
-                        value={formik.values.royalty}
-                        onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                      /> */}
-                      <CustomInput
-                        id="copies"
-                        class="ez-input"
-                        type="number"
-                        label="Number of copies"
-                        errors={formik.errors}
-                        touched={formik.touched}
-                        value={formik.values.copies}
-                        onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                      />
-                      <CustomInput
-                        id="websiteURL"
-                        class="ez-input"
-                        type="text"
-                        label="External Link"
-                        errors={formik.errors}
-                        touched={formik.touched}
-                        value={formik.values.websiteURL}
-                        onChange={formik.handleChange}
-                        onBlur={formik.handleBlur}
-                      />
-                      <div className="d-flex justify-content-between">
-                        <div className="create-nft-sub-header">Properties</div>
-                        <div
-                          className="create-nft-sub-header"
-                          role="button"
-                          onClick={() =>
-                            setopenPropertiesDialog(!openPropertiesDialog)
-                          }
-                        >
-                          {!openPropertiesDialog ? (
-                            <i className="ri-add-line icon"></i>
-                          ) : (
-                            <i className="ri-subtract-line icon"></i>
-                          )}
-                        </div>
-                      </div>
-                      <div className="row">
-                        {nftProperties.map((value, index) => (
-                          <>
-                            <div className="col-6 mb-3">
-                              <div
-                                className="ez-input"
-                                onClick={() =>
-                                  setopenPropertiesDialog(!openPropertiesDialog)
-                                }
-                              >
-                                {value?.key}
-                              </div>
-                            </div>
-                            <div className="col-6 mb-3">
-                              <div
-                                className="ez-input"
-                                onClick={() =>
-                                  setopenPropertiesDialog(!openPropertiesDialog)
-                                }
-                              >
-                                {value?.value}
-                              </div>
-                            </div>
-                          </>
-                        ))}
-                      </div>
-                    </>
-                  )}
+
                   <button
                     type="submit"
-                    className="button default-btn border-radius-5 mb-5 mt-4"
+                    className="default-btn btn-block mb-5 mt-4"
                   >
-                    Mint Certificate
+                    Mint Tag
                   </button>
-                </form>
-              </>
-            ) : (
-              <div
-                className="complete-center text-center"
-                style={{ minHeight: "75vh" }}
-              >
-                {loadingSectionValue}
-              </div>
-            )}
-          </div>
+                </div>
 
-          <div className="col-lg-8">
-            {displayURL ? (
-              <div
-                className="item-details-img"
-                style={{ width: "fit-content", margin: "auto" }}
-              >
-                <span
-                  className={"like-btn-inactive complete-center"}
-                  onClick={removeNFT}
-                  role="button"
-                >
-                  <i
-                    className={"ri-delete-bin-line ri-lg"}
-                    style={{ color: "black" }}
-                  ></i>
-                </span>
-                <Asset
-                  type={uploadFile?.type || "image"}
-                  imageSrc={displayURL}
-                  thumbnail={displayURL}
-                  videoSrc={[displayURL]}
-                  objectFit="cover"
-                />
+                <div className="col-lg-4">
+                  
+                <CustomInput
+                    id="name"
+                    class="ez-input"
+                    type="text"
+                    label="NFC Hash"
+                    errors={formik.errors}
+                    touched={formik.touched}
+                    value={formik.values.name}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                  />
+                    <CustomInput
+                    id="name"
+                    class="ez-input"
+                    type="text"
+                    label="NFC Hash"
+                    errors={formik.errors}
+                    touched={formik.touched}
+                    value={formik.values.name}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                  />
+                    <CustomInput
+                    id="name"
+                    class="ez-input"
+                    type="text"
+                    label="NFC Hash"
+                    errors={formik.errors}
+                    touched={formik.touched}
+                    value={formik.values.name}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                  />
+
+                </div>
+                <div className="col-lg-4">
+                  {displayURL ? (
+                    <div
+                      className="item-details-img"
+                      style={{ width: "fit-content", margin: "auto" }}
+                    >
+                      <span
+                        className={"like-btn-inactive complete-center"}
+                        onClick={removeNFT}
+                        role="button"
+                      >
+                        <i
+                          className={"ri-delete-bin-line ri-lg"}
+                          style={{ color: "black" }}
+                        ></i>
+                      </span>
+                      <Asset
+                        type={uploadFile?.type || "image"}
+                        imageSrc={displayURL}
+                        thumbnail={displayURL}
+                        videoSrc={[displayURL]}
+                        objectFit="cover"
+                      />
+                    </div>
+                  ) : (
+                    <div style={{ minHeight: "500px" }} className="complete-center">
+                      <div className="d-flex" style={{ gridGap: "20px" }}>
+                        <div
+                          className="complete-center upload-wrapper-circle"
+                          style={{ fontSize: "31px" }}
+                          onClick={onUploadClick}
+                        >
+                          <i className="ri-file-gif-line ri-lg"></i>
+                        </div>
+                        <div
+                          className="complete-center upload-wrapper-circle"
+                          style={{ fontSize: "31px" }}
+                          onClick={onUploadClick}
+                        >
+                          <i className="ri-image-add-line ri-lg"></i>
+                        </div>
+                        <div
+                          className="complete-center upload-wrapper-circle"
+                          style={{ fontSize: "31px" }}
+                          onClick={onUploadClick}
+                        >
+                          <i className="ri-video-upload-line ri-lg"></i>
+                        </div>
+                      </div>
+                      <div className="create-nft-upload-title mt-4">
+                        Upload assets
+                      </div>
+                      <div className="create-nft-upload-sub-title">
+                        Image, Video, Audio, or 3D Model <br />
+                        File types supported: JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG, GLB, GLTF. Max size: 100 MB
+                      </div>
+                    </div>
+                  )}
+                  <input
+                    type="file"
+                    accept=".jpeg,.png,.jpg,.mp4,.mov,.avi,.wmv"
+                    ref={ref}
+                    style={{ visibility: "hidden" }}
+                    name="fileName"
+                    onChange={(e) => handleUpload(e.target.files[0])}
+                  />
+                </div>
               </div>
-            ) : (
-              <div style={{ minHeight: "500px" }} className="complete-center">
-                <div className="d-flex" style={{ gridGap: "20px" }}>
-                  <div
-                    className="complete-center upload-wrapper-circle"
-                    style={{ fontSize: "31px" }}
-                    onClick={onUploadClick}
-                  >
-                    <i className="ri-file-gif-line ri-lg"></i>
-                  </div>
-                  <div
-                    className="complete-center upload-wrapper-circle"
-                    style={{ fontSize: "31px" }}
-                    onClick={onUploadClick}
-                  >
-                    <i className="ri-image-add-line ri-lg"></i>
-                  </div>
-                  <div
-                    className="complete-center upload-wrapper-circle"
-                    style={{ fontSize: "31px" }}
-                    onClick={onUploadClick}
-                  >
-                    <i className="ri-video-upload-line ri-lg"></i>
-                  </div>
-                </div>
-                <div className="create-nft-upload-title mt-4">
-                  Upload assets
-                </div>
-                <div className="create-nft-upload-sub-title">
-                  Image, Video, Audio, or 3D Model <br />
-                  File types supported: JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG, GLB, GLTF. Max size: 100 MB
-                </div>
-              </div>
-            )}
-            <input
-              type="file"
-              accept=".jpeg,.png,.jpg,.mp4,.mov,.avi,.wmv"
-              ref={ref}
-              style={{ visibility: "hidden" }}
-              name="fileName"
-              onChange={(e) => handleUpload(e.target.files[0])}
-            />
+
+            </form>
+          </>
+        ) : (
+          <div
+            className="complete-center text-center"
+            style={{ minHeight: "75vh" }}
+          >
+            {loadingSectionValue}
           </div>
-        </div>
+        )}
+
+
+
       </div>
       <AddNFTProperties
         open={openPropertiesDialog}

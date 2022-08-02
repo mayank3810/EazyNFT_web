@@ -1,7 +1,7 @@
 import Navbar from "../components/Layout/Navbar";
 
 import FeaturedArea from "../components/Common/FeaturedArea";
-import Footer from "../components/Layout/Footer";
+
 import Copyright from "../components/Common/Copyright";
 import React, { useState, useEffect, useRef } from "react";
 import { connect } from "react-redux";

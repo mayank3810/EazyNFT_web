@@ -1,7 +1,7 @@
 import Navbar from '../components/Layout/Navbar';
 
 import PageBanner from "../components/Common/PageBanner";
-import Footer from "../components/Layout/Footer";
+
 import Copyright from "../components/Common/Copyright";
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
@@ -153,7 +153,7 @@ const Register = (props) => {
         </div>
       </div>
 
-      <Footer />
+      
       <Copyright />
     </>
   );

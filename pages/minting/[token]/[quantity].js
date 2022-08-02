@@ -237,7 +237,7 @@ function Minting(props) {
           </div>
         </div>
       </section>
-      <Footer />
+      
       <Copyright />
     </>
   );

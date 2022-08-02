@@ -1,7 +1,7 @@
 import Navbar from '../components/Layout/Navbar';
 
 import PageBanner from "../components/Common/PageBanner";
-import Footer from "../components/Layout/Footer";
+
 import Copyright from "../components/Common/Copyright";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -152,7 +152,7 @@ const Login = (props) => {
         </div>
       </div>
 
-      <Footer />
+      
       <Copyright />
     </>
   );
