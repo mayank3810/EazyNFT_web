@@ -90,10 +90,10 @@ const DiscoverArea = (props) => {
                 <th>Virtual Image</th>
                 <th>Tag </th>
                 <th>Manufacture</th>
-                <th>Status</th>
+                <th style={{width:'120px'}}>Status</th>
                 <th>Owner</th>
                 <th>Blockchain</th>
-                <th>Price</th>
+                <th style={{width:'120px'}}>Price</th>
               </tr>
             </thead>
             <tbody>

@@ -9842,3 +9842,18 @@ ul.wallet-list {
     background: linear-gradient(to right, #fbce71 0%, #d7a241 100%);
     border-color: #d7a241;
 }
+
+.btn-sm-gold {
+  padding: 8px 10px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  border: none;
+  border-radius: 0.35rem !important;
+  cursor: pointer;
+  background: #fbce71;
+  background: linear-gradient(to right, #fbce71 0%, #d7a241 100%);
+  border-color: #d7a241;
+}
