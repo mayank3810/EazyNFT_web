@@ -9860,3 +9860,9 @@ ul.wallet-list {
 .btn-block {
   width: 100%;
 }
+
+.center {
+  display: block;
+  margin: auto;
+  padding: 15px 100px;
+}

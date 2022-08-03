@@ -34,6 +34,8 @@ const FormSchema = Yup.object().shape({
     .min(1, "Number of copy should be more than 1")
     .max(100, "Exceded maximum limit"),
   websiteURL: Yup.string(),
+  expiry: Yup.string(),
+  mfc_date: Yup.string(),
 });
 
 const CreateNFTArea = (props) => {
@@ -62,6 +64,8 @@ const CreateNFTArea = (props) => {
       property: "",
       copies: 1,
       websiteURL: "",
+      expiry: "",
+      mfc_date: "",
     },
     validationSchema: FormSchema,
     onSubmit: (values) => {
@@ -157,8 +161,12 @@ const CreateNFTArea = (props) => {
   };
 
   const handleSubmit = async () => {
+    let { name, description, copies, royalty, websiteURL, expiry } =
+      formik.values;
+    // console.log(formik.values);
     try {
-      let { name, description, copies, royalty, websiteURL } = formik.values;
+      let { name, description, copies, royalty, websiteURL, expiry, mfc_date } =
+        formik.values;
       copies = Number(copies);
       royalty = Number(royalty);
       if (checkValidations()) return;
@@ -223,9 +231,19 @@ const CreateNFTArea = (props) => {
         blockchainChainId: Number(desiredChainId),
         collectionName: selectedCollection,
         thumbnail,
+        properties: [
+          {
+            key: "Expiry",
+            value: expiry,
+          },
+          {
+            key: "Manufacture Date",
+            value: mfc_date,
+          },
+        ],
       };
 
-      if (nftProperties?.length) _createNFT["properties"] = nftProperties;
+      // if (nftProperties?.length) _createNFT["properties"] = nftProperties;
       let _categories = categories.filter((value) => {
         if (selectedCategories.includes(value.key)) return value;
       });
@@ -336,106 +354,7 @@ const CreateNFTArea = (props) => {
           <>
             <form onSubmit={formik.handleSubmit}>
               <div className="row create-nft-form-section">
-
-                <div className="col-lg-4">
-
-                  <CustomInput
-                    id="name"
-                    class="ez-input"
-                    type="text"
-                    label="NFC Hash"
-                    errors={formik.errors}
-                    touched={formik.touched}
-                    value={formik.values.name}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-
-                  <CustomInput
-                    id="name"
-                    class="ez-input"
-                    type="text"
-                    label="Product Name"
-                    errors={formik.errors}
-                    touched={formik.touched}
-                    value={formik.values.name}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                  <CustomInput
-                    id="description"
-                    class="ez-input"
-                    type="textarea"
-                    label="Description"
-                    errors={formik.errors}
-                    touched={formik.touched}
-                    value={formik.values.description}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    style={{ height: "141px" }}
-                  />
-                  <div className="mb-4 ez-input-container">
-                    <label>Select Category</label>
-                    <select
-                      className="form-select ez-form-select"
-                      value={selectedCategories[0]}
-                      onChange={(e) => handleCategories(e?.target?.value)}
-                    >
-                      {categories.map((value, index) => (
-                        <option key={index} value={value.key}>
-                          {value.value}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-
-
-                  <button
-                    type="submit"
-                    className="default-btn btn-block mb-5 mt-4"
-                  >
-                    Mint Tag
-                  </button>
-                </div>
-
-                <div className="col-lg-4">
-                  
-                <CustomInput
-                    id="name"
-                    class="ez-input"
-                    type="text"
-                    label="NFC Hash"
-                    errors={formik.errors}
-                    touched={formik.touched}
-                    value={formik.values.name}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                    <CustomInput
-                    id="name"
-                    class="ez-input"
-                    type="text"
-                    label="NFC Hash"
-                    errors={formik.errors}
-                    touched={formik.touched}
-                    value={formik.values.name}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-                    <CustomInput
-                    id="name"
-                    class="ez-input"
-                    type="text"
-                    label="NFC Hash"
-                    errors={formik.errors}
-                    touched={formik.touched}
-                    value={formik.values.name}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                  />
-
-                </div>
-                <div className="col-lg-4">
+                <div className="col-lg-12">
                   {displayURL ? (
                     <div
                       className="item-details-img"
@@ -460,15 +379,11 @@ const CreateNFTArea = (props) => {
                       />
                     </div>
                   ) : (
-                    <div style={{ minHeight: "500px" }} className="complete-center">
+                    <div
+                      style={{ minHeight: "400px" }}
+                      className="complete-center"
+                    >
                       <div className="d-flex" style={{ gridGap: "20px" }}>
-                        <div
-                          className="complete-center upload-wrapper-circle"
-                          style={{ fontSize: "31px" }}
-                          onClick={onUploadClick}
-                        >
-                          <i className="ri-file-gif-line ri-lg"></i>
-                        </div>
                         <div
                           className="complete-center upload-wrapper-circle"
                           style={{ fontSize: "31px" }}
@@ -476,34 +391,130 @@ const CreateNFTArea = (props) => {
                         >
                           <i className="ri-image-add-line ri-lg"></i>
                         </div>
-                        <div
-                          className="complete-center upload-wrapper-circle"
-                          style={{ fontSize: "31px" }}
-                          onClick={onUploadClick}
-                        >
-                          <i className="ri-video-upload-line ri-lg"></i>
-                        </div>
                       </div>
                       <div className="create-nft-upload-title mt-4">
                         Upload assets
                       </div>
                       <div className="create-nft-upload-sub-title">
                         Image, Video, Audio, or 3D Model <br />
-                        File types supported: JPG, PNG, GIF, SVG, MP4, WEBM, MP3, WAV, OGG, GLB, GLTF. Max size: 100 MB
+                        File types supported: JPG, PNG, GIF, SVG, MP4, WEBM, GIF
+                        MP3, WAV, OGG, GLB, GLTF. Max size: 100 MB
                       </div>
                     </div>
                   )}
                   <input
                     type="file"
-                    accept=".jpeg,.png,.jpg,.mp4,.mov,.avi,.wmv"
+                    accept=".jpeg,.png,.jpg,.mp4,.mov,.avi,.wmv,.gif"
                     ref={ref}
                     style={{ visibility: "hidden" }}
                     name="fileName"
                     onChange={(e) => handleUpload(e.target.files[0])}
                   />
                 </div>
-              </div>
+                <div className="col-lg-6">
+                  {/* <CustomInput
+                    id="name"
+                    class="ez-input"
+                    type="text"
+                    label="Name"
+                    errors={formik.errors}
+                    touched={formik.touched}
+                    value={formik.values.name}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                  /> */}
 
+                  <CustomInput
+                    id="name"
+                    class="ez-input"
+                    type="text"
+                    label="Product Name"
+                    errors={formik.errors}
+                    touched={formik.touched}
+                    value={formik.values.name}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                  />
+                  <CustomInput
+                    id="description"
+                    class="ez-input"
+                    type="textarea"
+                    label="Description"
+                    errors={formik.errors}
+                    touched={formik.touched}
+                    value={formik.values.description}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    style={{ height: "141px" }}
+                  />
+                </div>
+
+                <div className="col-lg-6">
+                  <CustomInput
+                    id="mfc_date"
+                    class="ez-input"
+                    type="text"
+                    label="Manufacture Date"
+                    errors={formik.errors}
+                    touched={formik.touched}
+                    value={formik.values.mfc_date}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                  />
+                  <CustomInput
+                    id="expiry"
+                    class="ez-input"
+                    type="text"
+                    label="Expiry"
+                    errors={formik.errors}
+                    touched={formik.touched}
+                    value={formik.values.expiry}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                  />
+                  <div className="mb-4 ez-input-container">
+                    <label>Select Category</label>
+                    <select
+                      className="form-select ez-form-select"
+                      value={selectedCategories[0]}
+                      onChange={(e) => handleCategories(e?.target?.value)}
+                    >
+                      {categories.map((value, index) => (
+                        <option key={index} value={value.key}>
+                          {value.value}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  {/* <CustomInput
+                    id="name"
+                    class="ez-input"
+                    type="text"
+                    label="NFC Hash"
+                    errors={formik.errors}
+                    touched={formik.touched}
+                    value={formik.values.name}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                  />
+                  <CustomInput
+                    id="name"
+                    class="ez-input"
+                    type="text"
+                    label="NFC Hash"
+                    errors={formik.errors}
+                    touched={formik.touched}
+                    value={formik.values.name}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                  /> */}
+                </div>
+                <div className="col-lg-12">
+                  <button type="submit" className="default-btn center mt-4 ">
+                    Mint Tag
+                  </button>
+                </div>
+              </div>
             </form>
           </>
         ) : (
@@ -514,11 +525,8 @@ const CreateNFTArea = (props) => {
             {loadingSectionValue}
           </div>
         )}
-
-
-
       </div>
-      <AddNFTProperties
+      {/* <AddNFTProperties
         open={openPropertiesDialog}
         properties={nftProperties}
         handleSave={(e) => {
@@ -526,7 +534,7 @@ const CreateNFTArea = (props) => {
           setopenPropertiesDialog(false);
         }}
         onClose={setopenPropertiesDialog}
-      />
+      /> */}
     </>
   );
 };

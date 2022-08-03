@@ -1,0 +1,332 @@
+{
+  "NFT_STATUS": {
+    "INITIAL": "initial",
+    "MINT": "mint",
+    "SALE": "sale",
+    "SOLD": "sold"
+  },
+  "result": 1,
+  "msg": "All Sellable Collectibles Fetched Successfully",
+  "data": {
+    "result": [
+      {
+        "title": "NIKE Sneakers",
+        "tokenId": 121,
+        "contentImage": "61db375f-33d4-4301-87c8-fd82a0f597e7-NIKE-Sneakers.jpg",
+        "isMintOnSale": false,
+        "status": "mint",
+        "totalViews": 1,
+        "likeCount": 0,
+        "auctionEnded": false,
+        "auctionLive": false,
+        "onSaleAt": "2022-08-03T17:05:02.271Z",
+        "metaData": {
+          "preview": "61db375f-33d4-4301-87c8-fd82a0f597e7-NIKE-Sneakers.jpg",
+          "thumbnail": "aabac8eb-3ff6-4e77-b82f-e3fc6a39a303-NIKE-Sneakers.jpg",
+          "type": "image/jpeg"
+        },
+        "createdBy": [
+          {
+            "walletAddress": "0x3286DBa0E72AE6FBC121Ed9340Ce450847453736",
+            "profilePic": "https://po-web-prod.vercel.app/images/profile-picture.webp",
+            "isVerified": false
+          }
+        ]
+      },
+      {
+        "title": "aa",
+        "tokenId": 120,
+        "contentImage": "45f3700d-3336-49a9-ad1e-485f4b313036-aa.jpg",
+        "isMintOnSale": false,
+        "status": "mint",
+        "totalViews": 18,
+        "likeCount": 0,
+        "auctionEnded": false,
+        "auctionLive": false,
+        "onSaleAt": "2022-07-29T09:00:02.499Z",
+        "metaData": {
+          "preview": "45f3700d-3336-49a9-ad1e-485f4b313036-aa.jpg",
+          "thumbnail": "ef4e38f0-d60f-4eb9-b6d3-0ad6fe60787f-aa.jpg",
+          "type": "image/jpeg"
+        },
+        "createdBy": [
+          {
+            "profilePic": "https://eazynft.nyc3.digitaloceanspaces.com/images/0.29660666134715785-1619890060797.jpeg",
+            "isVerified": false,
+            "walletAddress": "0x209C658a0FB7F09BB9413c37d7F6e6Cf7bBA1a1a",
+            "name": "Buyer"
+          }
+        ]
+      },
+      {
+        "title": "Test NFT",
+        "tokenId": 119,
+        "contentImage": "5369eccc-3fa4-4bb4-bf52-e9733a5c8198-Test-NFT.jpg",
+        "isMintOnSale": true,
+        "status": "sale",
+        "totalViews": 22,
+        "likeCount": 0,
+        "auctionEnded": true,
+        "auctionLive": false,
+        "onSaleAt": "2022-07-29T05:48:47.000Z",
+        "nftType": "fixed-price",
+        "price": 0.15,
+        "currentBid": null,
+        "metaData": {
+          "preview": "5369eccc-3fa4-4bb4-bf52-e9733a5c8198-Test-NFT.jpg",
+          "thumbnail": "6540bfb8-8a09-41e9-98c4-cfe05918b180-Test-NFT.jpg",
+          "type": "image/jpeg"
+        },
+        "createdBy": [
+          {
+            "profilePic": "https://eazynft.nyc3.digitaloceanspaces.com/images/0.29660666134715785-1619890060797.jpeg",
+            "isVerified": false,
+            "walletAddress": "0x209C658a0FB7F09BB9413c37d7F6e6Cf7bBA1a1a",
+            "name": "Buyer"
+          }
+        ]
+      },
+      {
+        "title": "Moon",
+        "tokenId": 118,
+        "contentImage": "d209d929-e162-4f1b-a53b-14343453dce1-Moon.jpg",
+        "isMintOnSale": false,
+        "status": "mint",
+        "totalViews": 2,
+        "likeCount": 0,
+        "auctionEnded": false,
+        "auctionLive": false,
+        "onSaleAt": "2022-07-26T11:54:58.759Z",
+        "metaData": {
+          "preview": "d209d929-e162-4f1b-a53b-14343453dce1-Moon.jpg",
+          "thumbnail": "c93343f1-6d51-44a9-91f5-7cbd39677b5d-Moon.jpg",
+          "type": "image/jpeg"
+        },
+        "createdBy": [
+          {
+            "profilePic": "https://polyone.azureedge.net/images/3de6be94-ced7-42ae-a70a-8121066c73c2-Rectangle.png",
+            "isVerified": true,
+            "walletAddress": "0xB6403ff3309ffeAdbAE3aF085B0fe9ED17a11A99",
+            "name": "Erbil"
+          }
+        ]
+      },
+      {
+        "title": "sun",
+        "tokenId": 117,
+        "contentImage": "0549bab8-a399-4eab-980e-26b84e883d6d-sun.png",
+        "isMintOnSale": false,
+        "status": "mint",
+        "totalViews": 0,
+        "likeCount": 0,
+        "auctionEnded": false,
+        "auctionLive": false,
+        "onSaleAt": "2022-07-26T11:35:30.926Z",
+        "metaData": {
+          "preview": "0549bab8-a399-4eab-980e-26b84e883d6d-sun.png",
+          "thumbnail": "50d5567a-ab97-41f3-8626-92bba6a01166-sun.png",
+          "type": "image/png"
+        },
+        "createdBy": [
+          {
+            "profilePic": "https://polyone.azureedge.net/images/3de6be94-ced7-42ae-a70a-8121066c73c2-Rectangle.png",
+            "isVerified": true,
+            "walletAddress": "0xB6403ff3309ffeAdbAE3aF085B0fe9ED17a11A99",
+            "name": "Erbil"
+          }
+        ]
+      },
+      {
+        "title": "Earth",
+        "tokenId": 116,
+        "contentImage": "6083d957-03d8-419e-b79c-94b2c0c4a4fc-Earth.png",
+        "isMintOnSale": false,
+        "status": "mint",
+        "totalViews": 6,
+        "likeCount": 0,
+        "auctionEnded": false,
+        "auctionLive": false,
+        "onSaleAt": "2022-07-26T07:24:12.337Z",
+        "metaData": {
+          "preview": "6083d957-03d8-419e-b79c-94b2c0c4a4fc-Earth.png",
+          "thumbnail": "cae67d82-cfcd-4794-aaaa-059cbeccbb7a-Earth.png",
+          "type": "image/png"
+        },
+        "createdBy": [
+          {
+            "profilePic": "https://polyone.azureedge.net/images/3de6be94-ced7-42ae-a70a-8121066c73c2-Rectangle.png",
+            "isVerified": true,
+            "walletAddress": "0xB6403ff3309ffeAdbAE3aF085B0fe9ED17a11A99",
+            "name": "Erbil"
+          }
+        ]
+      },
+      {
+        "title": "test",
+        "tokenId": 115,
+        "contentImage": "76c5ffbd-5e50-4c90-a1c9-50dad2175744-test.jpg",
+        "isMintOnSale": false,
+        "status": "mint",
+        "totalViews": 1,
+        "likeCount": 0,
+        "auctionEnded": false,
+        "auctionLive": false,
+        "onSaleAt": "2022-07-20T11:00:51.281Z",
+        "metaData": {
+          "preview": "76c5ffbd-5e50-4c90-a1c9-50dad2175744-test.jpg",
+          "thumbnail": "b5fbcc1a-f6a8-4475-9748-a00faa3e60f7-test.jpg",
+          "type": "image/jpeg"
+        },
+        "createdBy": [
+          {
+            "profilePic": "https://polyone.azureedge.net/images/3de6be94-ced7-42ae-a70a-8121066c73c2-Rectangle.png",
+            "isVerified": true,
+            "walletAddress": "0xB6403ff3309ffeAdbAE3aF085B0fe9ED17a11A99",
+            "name": "Erbil"
+          }
+        ]
+      },
+      {
+        "title": "Test NFT",
+        "tokenId": 114,
+        "contentImage": "e2a2532a-8581-4d0b-b594-3b0861e11ff0-Test-NFT.jpg",
+        "isMintOnSale": true,
+        "status": "sale",
+        "totalViews": 6,
+        "likeCount": 0,
+        "auctionEnded": true,
+        "auctionLive": false,
+        "onSaleAt": "2022-07-29T11:23:26.000Z",
+        "nftType": "fixed-price",
+        "price": 0.001,
+        "currentBid": null,
+        "metaData": {
+          "preview": "e2a2532a-8581-4d0b-b594-3b0861e11ff0-Test-NFT.jpg",
+          "thumbnail": "d200120d-3194-469b-be1f-f6a9d826fa70-Test-NFT.jpg",
+          "type": "image/jpeg"
+        },
+        "createdBy": [
+          {
+            "profilePic": "https://eazynft.nyc3.digitaloceanspaces.com/images/0.29660666134715785-1619890060797.jpeg",
+            "isVerified": false,
+            "walletAddress": "0x209C658a0FB7F09BB9413c37d7F6e6Cf7bBA1a1a",
+            "name": "Buyer"
+          }
+        ]
+      },
+      {
+        "title": "Sports Bot",
+        "tokenId": 113,
+        "contentImage": "fa236ec2-72af-4640-a3bd-30b7f0e2dd13-Sports-Bot.jpg",
+        "isMintOnSale": true,
+        "status": "sale",
+        "totalViews": 7,
+        "likeCount": 1,
+        "auctionEnded": true,
+        "auctionLive": false,
+        "onSaleAt": "2022-06-07T16:29:49.000Z",
+        "nftType": "fixed-price",
+        "price": 0.015,
+        "currentBid": null,
+        "metaData": {
+          "preview": "fa236ec2-72af-4640-a3bd-30b7f0e2dd13-Sports-Bot.jpg",
+          "thumbnail": "e73abec2-c494-4e15-879c-ba87060ba9cb-Sports-Bot.jpg",
+          "type": "image/jpeg"
+        },
+        "createdBy": [
+          {
+            "profilePic": "https://eazynft.nyc3.digitaloceanspaces.com/images/0.29660666134715785-1619890060797.jpeg",
+            "isVerified": false,
+            "walletAddress": "0x209C658a0FB7F09BB9413c37d7F6e6Cf7bBA1a1a",
+            "name": "Buyer"
+          }
+        ]
+      },
+      {
+        "title": "Kengo Kitazume 2022-23",
+        "tokenId": 112,
+        "contentImage": "69433880-ddb5-4ba8-b5c8-6911e3b7284b-Kengo-Kitazume-2022-23.png",
+        "isMintOnSale": true,
+        "status": "sale",
+        "totalViews": 23,
+        "likeCount": 0,
+        "auctionEnded": true,
+        "auctionLive": false,
+        "onSaleAt": "2022-06-03T07:25:28.000Z",
+        "nftType": "fixed-price",
+        "price": 0.0115,
+        "currentBid": null,
+        "metaData": {
+          "preview": "69433880-ddb5-4ba8-b5c8-6911e3b7284b-Kengo-Kitazume-2022-23.png",
+          "thumbnail": "20c74ba4-50f6-4e0a-b0d2-535061835835-Kengo-Kitazume-2022-23.png",
+          "type": "image/png"
+        },
+        "createdBy": [
+          {
+            "profilePic": "https://eazynft.nyc3.digitaloceanspaces.com/images/0.29660666134715785-1619890060797.jpeg",
+            "isVerified": false,
+            "walletAddress": "0x209C658a0FB7F09BB9413c37d7F6e6Cf7bBA1a1a",
+            "name": "Buyer"
+          }
+        ]
+      },
+      {
+        "title": "Sorare",
+        "tokenId": 111,
+        "contentImage": "277a58e1-526b-4789-8022-b4fb6309e688-Sorare.png",
+        "isMintOnSale": true,
+        "status": "mint",
+        "totalViews": 16,
+        "likeCount": 1,
+        "auctionEnded": false,
+        "auctionLive": false,
+        "dropDetails": {
+          "through": "0x209C658a0FB7F09BB9413c37d7F6e6Cf7bBA1a1a",
+          "timestamp": 1654240107439,
+          "share": 15,
+          "liveAt": 1654239915778
+        },
+        "onSaleAt": "2022-06-03T07:08:27.451Z",
+        "metaData": {
+          "preview": "277a58e1-526b-4789-8022-b4fb6309e688-Sorare.png",
+          "thumbnail": "5952e4d7-1f94-47a6-bebf-188217ccf964-Sorare.png",
+          "type": "image/png"
+        },
+        "createdBy": [
+          {
+            "profilePic": "https://eazynft.nyc3.digitaloceanspaces.com/images/0.29660666134715785-1619890060797.jpeg",
+            "isVerified": false,
+            "walletAddress": "0x209C658a0FB7F09BB9413c37d7F6e6Cf7bBA1a1a",
+            "name": "Buyer"
+          }
+        ]
+      },
+      {
+        "title": "grapes",
+        "tokenId": 110,
+        "contentImage": "c750419c-418e-4fe3-9f66-ac363ab72bad-grapes.jpg",
+        "isMintOnSale": true,
+        "status": "sale",
+        "totalViews": 11,
+        "likeCount": 1,
+        "auctionEnded": true,
+        "auctionLive": false,
+        "onSaleAt": "2022-05-06T11:48:55.000Z",
+        "metaData": {
+          "preview": "c750419c-418e-4fe3-9f66-ac363ab72bad-grapes.jpg",
+          "thumbnail": "dfad24ba-04dc-418a-b33e-0f21cf3a6744-grapes.jpg",
+          "type": "image/jpeg"
+        },
+        "createdBy": [
+          {
+            "profilePic": "https://polyone.azureedge.net/images/3de6be94-ced7-42ae-a70a-8121066c73c2-Rectangle.png",
+            "isVerified": true,
+            "walletAddress": "0xB6403ff3309ffeAdbAE3aF085B0fe9ED17a11A99",
+            "name": "Erbil"
+          }
+        ]
+      }
+    ],
+    "total": 13
+  }
+}

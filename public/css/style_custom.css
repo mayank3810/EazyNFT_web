@@ -2894,8 +2894,22 @@ span.verified {
   width: 45px;
   height: 45px;
   border-radius: 40px;
-  color: #ddd;
-  background: rgba(255, 255, 255, 0.05);
+  color: #000;
+  background: linear-gradient(to right, #fbce71 0%, #d7a241 100%);
+  border-color: #d7a241;
+}
+
+.btn-icon-only {
+  background: none;
+  border: none;
+  font-size: 30px;
+  transition: 0.3s ease;
+  color: #d7a241;
+}
+
+.btn-icon-only:hover {
+  color: #d7a241;
+  transform: translateX(7px);
 }
 
 .serach {
