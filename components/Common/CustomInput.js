@@ -23,9 +23,7 @@ export default function CustomInput({
           case "number":
             return (
               <input
-                className={
-                  isError ? "ez-input border-danger" : "ez-input"
-                }
+                className={isError ? "ez-input border-danger" : "ez-input"}
                 type={type}
                 {...rest}
               />
@@ -33,9 +31,7 @@ export default function CustomInput({
           case "textarea":
             return (
               <textarea
-                className={
-                  isError ? "ez-input border-danger" : "ez-input"
-                }
+                className={isError ? "ez-input border-danger" : "ez-input"}
                 {...rest}
               />
             );

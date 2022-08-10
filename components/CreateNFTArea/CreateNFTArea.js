@@ -21,6 +21,9 @@ import AddNFTProperties from "../Modals/AddNFTProperties";
 import { CHAINS } from "../../chains.ts";
 import imageCompression from "browser-image-compression";
 
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 const FormSchema = Yup.object().shape({
   name: Yup.string().required("NFT name is required."),
   description: Yup.string().required("NFT description is required."),
@@ -34,8 +37,6 @@ const FormSchema = Yup.object().shape({
     .min(1, "Number of copy should be more than 1")
     .max(100, "Exceded maximum limit"),
   websiteURL: Yup.string(),
-  expiry: Yup.string(),
-  mfc_date: Yup.string(),
 });
 
 const CreateNFTArea = (props) => {
@@ -54,6 +55,9 @@ const CreateNFTArea = (props) => {
   const [nftProperties, setnftProperties] = useState([]);
   const [uploadFile, setuploadFile] = useState(null);
   const [displayURL, setdisplayURL] = useState("");
+
+  const [mfc_date, setMfc_date] = useState(new Date());
+  const [expiry, setExpiry] = useState(new Date());
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -64,8 +68,6 @@ const CreateNFTArea = (props) => {
       property: "",
       copies: 1,
       websiteURL: "",
-      expiry: "",
-      mfc_date: "",
     },
     validationSchema: FormSchema,
     onSubmit: (values) => {
@@ -165,8 +167,7 @@ const CreateNFTArea = (props) => {
       formik.values;
     // console.log(formik.values);
     try {
-      let { name, description, copies, royalty, websiteURL, expiry, mfc_date } =
-        formik.values;
+      let { name, description, copies, royalty, websiteURL } = formik.values;
       copies = Number(copies);
       royalty = Number(royalty);
       if (checkValidations()) return;
@@ -450,18 +451,43 @@ const CreateNFTArea = (props) => {
                 </div>
 
                 <div className="col-lg-6">
-                  <CustomInput
+                  <div className="ez-input-container">
+                    <label className={"label"} htmlFor="expiry">
+                      Manufacture Date
+                    </label>
+                    <DatePicker
+                      className="ez-input"
+                      id="expiry"
+                      selected={expiry}
+                      onChange={(date) => setExpiry(date)}
+                    />
+                  </div>
+                  {/* <button onClick={() => setMfc_date(false)} className="default-btn btn-sm">Never</button> */}
+                  {/* <DatePickerField name="mfc_date" /> */}
+                  {/* <CustomInput
                     id="mfc_date"
                     class="ez-input"
-                    type="text"
+                    type="date"
                     label="Manufacture Date"
                     errors={formik.errors}
                     touched={formik.touched}
                     value={formik.values.mfc_date}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                  />
-                  <CustomInput
+                  /> */}
+
+                  <div className="ez-input-container">
+                    <label className={"label"} htmlFor="mfc_date">
+                      Expiry Date
+                    </label>
+                    <DatePicker
+                      className="ez-input"
+                      id="mfc_date"
+                      selected={mfc_date}
+                      onChange={(date) => setMfc_date(date)}
+                    />
+                  </div>
+                  {/* <CustomInput
                     id="expiry"
                     class="ez-input"
                     type="text"
@@ -471,7 +497,7 @@ const CreateNFTArea = (props) => {
                     value={formik.values.expiry}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                  />
+                  /> */}
                   <div className="mb-4 ez-input-container">
                     <label>Select Category</label>
                     <select
