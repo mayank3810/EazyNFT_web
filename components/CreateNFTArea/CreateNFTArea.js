@@ -163,8 +163,7 @@ const CreateNFTArea = (props) => {
   };
 
   const handleSubmit = async () => {
-    let { name, description, copies, royalty, websiteURL, expiry } =
-      formik.values;
+    let { name, description, copies, royalty, websiteURL } = formik.values;
     // console.log(formik.values);
     try {
       let { name, description, copies, royalty, websiteURL } = formik.values;
