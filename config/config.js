@@ -11,12 +11,12 @@ export default {
   },
   contractDetails: {
     1: {
-      polyoneContractAddress: "0x7f12D70786A584430425Ec0F9Dc42e36ba7eF2BF",
+      polyoneContractAddress: "0xF36C26b8FbD59fa454aeAf67481eE573F1503d35",
       marketplaceContractAddress: "0xF32E4fEF3f6AEF6Ff02F4Af7eF963F7Eda5ce44b",
       polyoneOwnerAddress: "0xe04AA2F94F43AdDc3574548AD8AF68FE4bc86A38",
     },
     4: {
-      polyoneContractAddress: "0x7f12D70786A584430425Ec0F9Dc42e36ba7eF2BF",
+      polyoneContractAddress: "0xF36C26b8FbD59fa454aeAf67481eE573F1503d35",
       marketplaceContractAddress: "0xF32E4fEF3f6AEF6Ff02F4Af7eF963F7Eda5ce44b",
       polyoneOwnerAddress: "0xe04AA2F94F43AdDc3574548AD8AF68FE4bc86A38",
     },
